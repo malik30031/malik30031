@@ -1,0 +1,498 @@
+-- Gui to Lua
+-- Version: 3.2
+
+
+-- Instances:
+
+
+local Gui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Box = Instance.new("TextBox")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local Label = Instance.new("TextLabel")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local Button = Instance.new("TextButton")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local Close = Instance.new("TextButton")
+
+
+Gui.Name = "Gui"
+Gui.Parent = gethui()
+Gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+
+Main.Name = "Main"
+Main.Parent = Gui
+Main.BackgroundColor3 = Color3.fromRGB(75,75,75)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.3359,0,0.5423,0)
+Main.Size = UDim2.new(0.2403,0,0.1668,0)
+Main.Active = true
+Main.Draggable = true
+
+
+Box.Parent = Main
+Box.BackgroundColor3 = Color3.fromRGB(95,95,95)
+Box.BorderSizePixel = 0
+Box.Position = UDim2.new(0.098,0,0.218,0)
+Box.Size = UDim2.new(0.801,0,0.364,0)
+Box.PlaceholderText = "Player here"
+Box.Text = ""
+Box.TextColor3 = Color3.fromRGB(255,255,255)
+Box.TextScaled = true
+Box.Font = Enum.Font.SourceSansBold
+
+
+UITextSizeConstraint.Parent = Box
+UITextSizeConstraint.MaxTextSize = 31
+
+
+Label.Parent = Main
+Label.BackgroundColor3 = Color3.fromRGB(95,95,95)
+Label.BorderSizePixel = 0
+Label.Size = UDim2.new(1,0,0.1605,0)
+Label.Text = "المطور مالك"
+Label.TextColor3 = Color3.fromRGB(255,255,255)
+Label.TextScaled = true
+Label.Font = Enum.Font.Nunito
+
+
+UITextSizeConstraint_2.Parent = Label
+UITextSizeConstraint_2.MaxTextSize = 21
+
+
+Button.Parent = Main
+Button.BackgroundColor3 = Color3.fromRGB(95,95,95)
+Button.BorderSizePixel = 0
+Button.Position = UDim2.new(0.183,0,0.656,0)
+Button.Size = UDim2.new(0.629,0,0.277,0)
+Button.Text = "Bring | Off"
+Button.TextColor3 = Color3.fromRGB(255,255,255)
+Button.TextScaled = true
+Button.Font = Enum.Font.Nunito
+
+
+UITextSizeConstraint_3.Parent = Button
+UITextSizeConstraint_3.MaxTextSize = 28
+
+
+Close.Parent = Main
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255,255,255)
+Close.TextScaled = true
+Close.BackgroundColor3 = Color3.fromRGB(170,0,0)
+Close.Size = UDim2.new(0.12,0,0.2,0)
+Close.Position = UDim2.new(0.88,0,0,0)
+Close.Font = Enum.Font.Nunito
+
+
+Close.MouseButton1Click:Connect(function()
+	Gui:Destroy()
+end)
+
+
+-- Services
+
+
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local Workspace = game:GetService("Workspace")
+local UserInputService = game:GetService("UserInputService")
+local StarterGui = game:GetService("StarterGui")
+
+
+local LocalPlayer = Players.LocalPlayer
+
+
+StarterGui:SetCore("SendNotification",{
+Title="مرحبا بك!",
+Text="تم تشغيل السكربت بواسطة المطور مالك",
+Duration=5
+})
+
+
+-- hide gui key
+
+
+local mainStatus=true
+
+
+UserInputService.InputBegan:Connect(function(input,gpe)
+	if input.KeyCode==Enum.KeyCode.RightControl and not gpe then
+		mainStatus=not mainStatus
+		Main.Visible=mainStatus
+	end
+end)
+
+
+-- Base
+
+
+local Folder=Instance.new("Folder",Workspace)
+
+
+local BasePart=Instance.new("Part",Folder)
+BasePart.Anchored=true
+BasePart.CanCollide=false
+BasePart.Transparency=1
+
+
+local Attachment1=Instance.new("Attachment",BasePart)
+
+
+-- Network
+
+
+if not getgenv().Network then
+
+
+	getgenv().Network={BaseParts={},Velocity=Vector3.new(14,14,14)}
+
+
+	Network.RetainPart=function(Part)
+
+
+		if Part:IsA("BasePart") and Part:IsDescendantOf(Workspace) then
+			table.insert(Network.BaseParts,Part)
+			Part.CustomPhysicalProperties=PhysicalProperties.new(0,0,0,0,0)
+			Part.CanCollide=false
+		end
+
+
+	end
+
+
+	RunService.Heartbeat:Connect(function()
+
+
+		sethiddenproperty(LocalPlayer,"SimulationRadius",math.huge)
+
+
+		for _,Part in pairs(Network.BaseParts) do
+			if Part:IsDescendantOf(Workspace) then
+				Part.Velocity=Network.Velocity
+			end
+		end
+
+
+	end)
+
+
+end
+
+
+-- checks
+
+
+local function hasDoorInAncestry(instance)
+
+
+	while instance do
+
+
+		if string.lower(instance.Name):find("door") then
+			return true
+		end
+
+
+		instance=instance.Parent
+
+
+	end
+
+
+	return false
+
+
+end
+
+
+local function hasBlockedInAncestry(part)
+
+
+	local blocked={"motor","car","sit","swing"}
+
+
+	while part do
+
+
+		local name=string.lower(part.Name)
+
+
+		for _,w in pairs(blocked) do
+			if name:find(w) then
+				return true
+			end
+		end
+
+
+		part=part.Parent
+
+
+	end
+
+
+	return false
+
+
+end
+
+
+-- التحقق إذا كان الجزء تابع لشخصية لاعب
+
+
+local function isPlayerCharacterPart(part)
+
+
+	local model=part:FindFirstAncestorOfClass("Model")
+
+
+	if model then
+
+
+		for _,plr in pairs(Players:GetPlayers()) do
+
+
+			if plr.Character and model==plr.Character then
+				return true
+			end
+
+
+		end
+
+
+	end
+
+
+	return false
+
+
+end
+
+
+-- التحقق إذا كان الجزء تابع لأي Tool
+
+
+local function isToolPart(part)
+	return part:FindFirstAncestorOfClass("Tool")~=nil
+end
+
+
+-- table
+
+
+local controlledParts={}
+
+
+-- force part
+
+
+local function ForcePart(v)
+
+
+	if v:IsA("BasePart")
+	and not v.Anchored
+	and v.Name~="Handle"
+	and not hasDoorInAncestry(v)
+	and not hasBlockedInAncestry(v)
+	and not isPlayerCharacterPart(v)
+	and not isToolPart(v)
+	and not controlledParts[v]
+	then
+
+
+		v.CanCollide=false
+
+
+		for _,x in ipairs(v:GetChildren()) do
+			if x:IsA("BodyMover") or x:IsA("RocketPropulsion") then
+				x:Destroy()
+			end
+		end
+
+
+		local Torque=Instance.new("Torque")
+		Torque.Torque=Vector3.new(100000,100000,100000)
+		Torque.Parent=v
+
+
+		local AlignPosition=Instance.new("AlignPosition")
+		AlignPosition.MaxForce=math.huge
+		AlignPosition.MaxVelocity=math.huge
+		AlignPosition.Responsiveness=200
+		AlignPosition.Parent=v
+
+
+		local Attachment2=Instance.new("Attachment",v)
+
+
+		Torque.Attachment0=Attachment2
+
+
+		AlignPosition.Attachment0=Attachment2
+		AlignPosition.Attachment1=Attachment1
+
+
+		controlledParts[v]=true
+
+
+	end
+
+
+end
+
+
+-- blackhole
+
+
+local blackHoleActive=false
+local DescendantAddedConnection
+
+
+local function toggleBlackHole()
+
+
+	blackHoleActive=not blackHoleActive
+
+
+	if blackHoleActive then
+
+
+		Button.Text="Bring Parts | On"
+
+
+		for _,v in ipairs(Workspace:GetDescendants()) do
+			ForcePart(v)
+		end
+
+
+		DescendantAddedConnection=Workspace.DescendantAdded:Connect(function(v)
+
+
+			if blackHoleActive then
+				ForcePart(v)
+			end
+
+
+		end)
+
+
+	else
+
+
+		Button.Text="Bring Parts | Off"
+
+
+		if DescendantAddedConnection then
+			DescendantAddedConnection:Disconnect()
+		end
+
+
+	end
+
+
+end
+
+
+-- player search
+
+
+local function getPlayer(name)
+
+
+	local lower=string.lower(name)
+
+
+	for _,p in pairs(Players:GetPlayers()) do
+
+
+		if string.find(string.lower(p.Name),lower) or string.find(string.lower(p.DisplayName),lower) then
+			return p
+		end
+
+
+	end
+
+
+end
+
+
+local player=nil
+
+
+Box.FocusLost:Connect(function(enter)
+
+
+	if enter then
+
+
+		player=getPlayer(Box.Text)
+
+
+		if player then
+			Box.Text=player.Name
+		end
+
+
+	end
+
+
+end)
+
+
+-- follow
+
+
+local function followPlayer(player)
+
+
+	task.spawn(function()
+
+
+		while blackHoleActive do
+
+
+			if player and player.Character then
+
+
+				local hrp=player.Character:FindFirstChild("HumanoidRootPart")
+
+
+				if hrp then
+					Attachment1.WorldCFrame=hrp.CFrame
+				end
+
+
+			end
+
+
+			RunService.RenderStepped:Wait()
+
+
+		end
+
+
+	end)
+
+
+end
+
+
+Button.MouseButton1Click:Connect(function()
+
+
+	if player then
+
+
+		toggleBlackHole()
+
+
+		if blackHoleActive then
+			followPlayer(player)
+		end
+
+
+	end
+
+
+end)
