@@ -1,0 +1,217 @@
+-- 💀 JR Phone Auto + Advanced Anti-Lag (Brookhaven Edition) 💀
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local Workspace = game:GetService("Workspace")
+local RunService = game:GetService("RunService")
+local StarterGui = game:GetService("StarterGui")
+
+-- إشعار عند تشغيل السكربت
+pcall(function()
+    StarterGui:SetCore("SendNotification",{
+        Title = "تنبيه",
+        Text = "تم تسريب السكربت معدل",
+        Duration = 5
+    })
+end)
+
+-- الألوان
+local RED_COLOR = Color3.fromRGB(255, 50, 50)
+local BLACK_COLOR = Color3.fromRGB(0, 0, 0)
+local GRAY_COLOR = Color3.fromRGB(20, 20, 20)
+
+--===== إعداد GUI =====--
+local gui = Instance.new("ScreenGui")
+gui.Name = "JR_PhoneGUI_v3000_Brookhaven"
+gui.ResetOnSpawn = false
+gui.Parent = game.CoreGui
+
+-- زر JR
+local toggle = Instance.new("TextButton")
+toggle.Size = UDim2.new(0, 60, 0, 60)
+toggle.Position = UDim2.new(0.5, -30, 0, 20)
+toggle.BackgroundColor3 = BLACK_COLOR
+toggle.Text = "JR"
+toggle.TextColor3 = RED_COLOR
+toggle.Font = Enum.Font.GothamBold
+toggle.TextScaled = true
+toggle.BorderSizePixel = 0
+toggle.Parent = gui
+toggle.Active = true
+toggle.Draggable = true
+
+-- الإطار
+local main = Instance.new("Frame")
+main.Size = UDim2.new(0, 320, 0, 200)
+main.Position = UDim2.new(0.5, -160, 0.5, -100)
+main.BackgroundColor3 = BLACK_COLOR
+main.BorderColor3 = RED_COLOR
+main.Visible = false
+main.Parent = gui
+
+-- العنوان
+local title = Instance.new("TextLabel")
+title.Size = UDim2.new(1, 0, 0, 30)
+title.BackgroundTransparency = 1
+title.Text = "تم تسريب سكربت JR وتعديله من قبل malik"
+title.TextColor3 = RED_COLOR
+title.Font = Enum.Font.GothamBold
+title.TextScaled = true
+title.Parent = main
+
+--===== إنشاء عناصر =====--
+local function createButton(name, y)
+    local btn = Instance.new("TextButton")
+    btn.Size = UDim2.new(0, 260, 0, 40)
+    btn.Position = UDim2.new(0, 30, 0, y)
+    btn.BackgroundColor3 = GRAY_COLOR
+    btn.Text = name
+    btn.TextColor3 = RED_COLOR
+    btn.Font = Enum.Font.GothamSemibold
+    btn.TextScaled = true
+    btn.BorderColor3 = RED_COLOR
+    btn.Parent = main
+    return btn
+end
+
+local function createCounter(y)
+    local lbl = Instance.new("TextLabel")
+    lbl.Size = UDim2.new(0, 260, 0, 20)
+    lbl.Position = UDim2.new(0, 30, 0, y)
+    lbl.BackgroundTransparency = 1
+    lbl.TextColor3 = RED_COLOR
+    lbl.Font = Enum.Font.GothamSemibold
+    lbl.TextScaled = true
+    lbl.Text = "Collected: 0"
+    lbl.Parent = main
+    return lbl
+end
+
+-- إحداثيات الانتقال
+local TARGET_X = -118.8
+local TARGET_Y = 21.5
+local TARGET_Z = 245.5
+
+local function TeleportToTarget()
+    if LocalPlayer and LocalPlayer.Character then
+        local HRP = LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+        if HRP then
+            HRP.CFrame = CFrame.new(TARGET_X, TARGET_Y, TARGET_Z)
+        end
+    end
+end
+
+local teleportBtn = createButton("Teleport", 60)
+local phoneAutoBtn = createButton("Start Auto Phone", 110)
+local phoneCounter = createCounter(160)
+
+--===== نظام الجمع =====--
+local phoneAuto = false
+local intensity = 2000
+local interval = 0.016
+local lastTick = 0
+local phoneCount = 0
+
+local function getPhone()
+    local p = Workspace:FindFirstChild("WorkspaceCom")
+    if not p then return end
+    local store = p:FindFirstChild("001_CommercialStores")
+    if not store then return end
+    local c1 = store:FindFirstChild("CommercialStorage1")
+    if not c1 then return end
+    local tools = c1:FindFirstChild("Store") and c1.Store:FindFirstChild("Tools")
+    if not tools then return end
+    return tools:FindFirstChild("Iphone")
+end
+
+local function collectPhone()
+    local phone = getPhone()
+    if not phone then return end
+
+    local detector = phone:FindFirstChildOfClass("ClickDetector")
+    local root = LocalPlayer.Character and LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+
+    if phone and detector and root then
+        root.CFrame = phone.CFrame + Vector3.new(0,2,0)
+
+        if fireclickdetector then
+            for i = 1, intensity do
+
+                -- يتوقف فوراً إذا أوقفت الزر
+                if not phoneAuto then
+                    break
+                end
+
+                pcall(function()
+                    fireclickdetector(detector)
+                end)
+
+            end
+        end
+    end
+end
+
+--===== Anti Lag =====--
+local savedObjects = {}
+
+local function hideWorld(state)
+
+    for _, obj in ipairs(Workspace:GetDescendants()) do
+
+        if obj:IsA("BasePart") then
+
+            if state then
+                savedObjects[obj] = obj.Transparency
+                obj.Transparency = 1
+                obj.CanCollide = false
+
+            elseif savedObjects[obj] then
+                obj.Transparency = savedObjects[obj]
+                obj.CanCollide = true
+            end
+
+        end
+
+    end
+
+end
+
+--===== الأزرار =====--
+
+toggle.MouseButton1Click:Connect(function()
+    main.Visible = not main.Visible
+end)
+
+teleportBtn.MouseButton1Click:Connect(function()
+    TeleportToTarget()
+end)
+
+phoneAutoBtn.MouseButton1Click:Connect(function()
+
+    phoneAuto = not phoneAuto
+
+    if phoneAuto then
+        phoneAutoBtn.Text = "Stop Auto Phone"
+        hideWorld(true)
+    else
+        phoneAutoBtn.Text = "Start Auto Phone"
+        hideWorld(false)
+    end
+
+end)
+
+--===== تشغيل الجمع =====--
+
+RunService.Heartbeat:Connect(function()
+
+    if tick() - lastTick >= interval then
+        lastTick = tick()
+
+        if phoneAuto then
+            collectPhone()
+            phoneCount += intensity
+            phoneCounter.Text = "Collected: "..phoneCount
+        end
+
+    end
+
+end)
