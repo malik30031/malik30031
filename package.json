@@ -1,0 +1,12 @@
+{
+  "name": "malik-hub-chat",
+  "version": "1.0.0",
+  "description": "Malik Hub Private WebSocket Chat",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
