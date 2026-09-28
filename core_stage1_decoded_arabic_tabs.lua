@@ -3056,24 +3056,24 @@ end)
 
 local Translations = {
     
-    ["Info"] = "Info",
-    ["Player"] = "Player",
-    ["Avatar"] = "Avatar",
-    ["Profile"] = "Profile",
-    ["Troll"] = "Troll",
-    ["Scripts"] = "Morph FE",
-    ["Build"] = "Build",
+    ["Info"] = "معلومات",
+    ["Player"] = "اللاعب",
+    ["Avatar"] = "الأفاتار",
+    ["Profile"] = "الملف الشخصي",
+    ["Troll"] = "مقالب",
+    ["Scripts"] = "التحولات FE",
+    ["Build"] = "البناء",
     ["Premium"] = "Premium",
     ["Teleport"] = "Teleport",
-    ["Protection"] = "Protection",
+    ["Protection"] = "الحماية",
     ["Speed"] = "Speed",
     ["JumpPower"] = "Jump Power",
     ["Gravity"] = "Gravity",
     ["Names"] = "Names",
     ["Music"] = "Music",
     ["ESP"] = "ESP",
-    ["House"] = "House",
-    ["Vehicle"] = "Vehicle",
+    ["House"] = "المنزل",
+    ["Vehicle"] = "المركبة",
     ["Graphics"] = "Graphics",
     ["Teleports"] = "Teleports",
     ["Animation"] = "Animations",
@@ -3094,40 +3094,40 @@ local Translations = {
 }
 
 local InfoTab = Window:MakeTab({
-    "المعلومات",
+    Translations["Info"],
     _0xS(46)
 })
 local PlayerTab = Window:MakeTab({
-    "اللاعب",
+    Translations["Player"],
     _0xS(47)
 })
 local ProfileTab = Window:MakeTab({
-    "الملف الشخصي",
+    Translations["Profile"],
     _0xS(48)
 })
 local AvatarTab = Window:MakeTab({
-    "الشخصية",
+    "الأفاتار",
     _0xS(47)
 })
 local TrollTab = Window:MakeTab({
-    "ترول",
+    Translations["Troll"],
     _0xS(49)
 })
 
 local TrollV2Tab = Window:MakeTab({
-    "ترول V2",
+    Translations["Troll"] .. " V2",
     _0xS(49)
 })
 local MorphFETab = Window:MakeTab({
-    "السكربتات",
+    Translations["Scripts"],
     _0xS(50)
 })
 local BuildTab = Window:MakeTab({
-    "البناء",
+    Translations["Build"],
     _0xS(51)
 })
 local BuildV2Tab = Window:MakeTab({
-    "البناء V2",
+    Translations["Build"] .. " V2",
     _0xS(51)
 })
 local PremiumTab = Window:MakeTab({
@@ -3143,12 +3143,12 @@ local VehicleTab = Window:MakeTab({
     _0xS(54)
 })
 local AudioTab = Window:MakeTab({
-    "الصوت",
+    "الصوتيات",
     _0xS(55)
 })
 
 local VisualTab = Window:MakeTab({
-    "المظهر",
+    "المرئيات",
     _0xS(46)
 })
 
@@ -3157,7 +3157,7 @@ local AdminTab = Window:MakeTab({
     _0xS(56)
 })
 local ProtectionTab = Window:MakeTab({
-    "الحماية",
+    Translations["Protection"],
     _0xS(57)
 })
 local SettingsTab = Window:MakeTab({
@@ -3177,17 +3177,17 @@ end
 local _executorName = (type(identifyexecutor) == "function" and identifyexecutor()) or "Standard Executor"
 
 InfoTab:AddSection({
-    "> Client Info"
+    "> معلومات العميل"
 })
 
 InfoTab:AddParagraph({
-    "BTR Client Information",
-    "- Version : 3.5.0\n- Status : Undetected / Safe\n- Environment : " .. tostring(_executorName) .. "\n- Target : Brookhaven RP\n- Edition : Official"
+    "معلومات BTR Client",
+    "- الإصدار : 3.5.0\n- الحالة : غير مكتشف / آمن\n- البيئة : " .. tostring(_executorName) .. "\n- المستهدف : Brookhaven RP\n- النسخة : رسمي"
 })
 
 InfoTab:AddButton({
-    Name = "تنبيه مهم وإرشادات ونصائح",
-    Description = "Open the welcome notice, tips, and controls guide",
+    Name = "التنبيه المهم ودليل الإرشادات والنصائح",
+    Description = "فتح تنبيه الترحيب ودليل النصائح وعناصر التحكم",
     Callback = function()
         if _G.BTR_ShowWelcomeModal then
             _G.BTR_ShowWelcomeModal(true)
@@ -3196,21 +3196,21 @@ InfoTab:AddButton({
 })
 
 InfoTab:AddSection({
-    "> User & Session"
+    "> المستخدم والجلسة"
 })
 
 InfoTab:AddParagraph({
-    "User Profile",
-    "- Username : " .. tostring(_infoLP.Name) .. "\n- Display Name : " .. tostring(_infoLP.DisplayName) .. "\n- User ID : " .. tostring(_infoLP.UserId) .. "\n- Account Age : " .. tostring(_infoLP.AccountAge) .. " days\n- Membership : " .. tostring(_infoLP.MembershipType):gsub("Enum.MembershipType.", "")
+    "ملف المستخدم",
+    "- اسم المستخدم : " .. tostring(_infoLP.Name) .. "\n- عرض الاسم : " .. tostring(_infoLP.DisplayName) .. "\n- معرّف المستخدم : " .. tostring(_infoLP.UserId) .. "\n- عمر الحساب : " .. tostring(_infoLP.AccountAge) .. " أيام\n- العضوية : " .. tostring(_infoLP.MembershipType):gsub("Enum.MembershipType.", "")
 })
 
 InfoTab:AddSection({
-    "> Live Performance"
+    "> الأداء المباشر"
 })
 
 local _perfParagraph = InfoTab:AddParagraph({
-    "Live Stats",
-    "- FPS : Calculating...\n- Ping : Calculating...\n- Session Time : 0s"
+    "الإحصائيات المباشرة",
+    "- FPS : جارٍ الحساب...\n- Ping : جارٍ الحساب...\n- وقت الجلسة : 0s"
 })
 
 task.spawn(function()
@@ -3251,14 +3251,14 @@ end)
 
 -- Onglet 2 : Player -- [LOCKED: WORK PERFECTLY]
 PlayerTab:AddSection({
-    "> Movement"
+    "> الحركة"
 })
 
 local _speedConn = nil
 local _customSpeed = 16
 PlayerTab:AddSlider({
-    Name = "Walk Speed",
-    Description = "Safe max: 250 (rollback above ~300 in Brookhaven)",
+    Name = "سرعة المشي",
+    Description = "الحد الآمن: 250 (يحدث رجوع فوق ~300 في Brookhaven)",
     Min = 16,
     Max = 250,
     Default = 16,
@@ -3284,8 +3284,8 @@ PlayerTab:AddSlider({
 local _jumpConn = nil
 local _customJump = 50
 PlayerTab:AddSlider({
-    Name = "Jump Power",
-    Description = "Default: 50 - safe max: 250",
+    Name = "قوة القفز",
+    Description = "الافتراضي: 50 - الحد الآمن: 250",
     Min = 50,
     Max = 250,
     Default = 50,
@@ -3316,8 +3316,8 @@ PlayerTab:AddSlider({
 
 local _infJumpConn = nil
 PlayerTab:AddToggle({
-    Name = "Infinite Jump",
-    Description = "Jump in the air indefinitely",
+    Name = "قفز لا نهائي",
+    Description = "القفز في الهواء دون توقف",
     Default = false,
     Callback = function(value)
         if _infJumpConn then _infJumpConn:Disconnect(); _infJumpConn = nil end
@@ -3335,8 +3335,8 @@ local _flyConn = nil
 local _flyBG   = nil
 local _flyBV   = nil
 PlayerTab:AddToggle({
-    Name = "Fly",
-    Description = "Hold Space to go up, Shift to go down, WASD to move",
+    Name = "طيران",
+    Description = "اضغط Space للصعود، وShift للنزول، وWASD للحركة",
     Default = false,
     Callback = function(value)
         local lp  = game:GetService(_0xS(1)).LocalPlayer
@@ -3389,8 +3389,8 @@ PlayerTab:AddToggle({
 local _noClipConn = nil
 local _noClipParts = {}
 PlayerTab:AddToggle({
-    Name = "NoClip",
-    Description = "Walk through walls and objects",
+    Name = "اختراق الجدران",
+    Description = "المشي عبر الجدران والأجسام",
     Default = false,
     Callback = function(value)
         if _noClipConn then
@@ -3425,12 +3425,12 @@ PlayerTab:AddToggle({
 })
 
 PlayerTab:AddSection({
-    "> Character"
+    "> الشخصية"
 })
 
 PlayerTab:AddButton({
     Name = "إعادة الشخصية",
-    Description = "Kills and respawns your character instantly",
+    Description = "إنهاء الشخصية وإعادة إحيائها فورًا",
     Callback = function()
         local lp  = game:GetService(_0xS(1)).LocalPlayer
         local hum = lp.Character and lp.Character:FindFirstChildOfClass("Humanoid")
@@ -3439,8 +3439,8 @@ PlayerTab:AddButton({
 })
 
 PlayerTab:AddSlider({
-    Name = "Field of View",
-    Description = "Default: 70 - cinematic max: 120",
+    Name = "مجال الرؤية",
+    Description = "الافتراضي: 70 - الحد السينمائي: 120",
     Min = 30,
     Max = 120,
     Default = 70,
@@ -3452,7 +3452,7 @@ PlayerTab:AddSlider({
 
 do
 PlayerTab:AddSection({
-    "> Exploits"
+    "> الاستغلالات"
 })
 
 local InvisActive       = false
@@ -3618,8 +3618,8 @@ lp.CharacterAdded:Connect(function(newChar)
 end)
 
 invisToggleRef = PlayerTab:AddToggle({
-    Name = "Invisible (FE)",
-    Description = "Hides your server body in Lighting while you walk freely in ghost mode locally",
+    Name = "اختفاء (FE)",
+    Description = "يخفي جسمك على السيرفر في Lighting بينما تتحرك بحرية محليًا في وضع الشبح",
     Default = false,
     Callback = function(Value)
         if Value == InvisActive then return end
@@ -3733,8 +3733,8 @@ invisToggleRef = PlayerTab:AddToggle({
 })
 
 desyncToggleRef = PlayerTab:AddToggle({
-    Name = "Desync",
-    Description = "Freezes your server body where you stood while you move freely locally",
+    Name = "عدم المزامنة",
+    Description = "يثبت جسمك على السيرفر في مكانك بينما تتحرك بحرية محليًا",
     Default = false,
     Callback = function(Value)
         if Value == DesyncActive then return end
@@ -4522,12 +4522,12 @@ do
 
     
     PlayerTab:AddSection({
-        "> Chat Translator"
+        "> مترجم الدردشة"
     })
 
     _G.BTR_AutoTranslateOutgoingToggle = PlayerTab:AddToggle({
-        Name = "Auto Translate Outgoing",
-        Description = "Translates your chat messages into the target language in real-time",
+        Name = "ترجمة الرسائل الصادرة تلقائيًا",
+        Description = "يترجم رسائل دردشتك إلى اللغة المستهدفة في الوقت الفعلي",
         Default = (_G.AutoTranslateOutgoingEnabled == true),
         Callback = function(val)
             if not _G.BTR_UI_READY then return end
@@ -4542,8 +4542,8 @@ do
     })
 
     PlayerTab:AddDropdown({
-        Name = "Outgoing Language",
-        Description = "Language your outgoing chat will be translated to",
+        Name = "لغة الرسائل الصادرة",
+        Description = "اللغة التي ستُترجم إليها رسائلك الصادرة",
         Options = { "Spanish", "English", "French", "German", "Portuguese", "Italian", "Russian", "Japanese" },
         Default = LANG_NAMES[_G.OutgoingTargetLang] or "Spanish",
         Callback = function(val)
@@ -4553,8 +4553,8 @@ do
     })
 
     PlayerTab:AddDropdown({
-        Name = "Outgoing Format",
-        Description = "How your translated message appears to others in chat",
+        Name = "تنسيق الرسائل الصادرة",
+        Description = "كيف تظهر رسالتك المترجمة للآخرين في الدردشة",
         Options = { "Translated Only", "Trans + Original", "Tagged [LANG]" },
         Default = _G.OutgoingFormat or "Translated Only",
         Callback = function(val)
@@ -4564,8 +4564,8 @@ do
     })
 
     _G.BTR_AutoTranslateIncomingToggle = PlayerTab:AddToggle({
-        Name = "Auto Translate Incoming",
-        Description = "Translates messages from other players into your language in chat",
+        Name = "ترجمة الرسائل الواردة تلقائيًا",
+        Description = "يترجم رسائل اللاعبين الآخرين إلى لغتك في الدردشة",
         Default = (_G.AutoTranslateIncomingEnabled == true),
         Callback = function(val)
             if not _G.BTR_UI_READY then return end
@@ -4580,8 +4580,8 @@ do
     })
 
     PlayerTab:AddDropdown({
-        Name = "Incoming Language",
-        Description = "Language you want to read other players' messages in",
+        Name = "لغة الرسائل الواردة",
+        Description = "اللغة التي تريد قراءة رسائل اللاعبين الآخرين بها",
         Options = { "French", "English", "Spanish" },
         Default = LANG_NAMES[_G.IncomingTargetLang] or "French",
         Callback = function(val)
@@ -4592,12 +4592,12 @@ do
 
     
     PlayerTab:AddSection({
-        "> Chat Auto-Corrector"
+        "> التصحيح التلقائي للدردشة"
     })
 
     _G.BTR_AutoCorrectToggle = PlayerTab:AddToggle({
-        Name = "Auto Correct Typing",
-        Description = "Automatically fixes cédilles, accents, typos and apostrophes (FR & EN)",
+        Name = "تصحيح الكتابة تلقائيًا",
+        Description = "يصحح تلقائيًا الحروف الخاصة واللكنات والأخطاء وعلامات الاقتباس (FR وEN)",
         Default = (_G.AutoCorrectEnabled == true),
         Callback = function(val)
             if not _G.BTR_UI_READY then return end
@@ -4614,7 +4614,7 @@ end
 
 -- Onglet 3 : Profile -- [LOCKED: WORK PERFECTLY]
 ProfileTab:AddSection({
-    "> " .. Translations["Names"]
+    "> " .. Translations["الأسماء"]
 })
 
 local customRPName = ""
@@ -4641,9 +4641,9 @@ local function setRPBio(text)
 end
 
 ProfileTab:AddTextBox({
-    Name = "Custom RP Name",
-    Description = "Type your custom RolePlay Name",
-    PlaceholderText = "Enter Name here...",
+    Name = "اسم RP مخصص",
+    Description = "اكتب اسم RolePlay المخصص",
+    PlaceholderText = "أدخل الاسم هنا...",
     Callback = function(val)
         customRPName = val
     end
@@ -4651,7 +4651,7 @@ ProfileTab:AddTextBox({
 
 ProfileTab:AddButton({
     Name = "تطبيق اسم RP",
-    Description = "Sets your RP Name on your character",
+    Description = "يضع اسم RP على شخصيتك",
     Callback = function()
         if customRPName ~= "" then
             setRPName(customRPName)
@@ -4665,9 +4665,9 @@ ProfileTab:AddButton({
 })
 
 ProfileTab:AddTextBox({
-    Name = "Custom RP Bio",
-    Description = "Type your custom RolePlay Bio",
-    PlaceholderText = "Enter Bio here...",
+    Name = "نبذة RP مخصصة",
+    Description = "اكتب نبذة RolePlay المخصصة",
+    PlaceholderText = "أدخل النبذة هنا...",
     Callback = function(val)
         customRPBio = val
     end
@@ -4675,7 +4675,7 @@ ProfileTab:AddTextBox({
 
 ProfileTab:AddButton({
     Name = "تطبيق نبذة RP",
-    Description = "Sets your RP Bio on your character",
+    Description = "يضع نبذة RP على شخصيتك",
     Callback = function()
         if customRPBio ~= "" then
             setRPBio(customRPBio)
@@ -4690,7 +4690,7 @@ ProfileTab:AddButton({
 
 ProfileTab:AddButton({
     Name = "مسح اسم RP والنبذة",
-    Description = "Resets both your RP Name and Bio",
+    Description = "يعيد اسم RP والنبذة إلى الوضع السابق",
     Callback = function()
         setRPName(" ")
         setRPBio(" ")
@@ -4703,12 +4703,12 @@ ProfileTab:AddButton({
 })
 
 ProfileTab:AddSection({
-    "> Preset RP Names & Bios"
+    "> أسماء ونبذات RP الجاهزة"
 })
 
 ProfileTab:AddDropdown({
-    Name = "Preset RP Names",
-    Description = "Select a curated RP Name",
+    Name = "أسماء RP الجاهزة",
+    Description = "اختر اسم RP مُجهزًا بعناية",
     Options = {
         "『 ѢҬԄ X ҪԒЇԐԊҬ 』",
         "BTR Client | ON TOP",
@@ -4725,7 +4725,7 @@ ProfileTab:AddDropdown({
 
 ProfileTab:AddButton({
     Name = "تطبيق الاسم الجاهز",
-    Description = "Sets the selected preset as your RP Name",
+    Description = "يضبط الاسم الجاهز المحدد كاسم RP",
     Callback = function()
         setRPName(selectedPresetName)
         game:GetService(_0xS(5)):SetCore("SendNotification", {
@@ -4737,8 +4737,8 @@ ProfileTab:AddButton({
 })
 
 ProfileTab:AddDropdown({
-    Name = "Preset RP Bios",
-    Description = "Select a curated RP Bio",
+    Name = "نبذات RP الجاهزة",
+    Description = "اختر نبذة RP مُجهزة بعناية",
     Options = {
         "BTR Client | ON TOP",
         "BTR Client",
@@ -4753,7 +4753,7 @@ ProfileTab:AddDropdown({
 
 ProfileTab:AddButton({
     Name = "تطبيق النبذة الجاهزة",
-    Description = "Sets the selected preset as your RP Bio",
+    Description = "يضبط النبذة الجاهزة المحددة كنبذة RP",
     Callback = function()
         setRPBio(selectedPresetBio)
         game:GetService(_0xS(5)):SetCore("SendNotification", {
@@ -4765,7 +4765,7 @@ ProfileTab:AddButton({
 })
 
 ProfileTab:AddSection({
-    "> Animated Colors (Rainbow & Gradient)"
+    "> الألوان المتحركة (قوس قزح وتدرج)"
 })
 
 do
@@ -5100,8 +5100,8 @@ do
 end
 
 ProfileTab:AddToggle({
-    Name = "Rainbow RP Name",
-    Description = "Cycles your RP Name color continuously",
+    Name = "قوس قزح لاسم RP",
+    Description = "يغيّر لون اسم RP باستمرار",
     Default = (_G.BTR_RGB_NAME_ACTIVE == true),
     Callback = function(val)
         isRainbowNameActive = val
@@ -5111,8 +5111,8 @@ ProfileTab:AddToggle({
 })
 
 ProfileTab:AddToggle({
-    Name = "Rainbow RP Bio",
-    Description = "Cycles your RP Bio color continuously",
+    Name = "قوس قزح لنبذة RP",
+    Description = "يغيّر لون نبذة RP باستمرار",
     Default = (_G.BTR_RGB_BIO_ACTIVE == true),
     Callback = function(val)
         isRainbowBioActive = val
@@ -5122,8 +5122,8 @@ ProfileTab:AddToggle({
 })
 
 ProfileTab:AddSlider({
-    Name = "Color Cycle Speed",
-    Description = "Adjusts how fast the colors transition",
+    Name = "سرعة دورة الألوان",
+    Description = "يضبط سرعة انتقال الألوان",
     Min = 1,
     Max = 10,
     Default = _G.BTR_RAINBOW_SPEED or 5,
@@ -5136,12 +5136,12 @@ ProfileTab:AddSlider({
 })
 
 ProfileTab:AddSection({
-    "> RP Name Colors (Custom Picker)"
+    "> ألوان اسم RP (اختيار مخصص)"
 })
 
 ProfileTab:AddDropdown({
-    Name = "Name Mode",
-    Description = "Choose between full spectrum RGB or custom 2/3 colors",
+    Name = "وضع الاسم",
+    Description = "اختر بين طيف RGB الكامل أو لونين/ثلاثة ألوان مخصصة",
     Options = {"Full Rainbow (RGB)", "Custom (2 Colors)", "Custom (3 Colors)"},
     Default = _G.BTR_NAME_COLOR_MODE or "Full Rainbow (RGB)",
     Callback = function(val)
@@ -5153,7 +5153,7 @@ ProfileTab:AddDropdown({
 
 ProfileTab:AddButton({
     Name = "اختيار لون الاسم 1",
-    Description = "Opens interactive Color Picker palette",
+    Description = "يفتح لوحة اختيار ألوان تفاعلية",
     Callback = function()
         openColorPickerGui("Pick Name Color 1", nameCol1, function(c)
             nameCol1 = c
@@ -5165,7 +5165,7 @@ ProfileTab:AddButton({
 
 ProfileTab:AddButton({
     Name = "اختيار لون الاسم 2",
-    Description = "Opens interactive Color Picker palette",
+    Description = "يفتح لوحة اختيار ألوان تفاعلية",
     Callback = function()
         openColorPickerGui("Pick Name Color 2", nameCol2, function(c)
             nameCol2 = c
@@ -5177,7 +5177,7 @@ ProfileTab:AddButton({
 
 ProfileTab:AddButton({
     Name = "اختيار لون الاسم 3",
-    Description = "Opens interactive Color Picker palette",
+    Description = "يفتح لوحة اختيار ألوان تفاعلية",
     Callback = function()
         openColorPickerGui("Pick Name Color 3", nameCol3, function(c)
             nameCol3 = c
@@ -5188,12 +5188,12 @@ ProfileTab:AddButton({
 })
 
 ProfileTab:AddSection({
-    "> RP Bio Colors (Custom Picker)"
+    "> ألوان نبذة RP (اختيار مخصص)"
 })
 
 ProfileTab:AddDropdown({
-    Name = "Bio Mode",
-    Description = "Choose between full spectrum RGB or custom 2/3 colors",
+    Name = "وضع النبذة",
+    Description = "اختر بين طيف RGB الكامل أو لونين/ثلاثة ألوان مخصصة",
     Options = {"Full Rainbow (RGB)", "Custom (2 Colors)", "Custom (3 Colors)"},
     Default = _G.BTR_BIO_COLOR_MODE or "Full Rainbow (RGB)",
     Callback = function(val)
@@ -5205,7 +5205,7 @@ ProfileTab:AddDropdown({
 
 ProfileTab:AddButton({
     Name = "اختيار لون النبذة 1",
-    Description = "Opens interactive Color Picker palette",
+    Description = "يفتح لوحة اختيار ألوان تفاعلية",
     Callback = function()
         openColorPickerGui("Pick Bio Color 1", bioCol1, function(c)
             bioCol1 = c
@@ -5217,7 +5217,7 @@ ProfileTab:AddButton({
 
 ProfileTab:AddButton({
     Name = "اختيار لون النبذة 2",
-    Description = "Opens interactive Color Picker palette",
+    Description = "يفتح لوحة اختيار ألوان تفاعلية",
     Callback = function()
         openColorPickerGui("Pick Bio Color 2", bioCol2, function(c)
             bioCol2 = c
@@ -5229,7 +5229,7 @@ ProfileTab:AddButton({
 
 ProfileTab:AddButton({
     Name = "اختيار لون النبذة 3",
-    Description = "Opens interactive Color Picker palette",
+    Description = "يفتح لوحة اختيار ألوان تفاعلية",
     Callback = function()
         openColorPickerGui("Pick Bio Color 3", bioCol3, function(c)
             bioCol3 = c
@@ -5267,7 +5267,7 @@ end)
 end
 
 TrollTab:AddSection({
-    "> Select Player"
+    "> اختيار اللاعب"
 })
 
 local PropStateManager = {
@@ -6130,8 +6130,8 @@ do
     end
 
     local trollDropdown = TrollTab:AddDropdown({
-        Name = "Select Target",
-        Description = "Choose the player to troll",
+        Name = "اختيار المستهدف",
+        Description = "اختر اللاعب للمقلب",
         Options = getTrollPlayers(),
         Default = "---",
         Callback = function(value)
@@ -6140,8 +6140,8 @@ do
     })
 
     local destDropdown = TrollTab:AddDropdown({
-        Name = "Select TP Destination",
-        Description = "Destination for TP actions",
+        Name = "اختيار وجهة TP",
+        Description = "وجهة إجراءات TP",
         Options = getTrollPlayers(),
         Default = "---",
         Callback = function(value)
@@ -6169,8 +6169,8 @@ do
 
     
     TrollTab:AddDropdown({
-        Name = "Select Prop for Actions",
-        Description = "Choose the prop used to grab players",
+        Name = "اختيار الأداة للإجراءات",
+        Description = "اختر الأداة المستخدمة للإمساك باللاعبين",
         Options = {"Toilet", "BeanBag", "Bleachers", "Silver Throne", "Futuristic Large Bed"},
         Default = "Toilet",
         Callback = function(value)
@@ -6246,8 +6246,8 @@ do
     end
 
     _G.BringToiletToggle = TrollTab:AddToggle({
-        Name = "Bring Target To Me <Prop>",
-        Description = "Kidnap the target on a prop and bring them",
+        Name = "إحضار المستهدف إليّ <الأداة>",
+        Description = "يمسك المستهدف بأداة ويحمله إليك",
         Default = false
     })
     _G.BringToiletToggle:Callback(function(value)
@@ -6263,7 +6263,7 @@ do
 
     TrollTab:AddButton({
         Name = "نقلي إلى اللاعب المستهدف",
-        Description = "Instantly teleports your character to the selected target",
+        Description = "ينقل شخصيتك فورًا إلى المستهدف المحدد",
         Callback = function()
             local t = requireTarget()
             if not t then return end
@@ -6280,8 +6280,8 @@ do
     })
 
     _G.TpTargetToDestToggle = TrollTab:AddToggle({
-        Name = "Teleport Target To Destination <Prop>",
-        Description = "Teleports the target to the chosen destination",
+        Name = "نقل المستهدف إلى الوجهة <الأداة>",
+        Description = "ينقل المستهدف إلى الوجهة المختارة",
         Default = false
     })
     _G.TpTargetToDestToggle:Callback(function(value)
@@ -6306,8 +6306,8 @@ do
     end)
 
     _G.KillToiletToggle = TrollTab:AddToggle({
-        Name = "Kill Player <Prop>",
-        Description = "Force target on a prop and drop them into the void!",
+        Name = "إنهاء اللاعب <الأداة>",
+        Description = "يُجبر المستهدف على الأداة ويسقطه في الفراغ!",
         Default = false
     })
     _G.KillToiletToggle:Callback(function(value)
@@ -6322,8 +6322,8 @@ do
     end)
 
     _G.JailToiletToggle = TrollTab:AddToggle({
-        Name = "Jail Player <Prop>",
-        Description = "Locks the target in the prison cell!",
+        Name = "سجن اللاعب <الأداة>",
+        Description = "يقفل المستهدف داخل زنزانة السجن!",
         Default = false
     })
     _G.JailToiletToggle:Callback(function(value)
@@ -6338,8 +6338,8 @@ do
     end)
 
     _G.FreezeToiletToggle = TrollTab:AddToggle({
-        Name = "Freeze Player <Prop>",
-        Description = "Freezes the target in a glitch spot!",
+        Name = "تجميد اللاعب <الأداة>",
+        Description = "يجمد المستهدف في موقع خلل!",
         Default = false
     })
     _G.FreezeToiletToggle:Callback(function(value)
@@ -6354,8 +6354,8 @@ do
     end)
 
     _G.CliffToiletToggle = TrollTab:AddToggle({
-        Name = "Void Choice <Prop>",
-        Description = "Teleports the target to a cliff edge... jump or stay?",
+        Name = "اختيار الفراغ <الأداة>",
+        Description = "ينقل المستهدف إلى حافة الجرف... هل يقفز أم يبقى؟",
         Default = false
     })
     _G.CliffToiletToggle:Callback(function(value)
@@ -6370,8 +6370,8 @@ do
     end)
 
     _G.ExileToiletToggle = TrollTab:AddToggle({
-        Name = "Void Player <Prop>",
-        Description = "Exile the target to the void!",
+        Name = "إرسال اللاعب إلى الفراغ <الأداة>",
+        Description = "ينفي المستهدف إلى الفراغ!",
         Default = false
     })
     _G.ExileToiletToggle:Callback(function(value)
@@ -6386,8 +6386,8 @@ do
     end)
 
     _G.VoidGlitchToiletToggle = TrollTab:AddToggle({
-        Name = "Void Glitch Player <Prop>",
-        Description = "Send the target to the glitch zone where everything vanishes",
+        Name = "إرسال اللاعب إلى منطقة الخلل <الأداة>",
+        Description = "يرسل المستهدف إلى منطقة الخلل حيث يختفي كل شيء",
         Default = false
     })
     _G.VoidGlitchToiletToggle:Callback(function(value)
@@ -6402,8 +6402,8 @@ do
     end)
 
     _G.NoclipToiletToggle = TrollTab:AddToggle({
-        Name = "Fly Player <BeanBag>",
-        Description = "WASD = Move | Slot 1 = Ascend | Slot 2 = Descend | Jump = Exit",
+        Name = "طيران اللاعب <BeanBag>",
+        Description = "WASD = حركة | الخانة 1 = صعود | الخانة 2 = نزول | Jump = خروج",
         Default = false
     })
     _G.NoclipToiletToggle:Callback(function(value)
@@ -6418,8 +6418,8 @@ do
     end)
 
     _G.TrollLoopToggle = TrollTab:AddToggle({
-        Name = "Loop Actions (Keep Prop & Auto-Catch)",
-        Description = "Keeps prop attached permanently; instantly re-attaches if target jumps or respawns",
+        Name = "تكرار الإجراءات (إبقاء الأداة والإمساك التلقائي)",
+        Description = "يبقي الأداة متصلة بشكل دائم؛ ويعيد وصلها فورًا إذا قفز المستهدف أو عاد للظهور",
         Default = false
     })
     _G.TrollLoopToggle:Callback(function(value)
@@ -6825,7 +6825,7 @@ do
     end
 
     
-    TrollV2Tab:AddSection({"> Troll V2"})
+    TrollV2Tab:AddSection({"> مقلب V2"})
 
     
     local function getTV2Players()
@@ -6837,8 +6837,8 @@ do
         return list
     end
     local tv2Dropdown = TrollV2Tab:AddDropdown({
-        Name = "Select Target",
-        Description = "Choose the player to trap",
+        Name = "اختيار المستهدف",
+        Description = "اختر اللاعب للمحاصرة",
         Options = getTV2Players(),
         Default = "---",
         Callback = function(value)
@@ -6859,8 +6859,8 @@ do
 
     -- [LOCKED: WORK PERFECTLY] NoEscape toggle + callback (valide par Keito)
     _G.NoEscapeToggle = TrollV2Tab:AddToggle({
-        Name = "No Escape <Couch>",
-        Description = "Grid of 15 couches that sticks to the target: no escape possible",
+        Name = "لا هروب <Couch>",
+        Description = "شبكة من 15 أريكة تلتصق بالمستهدف: لا يمكن الهروب",
         Default = false
     })
     _G.NoEscapeToggle:Callback(function(value)
@@ -6922,8 +6922,8 @@ do
 
     
     TrollV2Tab:AddDropdown({
-        Name = "No Escape Prop",
-        Description = "Choose the prop for the No Escape grid (Couch or Bed)",
+        Name = "أداة لا هروب",
+        Description = "اختر الأداة لشبكة لا هروب (أريكة أو سرير)",
         Options = {"Couch", "Futuristic Large Bed"},
         Default = "Couch",
         Callback = function(val)
@@ -6938,8 +6938,8 @@ do
 
     
     TrollV2Tab:AddDropdown({
-        Name = "No Escape Mode",
-        Description = "Positioning: Trailing (rotating trail) / Ultra Strong (stacked on him) / Static (fixed formation)",
+        Name = "وضع لا هروب",
+        Description = "التموضع: متتابع (مسار دوار) / قوي جدًا (متراص عليه) / ثابت (تشكيل ثابت)",
         Options = {"Trail", "Ultra Strong", "Static"},
         Default = "Static",
         Callback = function(val)
@@ -6951,7 +6951,7 @@ do
     
     TrollV2Tab:AddToggle({
         Name = "RGB",
-        Description = "Rainbow colors on the couch grid (cycles HSV)",
+        Description = "ألوان قوس قزح على شبكة الأرائك (تتغير بتقنية HSV)",
         Default = false,
         Callback = function(val)
             neRGB = val
@@ -6982,7 +6982,7 @@ do
     local blindLockedTarget = nil
     local blindPropEntries = {}
 
-    TrollTab:AddSection({"> Blind & Specials"})
+    TrollTab:AddSection({"> التعمية والميزات الخاصة"})
 
     local blindColorPresets = {
         ["White"] = {prop = "LightsSpotLightWhite", color = Color3.fromRGB(255, 255, 255)},
@@ -6994,8 +6994,8 @@ do
     }
 
     TrollTab:AddDropdown({
-        Name = "Blind Color",
-        Description = "Laser/cocoon color (White or Black)",
+        Name = "لون التعمية",
+        Description = "لون الليزر/الشرنقة (أبيض أو أسود)",
         Options = {"White", "Black", "Light Blue", "Red", "Pink", "Green", "RGB (Rainbow)"},
         Default = "White",
         Callback = function(value)
@@ -7012,8 +7012,8 @@ do
     })
 
     TrollTab:AddToggle({
-        Name = "Blind Loop (Re-lock after rejoin)",
-        Description = "If active, waits for the target to come back if they leave",
+        Name = "تكرار التعمية (إعادة القفل بعد العودة)",
+        Description = "عند التفعيل، ينتظر عودة المستهدف إذا غادر",
         Default = true,
         Callback = function(Value)
             isBlindLoopEnabled = Value
@@ -7399,8 +7399,8 @@ do
     end
 
     blindV1Toggle = TrollTab:AddToggle({
-        Name = "Blind Player V1 (Base)",
-        Description = "Blinds the selected target with a ring of light",
+        Name = "تعمية اللاعب V1 (أساسي)",
+        Description = "يعمي المستهدف المحدد بحلقة من الضوء",
         Default = false,
         Callback = function(Value)
             if not _G.BTR_UI_READY then return end
@@ -7428,8 +7428,8 @@ do
     })
 
     blindV2Toggle = TrollTab:AddToggle({
-        Name = "Blind Player V2 (Cocoon)",
-        Description = "Locks the target in a vertical cocoon of light",
+        Name = "تعمية اللاعب V2 (شرنقة)",
+        Description = "يقفل المستهدف داخل شرنقة ضوئية عمودية",
         Default = false,
         Callback = function(Value)
             if not _G.BTR_UI_READY then return end
@@ -7457,8 +7457,8 @@ do
     })
 
     blindV3Toggle = TrollTab:AddToggle({
-        Name = "Blind Player V3 (3D Sphere)",
-        Description = "3D orbiting sphere of pure blinding light around target",
+        Name = "تعمية اللاعب V3 (كرة ثلاثية الأبعاد)",
+        Description = "كرة ثلاثية الأبعاد تدور حول المستهدف من ضوء ساطع نقي",
         Default = false,
         Callback = function(Value)
             if not _G.BTR_UI_READY then return end
@@ -7486,8 +7486,8 @@ do
     })
 
     blindV4Toggle = TrollTab:AddToggle({
-        Name = "Blind Player V4 (Helix Tornado)",
-        Description = "Double helix tornado of lasers surrounding the target",
+        Name = "تعمية اللاعب V4 (الإعصار الحلزوني)",
+        Description = "إعصار حلزوني مزدوج من الليزر يحيط بالمستهدف",
         Default = false,
         Callback = function(Value)
             if not _G.BTR_UI_READY then return end
@@ -7515,8 +7515,8 @@ do
     })
 
     blindV5Toggle = TrollTab:AddToggle({
-        Name = "Blind Player V5 (Strobe Matrix)",
-        Description = "High-frequency strobe jitter surrounding the target camera",
+        Name = "تعمية اللاعب V5 (مصفوفة الوميض)",
+        Description = "وميض عالي التردد يحيط بكاميرا المستهدف",
         Default = false,
         Callback = function(Value)
             if not _G.BTR_UI_READY then return end
@@ -7544,8 +7544,8 @@ do
     })
 
     blindV6Toggle = TrollTab:AddToggle({
-        Name = "Blind Player V6 (Solar Supernova)",
-        Description = "Blinding pulsating singularity starburst that detonates right on target's face",
+        Name = "تعمية اللاعب V6 (المستعر الشمسي)",
+        Description = "انفجار نجمي نابض شديد السطوع ينفجر مباشرة أمام وجه المستهدف",
         Default = false,
         Callback = function(Value)
             if not _G.BTR_UI_READY then return end
@@ -7575,8 +7575,8 @@ do
     })
 
     blindV7Toggle = TrollTab:AddToggle({
-        Name = "Blind Player V7 (Quantum Gyro Cage)",
-        Description = "3 concentric counter-rotating gyroscopic laser rings locking target's view",
+        Name = "تعمية اللاعب V7 (القفص الجيروسكوبي الكمي)",
+        Description = "3 حلقات ليزر جيروسكوبية متحدة المركز تدور بعكس الاتجاه وتقفل رؤية المستهدف",
         Default = false,
         Callback = function(Value)
             if not _G.BTR_UI_READY then return end
@@ -7606,8 +7606,8 @@ do
     })
 
     TrollTab:AddDropdown({
-        Name = "Blind Rainbow Prop",
-        Description = "Select prop for Rainbow Bed Blind (Beds or Bleachers)",
+        Name = "أداة تعمية قوس قزح",
+        Description = "اختر الأداة لتعمية قوس قزح (الأسرّة أو المدرجات)",
         Options = {"Beds (Futuristic Large Bed)", "Bleachers (Grandstand)"},
         Default = "Beds (Futuristic Large Bed)",
         Callback = function(value)
@@ -7620,8 +7620,8 @@ do
     })
 
     blindRainbowToggle = TrollTab:AddToggle({
-        Name = "Blind Rainbow (Beds / Bleachers)",
-        Description = "Encages and blinds target inside a revolving rainbow vortex of beds or bleachers",
+        Name = "تعمية قوس قزح (الأسرّة / المدرجات)",
+        Description = "يحاصر المستهدف ويعميه داخل دوامة قوس قزح دوارة من الأسرّة أو المدرجات",
         Default = false,
         Callback = function(Value)
             if not _G.BTR_UI_READY then return end
@@ -7683,8 +7683,8 @@ do
     _G.BTR_StopSkyLift = stopSkyLift
 
     local skyLiftToggle = TrollTab:AddToggle({
-        Name = "Bleacher Sky Lift (Troll Fly)",
-        Description = "Carries the target into the sky on a bleacher platform!",
+        Name = "رفع المستهدف للسماء بالمدرجات",
+        Description = "يحمل المستهدف إلى السماء فوق منصة المدرجات!",
         Default = false,
         Callback = function(state)
             if not _G.BTR_UI_READY then return end
@@ -7968,8 +7968,8 @@ do
     end
 
     prisonToggle = TrollTab:AddToggle({
-        Name = "Bunker Prison (Deep Black)",
-        Description = "Encages target in 15 Deep Black Bunkers for total FE camera blackout",
+        Name = "سجن المخابئ (السواد العميق)",
+        Description = "يحاصر المستهدف داخل 15 مخبأ أسود داكن لتعتيم كاميرا FE بالكامل",
         Default = false,
         Callback = function(state)
             if not _G.BTR_UI_READY then return end
@@ -8349,13 +8349,13 @@ do
     end
 
     TrollTab:AddSection({
-        "> Parasite Chat Impersonator (All-In-One)"
+        "> منتحل دردشة الطفيلي (متكامل)"
     })
 
     
     TrollTab:AddButton({
         Name = "إخفاء الاسم الحالي (وضع التخفي)",
-        Description = "Clears text over your head so you are 100% anonymous",
+        Description = "يمسح النص فوق رأسك لتصبح مجهولًا بنسبة 100%",
         Callback = function()
             pcall(function()
                 local RE = game:GetService(_0xS(70)):FindFirstChild(_0xS(83))
@@ -8373,8 +8373,8 @@ do
     })
 
     TrollTab:AddButton({
-        Name = "استعادة وسم BTR Client",
-        Description = "Restores official BTR Client tag over your head",
+        Name = "استعادة علامة BTR Client",
+        Description = "يعيد علامة BTR Client الرسمية فوق رأسك",
         Callback = function()
             pcall(function()
                 local RE = game:GetService(_0xS(70)):FindFirstChild(_0xS(83))
@@ -8396,8 +8396,8 @@ do
     local defaultSlotStr = "Slot " .. tostring(selectedTrollOutfitSlot)
 
     TrollTab:AddDropdown({
-        Name = "Select Outfit Slot",
-        Description = "Choose Brookhaven wardrobe slot (Slot 1, 2 or 3)",
+        Name = "اختيار خانة المظهر",
+        Description = "اختر خانة ملابس Brookhaven (الخانة 1 أو 2 أو 3)",
         Options = {"Slot 1", "Slot 2", "Slot 3"},
         Default = defaultSlotStr,
         Callback = function(slot)
@@ -8411,8 +8411,8 @@ do
     })
 
     TrollTab:AddButton({
-        Name = "حفظ الزي الحالي في الخانة",
-        Description = "Saves your current avatar into the selected slot",
+        Name = "حفظ المظهر الحالي في الخانة",
+        Description = "يحفظ مظهرك الحالي في الخانة المحددة",
         Callback = function()
             pcall(function()
                 local RS = game:GetService(_0xS(70))
@@ -8431,8 +8431,8 @@ do
     })
 
     TrollTab:AddButton({
-        Name = "تحميل الزي من الخانة المحددة",
-        Description = "Loads the saved outfit from chosen slot",
+        Name = "تحميل المظهر من الخانة المحددة",
+        Description = "يحمّل المظهر المحفوظ من الخانة المختارة",
         Callback = function()
             pcall(function()
                 local RS = game:GetService(_0xS(70))
@@ -8451,8 +8451,8 @@ do
     })
 
     _G.BTR_AutoLoadOutfitToggle = TrollTab:AddToggle({
-        Name = "Auto Outfit for Chat Control",
-        Description = "Loads chosen wardrobe slot when activating Parasite / Chat Control",
+        Name = "مظهر تلقائي للتحكم بالدردشة",
+        Description = "يحمّل خانة الملابس المختارة عند تفعيل الطفيلي / التحكم بالدردشة",
         Default = (_G.BTR_AUTOLOAD_OUTFIT == true),
         Callback = function(val)
             _G.BTR_AUTOLOAD_OUTFIT = (val == true)
@@ -8464,8 +8464,8 @@ do
 
     
     local parasiteToggle = TrollTab:AddToggle({
-        Name = "Parasite Chat (Lock in Torso)",
-        Description = "Locks inside target torso with forward lead and frozen animations",
+        Name = "دردشة الطفيلي (القفل داخل الجذع)",
+        Description = "يقفل داخل جذع المستهدف مع تقدم أمامي وتثبيت الحركات",
         Default = false,
         Callback = function(state)
             if not _G.BTR_UI_READY then return end
@@ -8515,7 +8515,7 @@ do
 
     TrollTab:AddButton({
         Name = "فصل / إيقاف الطفيلي",
-        Description = "Instantly leaves the target and restores normal character state",
+        Description = "يغادر المستهدف فورًا ويعيد حالة الشخصية الطبيعية",
         Callback = function()
             detachParasite()
             if parasiteToggle and parasiteToggle.Set then
@@ -8914,10 +8914,10 @@ end
         end
 
         
-        TrollV2Tab:AddSection({"> Special Blind"})
+        TrollV2Tab:AddSection({"> التعمية الخاصة"})
         local sbModeDropdown = TrollV2Tab:AddDropdown({
-            Name = "Blind Mode",
-            Description = "Choose the special blind",
+            Name = "وضع التعمية",
+            Description = "اختر التعمية الخاصة",
             Options = {"Smoke", "Flowers", "Skeleton Hug", "Carpet", "Skeleton + Smoke"},
             Default = "Smoke",
         })
@@ -8938,8 +8938,8 @@ end
         
         smokeColors = {"SmokePurple", "SmokeBlue", "SmokeYellow"}
         smokeColorDropdown = TrollV2Tab:AddDropdown({
-            Name = "Smoke Colors",
-            Description = "Choose the smoke colors (also used in Skeleton + Smoke)",
+            Name = "ألوان الدخان",
+            Description = "اختر ألوان الدخان (وتُستخدم أيضًا في Skeleton + Smoke)",
             Options = {"All 3 (Purple + Blue + Yellow)", "Purple + Blue", "Purple + Yellow", "Blue + Yellow", "Purple only", "Blue only", "Yellow only"},
             Default = "All 3 (Purple + Blue + Yellow)",
         })
@@ -8954,8 +8954,8 @@ end
         end)
 
         _G.SpecialBlindToggle = TrollV2Tab:AddToggle({
-            Name = "Special Blind",
-            Description = "Activates the selected special blind on the target",
+            Name = "تعمية خاصة",
+            Description = "يفعل التعمية الخاصة المحددة على المستهدف",
             Default = false
         })
         _G.SpecialBlindToggle:Callback(function(value)
@@ -8980,7 +8980,7 @@ end
     end
 
 TrollV2Tab:AddSection({
-    "> Pirate Ship Tornado"
+    "> إعصار السفينة القراصنة"
 })
 
 -- [LOCKED: WORK PERFECTLY] PIRATE SHIP TORNADO - VRAI CODE GOAT HUB
@@ -9283,8 +9283,8 @@ do
     end
 
     local tornadoSpotDropdown = TrollV2Tab:AddDropdown({
-        Name = "Tornado Zone",
-        Description = "Current Position = the ship circles around you | House: <player> = circles around that player's house",
+        Name = "منطقة الإعصار",
+        Description = "الموقع الحالي = تدور السفينة حولك | منزل: <player> = تدور حول منزل ذلك اللاعب",
         Options = buildTornadoOptions(),
         Default = "Current Position",
     })
@@ -9365,8 +9365,8 @@ do
     end)
 local tornadoLockOwner = false 
     local TornadoToggle = TrollV2Tab:AddToggle({
-        Name = "Pirate Ship Tornado",
-        Description = "Pulls Pirate Ship to the Square",
+        Name = "إعصار السفينة القراصنة",
+        Description = "يسحب السفينة القراصنة إلى الساحة",
         Default = false
     })
 
@@ -10163,12 +10163,12 @@ do
     _G.BTR_StopRealBlackHole = stopRealBlackHole
 
     TrollV2Tab:AddSection({
-        "> Real Black Hole V2"
+        "> الثقب الأسود الحقيقي V2"
     })
 
     TrollV2Tab:AddSlider({
-        Name = "Attraction Power",
-        Description = "Gravity pull strength on server parts and players",
+        Name = "قوة الجذب",
+        Description = "قوة سحب الجاذبية على أجزاء السيرفر واللاعبين",
         Min = 500,
         Max = 50000,
         Increase = 500,
@@ -10196,8 +10196,8 @@ do
     })
 
     realBlackHoleToggle = TrollV2Tab:AddToggle({
-        Name = "Real Black Hole V2",
-        Description = "Creates a giant black hole with props and violently pulls all unanchored parts & vehicles to spawn",
+        Name = "الثقب الأسود الحقيقي V2",
+        Description = "ينشئ ثقبًا أسود ضخمًا بالأدوات ويسحب بعنف جميع الأجزاء والمركبات غير المثبتة إلى مكان الظهور",
         Default = false,
         Callback = function(state)
             if not _G.BTR_UI_READY then return end
@@ -10514,11 +10514,11 @@ do
         end)
     end
 
-    TrollV2Tab:AddSection({"> Light Player"})
+    TrollV2Tab:AddSection({"> اللاعب الضوئي"})
 
     TrollV2Tab:AddDropdown({
-        Name = "Light Target",
-        Description = "Choose who receives the divine pillar of light",
+        Name = "المستهدف للضوء",
+        Description = "اختر من يستقبل عمود الضوء الإلهي",
         Options = {"Self", "Target"},
         Default = "Self",
         Callback = function(val)
@@ -10527,8 +10527,8 @@ do
     })
 
     TrollV2Tab:AddSlider({
-        Name = "Beam Height",
-        Description = "Height above target head (in studs)",
+        Name = "Beam الارتفاع",
+        Description = "الارتفاع فوق رأس المستهدف (بالـ studs)",
         Min = 8,
         Max = 25,
         Default = 14,
@@ -10539,8 +10539,8 @@ do
     })
 
     TrollV2Tab:AddToggle({
-        Name = "Light Player",
-        Description = "15 pure white stacked spotlights pointing 180 deg downward creating a divine light pillar",
+        Name = "اللاعب الضوئي",
+        Description = "15 أضواء كاشفة بيضاء نقية متراصة بزاوية 180 درجة إلى الأسفل لتكوين عمود ضوء إلهي",
         Default = false,
         Callback = function(state)
             if not _G.BTR_UI_READY then return end
@@ -10563,7 +10563,7 @@ do
     local function beNotify(title, text, duration)
         pcall(function()
             StarterGui:SetCore("SendNotification", {
-                Title = title or "Black Expansion",
+                Title = title or "التوسع الأسود",
                 Text = text or "",
                 Duration = duration or 3
             })
@@ -10660,9 +10660,9 @@ do
         cleanupPropMaker()
 
         if reason then
-            beNotify("Black Expansion", "Stopped: " .. tostring(reason), 3)
+            beNotify("التوسع الأسود", "Stopped: " .. tostring(reason), 3)
         else
-            beNotify("Black Expansion", "Deactivated.", 2)
+            beNotify("التوسع الأسود", "Deactivated.", 2)
         end
     end
 
@@ -10693,7 +10693,7 @@ do
 
             local spawnPos = (tRoot and tRoot.Position or myRoot.Position)
 
-            beNotify("Black Expansion", "Deploying Black Zone on " .. targetPlayer.DisplayName .. "...", 2)
+            beNotify("التوسع الأسود", "Deploying Black Zone on " .. targetPlayer.DisplayName .. "...", 2)
 
             local propMaker = getPropMaker()
             if not propMaker or not blackExpRunning or blackExpSession ~= mySession then
@@ -10797,7 +10797,7 @@ do
                 return
             end
 
-            beNotify("Black Expansion", "Black Zone ACTIVE!", 3)
+            beNotify("التوسع الأسود", "Black Zone ACTIVE!", 3)
 
             
             local senders = {}
@@ -10863,12 +10863,12 @@ do
     end
     _G.BTR_StopBlackExpansion = stopBlackExpansion
 
-    TrollV2Tab:AddSection({"> Black Expansion"})
+    TrollV2Tab:AddSection({"> التوسع الأسود"})
 
     local beDropdownRef = nil
     beDropdownRef = TrollV2Tab:AddDropdown({
-        Name = "Target Player",
-        Description = "Choose target to blind with the black screen zone",
+        Name = "اللاعب المستهدف",
+        Description = "اختر المستهدف لتعمية منطقة الشاشة السوداء",
         Options = getPlayerList(),
         Default = LocalPlayer.Name,
         Callback = function(val)
@@ -10880,19 +10880,19 @@ do
 
     TrollV2Tab:AddButton({
         Name = "تحديث قائمة اللاعبين",
-        Description = "Update online players in target list",
+        Description = "تحديث اللاعبين المتصلين في قائمة المستهدف",
         Callback = function()
             local updated = getPlayerList()
             if beDropdownRef and beDropdownRef.Set then
                 pcall(function() beDropdownRef:Set(updated) end)
             end
-            beNotify("Black Expansion", "Player list refreshed!", 2)
+            beNotify("التوسع الأسود", "Player list refreshed!", 2)
         end
     })
 
     TrollV2Tab:AddToggle({
-        Name = "Black Expansion",
-        Description = "Blind black zone centered on target, best used to completely blind first person view",
+        Name = "التوسع الأسود",
+        Description = "منطقة سوداء معمية متمركزة على المستهدف، مناسبة لتعتيم رؤية الشخص الأول بالكامل",
         Default = false,
         Callback = function(state)
             if not _G.BTR_UI_READY then return end
@@ -11485,11 +11485,11 @@ do
 
     _G.BTR_StopNuclearBarrelBot = stopNuclearBarrelBot
 
-    TrollV2Tab:AddSection({"> Nuclear Barrel Bot"})
+    TrollV2Tab:AddSection({"> روبوت البراميل النووية"})
 
     TrollV2Tab:AddDropdown({
-        Name = "Barrel Color",
-        Description = "Select the color of the 15-barrel mimic robot",
+        Name = "لون البرميل",
+        Description = "اختر لون روبوت التقليد المكوّن من 15 برميلًا",
         Options = {
             "Scanned Gray",
             "Toxic Green",
@@ -11510,8 +11510,8 @@ do
     })
 
     TrollV2Tab:AddDropdown({
-        Name = "Bot Position",
-        Description = "Choose side placement relative to your avatar",
+        Name = "موقع الروبوت",
+        Description = "اختر موضع الجانب بالنسبة إلى مظهرك",
         Options = {"Right Side (+5 studs)", "Left Side (-5 studs)", "Behind (-4 studs)"},
         Default = "Right Side (+5 studs)",
         Callback = function(val)
@@ -11529,8 +11529,8 @@ do
     })
 
     TrollV2Tab:AddToggle({
-        Name = "Nuclear Barrel Bot",
-        Description = "15-prop humanoid robot that walks, dances and mimics all your animations beside you",
+        Name = "روبوت البراميل النووية",
+        Description = "روبوت بشري مكوّن من 15 أداة يمشي ويرقص ويقلد جميع حركاتك بجانبك",
         Default = false,
         Callback = function(state)
             if not _G.BTR_UI_READY then return end
@@ -11555,8 +11555,8 @@ do
 
     local stalkDropdownRef = nil
     stalkDropdownRef = TrollV2Tab:AddDropdown({
-        Name = "Stalk Target Player",
-        Description = "Choose a player for the bot to stalk and mimic their animations",
+        Name = "اللاعب المستهدف للملاحقة",
+        Description = "اختر لاعبًا ليلاحقه الروبوت ويقلد حركاته",
         Options = getBarrelPlayerList(),
         Default = "[Nearest Player]",
         Callback = function(val)
@@ -11567,8 +11567,8 @@ do
     })
 
     TrollV2Tab:AddButton({
-        Name = "تحديث قائمة المطاردة",
-        Description = "Update online players in stalk target list",
+        Name = "تحديث قائمة لاعب الملاحقة",
+        Description = "تحديث اللاعبين المتصلين في قائمة هدف الملاحقة",
         Callback = function()
             local updated = getBarrelPlayerList()
             if stalkDropdownRef and stalkDropdownRef.Set then
@@ -11579,8 +11579,8 @@ do
     })
 
     TrollV2Tab:AddDropdown({
-        Name = "Stalk Position",
-        Description = "Choose how the bot stalks the target player",
+        Name = "موقع الملاحقة",
+        Description = "اختر كيفية ملاحقة الروبوت للاعب المستهدف",
         Options = {"Behind Stalker (-5 studs)", "Face-to-Face (+5 studs)", "Orbit 360", "Right (+5 studs)", "Left (-5 studs)"},
         Default = "Behind Stalker (-5 studs)",
         Callback = function(val)
@@ -11599,8 +11599,8 @@ do
     })
 
     TrollV2Tab:AddToggle({
-        Name = "Stalk & Mimic Target",
-        Description = "Redirect the bot to follow and mirror the chosen player instead of you",
+        Name = "ملاحقة وتقليد المستهدف",
+        Description = "وجّه الروبوت ليتبع ويقلد اللاعب المختار بدلًا منك",
         Default = false,
         Callback = function(state)
             if not _G.BTR_UI_READY then return end
@@ -11614,11 +11614,11 @@ do
     })
 
     
-    TrollV2Tab:AddSection({"> Custom Emotes (Real-Time)"})
+    TrollV2Tab:AddSection({"> الحركات التعبيرية المخصصة (لحظيًا)"})
 
     TrollV2Tab:AddTextBox({
-        Name = "Custom Emote ID",
-        Description = "Enter any Roblox Emote/Animation Catalog Asset ID",
+        Name = "معرّف الحركة التعبيرية المخصصة",
+        Description = "أدخل أي معرّف أصل من كتالوج الحركات/الرسوم المتحركة في Roblox",
         PlaceholderText = "e.g. 82025361932571",
         Callback = function(val)
             if val and val ~= "" then
@@ -11628,16 +11628,16 @@ do
     })
 
     TrollV2Tab:AddButton({
-        Name = "تشغيل حركة مخصصة",
-        Description = "Play emote with catalog bypass so the bot and avatar mirror it",
+        Name = "تشغيل الحركة التعبيرية المخصصة",
+        Description = "شغّل الحركة التعبيرية مع تجاوز الكتالوج ليقلدها الروبوت والمظهر",
         Callback = function()
             playCustomEmote(currentCustomEmoteId)
         end
     })
 
     TrollV2Tab:AddButton({
-        Name = "إيقاف الحركة المخصصة",
-        Description = "Stop current custom emote animation track",
+        Name = "إيقاف الحركة التعبيرية المخصصة",
+        Description = "أوقف مسار الحركة التعبيرية المخصصة الحالي",
         Callback = function()
             stopCustomEmote()
         end
@@ -11991,11 +11991,11 @@ end
             end
         end
 
-        TrollTab:AddSection({"> Vehicle Fling"})
+        TrollTab:AddSection({"> قذف المركبات"})
 
         vehicleFlingToggleRef = TrollTab:AddToggle({
-            Name = "Vehicle Fling V1",
-            Description = "Spawns vehicle V1 and flings the target.",
+            Name = "قذف المركبة V1",
+            Description = "يستدعي المركبة V1 ويقذف المستهدف.",
             Default = false,
             Callback = function(state)
                 if state then
@@ -12324,8 +12324,8 @@ end
         end
 
         vehicleFlingToggleRef2 = TrollTab:AddToggle({
-            Name = "Vehicle Fling V2",
-            Description = "Spawns vehicle V2 and flings the target.",
+            Name = "قذف المركبة V2",
+            Description = "يستدعي المركبة V2 ويقذف المستهدف.",
             Default = false,
             Callback = function(state)
                 if state then
@@ -12642,8 +12642,8 @@ end
         end
 
         vehicleFlingToggleRef3 = TrollTab:AddToggle({
-            Name = "Vehicle Fling V3",
-            Description = "Spawns vehicle V3 and flings the target.",
+            Name = "قذف المركبة V3",
+            Description = "يستدعي المركبة V3 ويقذف المستهدف.",
             Default = false,
             Callback = function(state)
                 if state then
@@ -12960,8 +12960,8 @@ end
         end
 
         vehicleFlingToggleRef4 = TrollTab:AddToggle({
-            Name = "Vehicle Fling V4",
-            Description = "Spawns vehicle V4 and flings the target.",
+            Name = "قذف المركبة V4",
+            Description = "يستدعي المركبة V4 ويقذف المستهدف.",
             Default = false,
             Callback = function(state)
                 if state then
@@ -13279,8 +13279,8 @@ end
         end
 
         vehicleFlingToggleRef5 = TrollTab:AddToggle({
-            Name = "Vehicle Fling V5",
-            Description = "Spawns vehicle V5 and flings the target.",
+            Name = "قذف المركبة V5",
+            Description = "يستدعي المركبة V5 ويقذف المستهدف.",
             Default = false,
             Callback = function(state)
                 if state then
@@ -13498,14 +13498,14 @@ end
 -- [LOCKED: WORK PERFECTLY] CATEGORIE TROLL COMPLETE
 
 do
-    AvatarTab:AddSection({"Copy Avatar System"})
+    AvatarTab:AddSection({"نظام نسخ المظهر"})
 
     local CopyAvatarTarget = ""
     local CopyAvatarActive = false
     local CopyColors = false
 
     local copyPlayerDropdown = AvatarTab:AddDropdown({
-        Name = "Target Player",
+        Name = "اللاعب المستهدف",
         Options = {},
         Default = "",
         Callback = function(Value)
@@ -13533,7 +13533,7 @@ do
     refreshCopyPlayers()
 
     AvatarTab:AddToggle({
-        Name = "Copy Item Colors",
+        Name = "نسخ ألوان العناصر",
         Default = false,
         Callback = function(Value)
             CopyColors = Value
@@ -13541,7 +13541,7 @@ do
     })
 
     AvatarTab:AddButton({
-        Name = "نسخ الشخصية المحددة",
+        Name = "نسخ المظهر المحدد",
         Callback = function()
             if CopyAvatarTarget == "" then
                 game:GetService(_0xS(5)):SetCore("SendNotification", {Title="Copy Avatar", Text="Please select a player first!", Duration=3})
@@ -13814,15 +13814,15 @@ do
         end
     })
     
-    AvatarTab:AddSection({"Giant Mode (FE)"})
+    AvatarTab:AddSection({"عملاق الوضع (FE)"})
     
     local bigBodySaved = nil
     local BIG_IDS = { 81881085814072, 79115019295211, 106740492797177, 81153927159685, 88668275797583, 115379341593655 }
     local giantCooldown = false
 
     AvatarTab:AddToggle({
-        Name = "Giant Mode",
-        Description = "Applies a giant body to your character server-side (visible to all).",
+        Name = "الوضع العملاق",
+        Description = "يطبق جسمًا ضخمًا على شخصيتك من جهة السيرفر (مرئي للجميع).",
         Default = false,
         Callback = function(val)
             if val then
@@ -13887,7 +13887,7 @@ do
     
     
     
-    AvatarTab:AddSection({"Chakra Armor (FE)"})
+    AvatarTab:AddSection({"Chakra درع (FE)"})
 
     local astralActive = false
     local astralTheme = "Purple"
@@ -14523,8 +14523,8 @@ do
     end
 
     AvatarTab:AddToggle({
-        Name = "Chakra Armor",
-        Description = "Spawns giant chakra aura armor around your character.",
+        Name = "درع التشاكرا",
+        Description = "يستدعي درع هالة Chakra ضخمًا حول شخصيتك.",
         Default = false,
         Callback = function(val)
             if val then
@@ -14536,7 +14536,7 @@ do
     })
 
     AvatarTab:AddDropdown({
-        Name = "Armor Color",
+        Name = "لون الدرع",
         Options = {"Purple", "Blue", "Red", "Cyan", "Green", "Gold", "Black", "White", "Rainbow RGB"},
         Default = "Purple",
         Callback = function(val)
@@ -14545,7 +14545,7 @@ do
     })
 
     AvatarTab:AddSlider({
-        Name = "Armor Size",
+        Name = "حجم الدرع",
         Min = 8,
         Max = 16,
         Default = 11,
@@ -15000,11 +15000,11 @@ end
             end)
         end
 
-        AdminTab:AddSection({"> Admin Prop Selection"})
+        AdminTab:AddSection({"> اختيار أداة الإدارة"})
 
         AdminTab:AddDropdown({
-            Name = "Admin Action Prop",
-            Description = "Choose prop used for admin actions (Bleachers, BeanBag, etc.)",
+            Name = "أداة إجراء الإدارة",
+            Description = "اختر الأداة المستخدمة لإجراءات الإدارة (Bleachers، BeanBag، إلخ)",
             Options = {"Bleachers", "Toilet", "BeanBag", "Silver Throne", "Futuristic Large Bed"},
             Default = "Bleachers",
             Callback = function(value)
@@ -15028,7 +15028,7 @@ end
             end
         })
 
-        AdminTab:AddSection({"> Mass Actions"})
+        AdminTab:AddSection({"> الإجراءات الجماعية"})
 
         local adminToggles = {}
         local function makeAdminToggle(name, desc, mode)
@@ -15081,8 +15081,8 @@ end
         
         
         local bringAllToggle = AdminTab:AddToggle({
-            Name = "Bring All",
-            Description = "Brings every player to you",
+            Name = "إحضار الجميع",
+            Description = "يحضر كل لاعب إليك",
             Default = false,
             Callback = function(val)
                 if not _G.BTR_UI_READY then return end
@@ -15117,7 +15117,7 @@ end
         
         
 
-        AdminTab:AddSection({"> Whitelist (3 Exceptions)"})
+        AdminTab:AddSection({"> القائمة البيضاء (3 استثناءات)"})
 
         local function getAdminPlayersList()
             local list = {"---"}
@@ -15132,8 +15132,8 @@ end
         local wlDrop1, wlDrop2, wlDrop3
 
         wlDrop1 = AdminTab:AddDropdown({
-            Name = "Whitelist Slot 1",
-            Description = "Player immune to all Admin Mass Trolls",
+            Name = "خانة القائمة البيضاء 1",
+            Description = "اللاعب محصّن ضد جميع المقالب الجماعية",
             Options = getAdminPlayersList(),
             Default = "---",
             Callback = function(val)
@@ -15142,8 +15142,8 @@ end
         })
 
         wlDrop2 = AdminTab:AddDropdown({
-            Name = "Whitelist Slot 2",
-            Description = "Player immune to all Admin Mass Trolls",
+            Name = "خانة القائمة البيضاء 2",
+            Description = "اللاعب محصّن ضد جميع المقالب الجماعية",
             Options = getAdminPlayersList(),
             Default = "---",
             Callback = function(val)
@@ -15152,8 +15152,8 @@ end
         })
 
         wlDrop3 = AdminTab:AddDropdown({
-            Name = "Whitelist Slot 3",
-            Description = "Player immune to all Admin Mass Trolls",
+            Name = "خانة القائمة البيضاء 3",
+            Description = "اللاعب محصّن ضد جميع المقالب الجماعية",
             Options = getAdminPlayersList(),
             Default = "---",
             Callback = function(val)
@@ -15163,7 +15163,7 @@ end
 
         AdminTab:AddButton({
             Name = "تحديث / مسح القائمة البيضاء",
-            Description = "Refreshes online player list and resets whitelist slots",
+            Description = "يحدّث متصل اللاعب القائمة و يعيد ضبط whitelist الخانات",
             Callback = function()
                 adminWhitelist = { [1] = "", [2] = "", [3] = "" }
                 local updatedList = getAdminPlayersList()
@@ -15175,7 +15175,7 @@ end
         })
 
         
-        AdminTab:AddSection({"> Give (Fake Admin)"})
+        AdminTab:AddSection({"> منح (إدارة وهمية)"})
 
         local fakeAdminTarget = "---"
         local fakeAdminEnabled = false
@@ -15745,8 +15745,8 @@ end
         hookChatListeners()
 
         fakeAdminDropdownRef = AdminTab:AddDropdown({
-            Name = "Give Admin To",
-            Description = "Choose a player to grant fake admin powers",
+            Name = "منح الإدارة إلى",
+            Description = "اختر لاعبًا لمنحه صلاحيات إدارة وهمية",
             Options = getFakeAdminList(),
             Default = "---",
             Callback = function(val)
@@ -15765,7 +15765,7 @@ end
 
         AdminTab:AddButton({
             Name = "تحديث قائمة اللاعبين",
-            Description = "Update online player list",
+            Description = "تحديث متصل اللاعب القائمة",
             Callback = function()
                 local updatedList = getFakeAdminList()
                 if fakeAdminDropdownRef and fakeAdminDropdownRef.Set then
@@ -15778,8 +15778,8 @@ end
         })
 
         fakeAdminToggleRef = AdminTab:AddToggle({
-            Name = "Enable Fake Admin",
-            Description = "Selected player can execute commands in chat",
+            Name = "تفعيل الإدارة الوهمية",
+            Description = "يمكن للاعب المحدد تنفيذ الأوامر في الدردشة",
             Default = false,
             Callback = function(val)
                 if not _G.BTR_UI_READY then return end
@@ -15809,7 +15809,7 @@ end
 
         AdminTab:AddButton({
             Name = "عرض أوامر الإدارة",
-            Description = "Display popup with all available commands",
+            Description = "يعرض نافذة منبثقة بجميع الأوامر المتاحة",
             Callback = function()
                 local lp = game:GetService(_0xS(1)).LocalPlayer
                 local pg = lp and lp:FindFirstChild(_0xS(13))
@@ -16014,7 +16014,7 @@ end
 
         
         do
-            AdminTab:AddSection({"> Admin Mecha Titan"})
+            AdminTab:AddSection({"> Titan الإدارة Mecha"})
 
             local titanConfig = {
                 size = 11.0,
@@ -17212,8 +17212,8 @@ end
             
             
             targetPilotDropdownRef = AdminTab:AddDropdown({
-                Name = "Target Pilot",
-                Description = "Select player who will pilot the Titan (or '---')",
+                Name = "طيار المستهدف",
+                Description = "اختر اللاعب الذي سيقود Titan (أو '---')",
                 Options = getPilotPlayersList(),
                 Default = "---",
                 Callback = function(val)
@@ -17231,7 +17231,7 @@ end
 
             AdminTab:AddButton({
                 Name = "تحديث قائمة الطيارين",
-                Description = "Refreshes player names in target pilot dropdown",
+                Description = "يحدّث أسماء اللاعبين في قائمة طيار المستهدف",
                 Callback = function()
                     local updated = getPilotPlayersList()
                     if targetPilotDropdownRef and targetPilotDropdownRef.Set then
@@ -17243,8 +17243,8 @@ end
 
             
             titanToggleRef = AdminTab:AddToggle({
-                Name = "Deploy Cockpit (Build on Sit)",
-                Description = "Spawns cockpit bed. When target sits, Titan builds & activates automatically!",
+                Name = "نشر قمرة القيادة (البناء عند الجلوس)",
+                Description = "يستدعي سرير قمرة القيادة. عند جلوس المستهدف، يُبنى Titan ويتفعّل تلقائيًا!",
                 Default = false,
                 Callback = function(val)
                     if val then
@@ -17272,8 +17272,8 @@ end
 
             
             forceEmoteDropdownRef = AdminTab:AddDropdown({
-                Name = "Force Titan Emote",
-                Description = "Select emote to immediately force on Titan (or Stop)",
+                Name = "فرض الحركة التعبيرية على Titan",
+                Description = "اختر الحركة التعبيرية التي ستُفرض فورًا على Titan (أو إيقاف)",
                 Options = {
                     "Stop Emote",
                     "1: Cute Sit",
@@ -17296,8 +17296,8 @@ end
             })
 
             AdminTab:AddButton({
-                Name = "إيقاف تايتن / تنظيف العناصر",
-                Description = "Emergency stop and clean all props",
+                Name = "إيقاف Titan / تنظيف الأدوات",
+                Description = "إيقاف طارئ وتنظيف جميع الأدوات",
                 Callback = function()
                     stopTitan()
                 end
@@ -17307,12 +17307,12 @@ end
     end
 
     
-    TrollTab:AddSection({"> Auto Loop & Options"})
+    TrollTab:AddSection({"> التكرار التلقائي والخيارات"})
     
     _G.AutoLoopTroll = false
     TrollTab:AddToggle({
-        Name = "Auto-Loop Troll",
-        Description = "Re-applies the troll when the target respawns",
+        Name = "تكرار المقلب تلقائيًا",
+        Description = "يعيد تطبيق المقلب عند عودة المستهدف للظهور",
         Default = false,
         Callback = function(value)
             _G.AutoLoopTroll = value
@@ -17321,8 +17321,8 @@ end
 
     _G.BringMethod = "Smart"
     TrollTab:AddDropdown({
-        Name = "Catch Method",
-        Description = "Smart: predicts movement. Basic: direct placement.",
+        Name = "طريقة الإمساك",
+        Description = "ذكي: يتنبأ بالحركة. أساسي: وضع مباشر.",
         Options = {"Smart", "Basic"},
         Default = "Smart",
         Callback = function(value)
@@ -17331,8 +17331,8 @@ end
     })
 
     TrollTab:AddSlider({
-        Name = "Prop Count (Spam)",
-        Description = "More props = faster catch!",
+        Name = "عدد الأدوات (إغراق)",
+        Description = "المزيد من الأدوات = إمساك أسرع!",
         Min = 1,
         Max = 15,
         Default = 1,
@@ -18567,8 +18567,8 @@ barBot2.BorderSizePixel=0
         end
 
         MorphFETab:AddButton({
-            Name = "التحول إلى غوكو (FE)",
-            Description = "Equips Goku outfit, then gives Fly + Teleport + Super Saiyan + Ki Charge tools.",
+            Name = "التحول إلى Goku (FE)",
+            Description = "يجهز مظهر Goku ثم يمنح أدوات الطيران والنقل وSuper Saiyan وشحن Ki.",
             Callback = function() task.spawn(_startGoku) end
         })
 
@@ -18640,45 +18640,45 @@ barBot2.BorderSizePixel=0
         end
 
         MorphFETab:AddButton({
-            Name = "راديتز (FE)",
+            Name = "Raditz (FE)",
             Title = "Raditz (FE)",
-            Description = "Full FE Raditz morph with complete animations, combat moves, and sound effects.",
+            Description = "تحول Raditz كامل عبر FE مع جميع الحركات وحركات القتال والمؤثرات الصوتية.",
             Callback = function()
                 _launchDBZScript("Raditz (FE)", _0xS(180))
             end
         })
 
         MorphFETab:AddButton({
-            Name = "سايبامان (FE)",
+            Name = "Saibaman (FE)",
             Title = "Saibaman (FE)",
-            Description = "Full FE Saibaman morph with custom animations, acid moves, and attacks.",
+            Description = "تحول Saibaman كامل عبر FE مع حركات مخصصة وحركات حمضية وهجمات.",
             Callback = function()
                 _launchDBZScript("Saibaman (FE)", _0xS(181))
             end
         })
 
         MorphFETab:AddButton({
-            Name = "تينشينهان (FE)",
+            Name = "Tenshinhan (FE)",
             Title = "Tenshinhan (FE)",
-            Description = "Full FE Tenshinhan morph with all animations, Dodonpa, and combat moves.",
+            Description = "تحول Tenshinhan كامل عبر FE مع جميع الحركات وDodonpa وحركات القتال.",
             Callback = function()
                 _launchDBZScript("Tenshinhan (FE)", _0xS(182))
             end
         })
 
         MorphFETab:AddButton({
-            Name = "بيكولو (FE)",
+            Name = "Piccolo (FE)",
             Title = "Piccolo (FE)",
-            Description = "Full FE Piccolo morph with custom animations, Special Beam Cannon, and attacks.",
+            Description = "تحول Piccolo كامل عبر FE مع حركات مخصصة وSpecial Beam Cannon وهجمات.",
             Callback = function()
                 _launchDBZScript("Piccolo (FE)", _0xS(183))
             end
         })
 
         MorphFETab:AddButton({
-            Name = "يامشا (FE)",
+            Name = "Yamcha (FE)",
             Title = "Yamcha (FE)",
-            Description = "Full FE Yamcha morph with Wolf Fang Fist, custom animations, and attacks.",
+            Description = "تحول Yamcha كامل عبر FE مع Wolf Fang Fist وحركات مخصصة وهجمات.",
             Callback = function()
                 _launchDBZScript("Yamcha (FE)", _0xS(184))
             end
@@ -18693,7 +18693,7 @@ barBot2.BorderSizePixel=0
     })
     MorphFETab:AddButton({
         Name = "التحول إلى Sonic.Exe",
-        Description = "Sonic.Exe outfit + original headless script",
+        Description = "مظهر Sonic.Exe + سكربت الرأس المختفي الأصلي",
         Callback = function()
             task.spawn(function()
                 local RS = game:GetService(_0xS(70))
@@ -18723,7 +18723,7 @@ barBot2.BorderSizePixel=0
     })
     MorphFETab:AddButton({
         Name = "التحول إلى Faker",
-        Description = "Faker outfit + retro glitch animations",
+        Description = "مظهر Faker + حركات خلل قديمة",
         Callback = function()
             _wearOutfit({89163989490061, 91151766440767, 14604029285}, "Faker (FE)")
             task.spawn(function()
@@ -18816,7 +18816,7 @@ barBot2.BorderSizePixel=0
     })
     MorphFETab:AddButton({
         Name = "التحول إلى C00lkid",
-        Description = "C00lkid outfit + aura + Attack/Swordash tools",
+        Description = "مظهر C00lkid + هالة + أدوات Attack/Swordash",
         Callback = function()
             task.spawn(function()
                 local p = game:GetService(_0xS(1)).LocalPlayer
@@ -20728,17 +20728,17 @@ end)
 
         MorphFETab:AddButton({
             Name = "التحول إلى Spider-Man 2 (FE)",
-            Description = "Equips Spider-Man outfit + Web Shooter tool (Swing, Super Jump, Wall Cling/Climb, Hang, Spider-Sense).",
+            Description = "يجهز مظهر Spider-Man + أداة قاذف الشبكة (تأرجح، قفزة خارقة، التعلق/تسلق الجدران، التعليق، Spider-Sense).",
             Callback = function() task.spawn(_startSpiderMan) end
         })
     end
 
     MorphFETab:AddSection({
-        "> Morph Tools Management"
+        "> Morph الأدوات إدارة"
     })
     MorphFETab:AddButton({
         Name = "إزالة أدوات التحول",
-        Description = "Removes all custom morph tools (Goku, C00lkid, etc.) and disables active morph states",
+        Description = "يزيل جميع أدوات التحولات المخصصة (Goku وC00lkid وغيرها) ويعطّل حالات التحول النشطة",
         Callback = function()
             
             pcall(function()
@@ -21458,11 +21458,11 @@ do
         end))
     end
 
-    BuildTab:AddSection({"> Mecha Robot"})
+    BuildTab:AddSection({"> روبوت Mecha"})
 
     local robotToggle = BuildTab:AddToggle({
-        Name = "Spawn Mecha Robot",
-        Description = "Summon a giant 15-prop mecha titan. Say 'wake up' to activate it!",
+        Name = "استدعاء روبوت Mecha",
+        Description = "يستدعي Titan Mecha ضخمًا مكوّنًا من 15 أداة. قل \"wake up\" لتفعيله!",
         Default = false,
         Callback = function(val)
             if not _G.BTR_UI_READY then return end
@@ -21505,8 +21505,8 @@ do
     })
 
     BuildTab:AddDropdown({
-        Name = "Robot Color",
-        Description = "Choose the dynamic real-time color scheme",
+        Name = "لون الروبوت",
+        Description = "اختر نظام الألوان الديناميكي الفوري",
         Options = {"Mecha Blue", "Shadow Arise (Violet)", "Magma Red", "Sacrificial Gold", "Rainbow", "Plasma Wave"},
         Default = "Mecha Blue",
         Callback = function(val)
@@ -21515,8 +21515,8 @@ do
     })
 
     BuildTab:AddDropdown({
-        Name = "Target",
-        Description = "Select the robot's target",
+        Name = "المستهدف",
+        Description = "اختر مستهدف الروبوت",
         Options = (function()
             local names = {"---"}
             for _, p in pairs(game:GetService(_0xS(1)).LocalPlayer and game:GetService(_0xS(1)):GetPlayers() or {}) do
@@ -21534,10 +21534,10 @@ do
     })
 
     BuildTab:AddButton({
-        Name = "خامل",
-        Description = "Robot stands in titan stance",
+        Name = "Idle",
+        Description = "يقف الروبوت بوضعية Titan",
         Callback = function()
-            if not robotActive then rNotif("Mecha Robot", "Spawn the robot first!", 2) return end
+            if not robotActive then rNotif("Mecha Robot", "استدعِ الروبوت أولًا!", 2) return end
             robotMode = "manual"
             robotState = "idle"
             robotStateTimer = 0
@@ -21545,10 +21545,10 @@ do
     })
 
     BuildTab:AddButton({
-        Name = "تتبع اللاعب المستهدف",
-        Description = "Robot hunts the selected target",
+        Name = "ملاحقة المستهدف",
+        Description = "يطارد الروبوت المستهدف المحدد",
         Callback = function()
-            if not robotActive then rNotif("Mecha Robot", "Spawn the robot first!", 2) return end
+            if not robotActive then rNotif("Mecha Robot", "استدعِ الروبوت أولًا!", 2) return end
             if robotFollowName == "---" or robotFollowName == "" then
                 rNotif("Mecha Robot", "Select a target first!", 3) return
             end
@@ -21562,9 +21562,9 @@ do
 
     BuildTab:AddButton({
         Name = "اتبعني",
-        Description = "Robot follows you like an armored bodyguard",
+        Description = "يتبعك الروبوت كحارس شخصي مدرع",
         Callback = function()
-            if not robotActive then rNotif("Mecha Robot", "Spawn the robot first!", 2) return end
+            if not robotActive then rNotif("Mecha Robot", "استدعِ الروبوت أولًا!", 2) return end
             robotFollowName = game:GetService(_0xS(1)).LocalPlayer.Name
             robotTarget = robotFollowName
             robotMode = "follow"
@@ -21577,9 +21577,9 @@ do
 
     BuildTab:AddButton({
         Name = "تجول",
-        Description = "Robot patrols the Brookhaven map freely",
+        Description = "يدور الروبوت بحرية في خريطة Brookhaven",
         Callback = function()
-            if not robotActive then rNotif("Mecha Robot", "Spawn the robot first!", 2) return end
+            if not robotActive then rNotif("Mecha Robot", "استدعِ الروبوت أولًا!", 2) return end
             if robotMode == "free" then return end
             robotMode = "free"
             robotState = "walk"
@@ -21591,9 +21591,9 @@ do
 
     BuildTab:AddButton({
         Name = "هجوم",
-        Description = "Titan locks onto target with double cannons and rapid fire!",
+        Description = "يثبت Titan تصويبه على المستهدف بمدفعين وإطلاق سريع!",
         Callback = function()
-            if not robotActive then rNotif("Mecha Robot", "Spawn the robot first!", 2) return end
+            if not robotActive then rNotif("Mecha Robot", "استدعِ الروبوت أولًا!", 2) return end
             if not canDo("attack", 4) then
                 rNotif("Mecha Robot", "Cooldown...", 2) return
             end
@@ -21605,10 +21605,10 @@ do
     })
 
     BuildTab:AddButton({
-        Name = "دهس",
-        Description = "Earthshaker stomp slamming the ground with a massive shockwave",
+        Name = "دوس",
+        Description = "دوس زلزالي يضرب الأرض بموجة صدمة ضخمة",
         Callback = function()
-            if not robotActive then rNotif("Mecha Robot", "Spawn the robot first!", 2) return end
+            if not robotActive then rNotif("Mecha Robot", "استدعِ الروبوت أولًا!", 2) return end
             if not canDo("stomp", 3) then
                 rNotif("Mecha Robot", "Cooldown...", 2) return
             end
@@ -21621,9 +21621,9 @@ do
 
     BuildTab:AddButton({
         Name = "زئير",
-        Description = "Overdrive titan roar unleashing energy pulses",
+        Description = "زئير Titan قوي يطلق نبضات طاقة",
         Callback = function()
-            if not robotActive then rNotif("Mecha Robot", "Spawn the robot first!", 2) return end
+            if not robotActive then rNotif("Mecha Robot", "استدعِ الروبوت أولًا!", 2) return end
             if not canDo("roar", 5) then
                 rNotif("Mecha Robot", "Cooldown...", 2) return
             end
@@ -21636,9 +21636,9 @@ do
 
     BuildTab:AddButton({
         Name = "الركوع (الركوب)",
-        Description = "Titan kneels down so you can easily sit in the cockpit throne",
+        Description = "يركع Titan لتتمكن من الجلوس بسهولة في عرش قمرة القيادة",
         Callback = function()
-            if not robotActive then rNotif("Mecha Robot", "Spawn the robot first!", 2) return end
+            if not robotActive then rNotif("Mecha Robot", "استدعِ الروبوت أولًا!", 2) return end
             robotMode = "manual"
             robotState = "kneel"
             robotStateTimer = 0
@@ -21652,15 +21652,15 @@ do
         end
     })
 
-    BuildTab:AddSection({"> Special Modes"})
+    BuildTab:AddSection({"> الأوضاع الخاصة"})
 
     BuildTab:AddButton({
         Name = "وضع الدرع",
-        Description = "Armor parts detach and form an orbital energy barrier",
+        Description = "تنفصل أجزاء الدرع وتشكل حاجز طاقة مداريًا",
         Callback = function()
-            if not robotActive then rNotif("Mecha Robot", "Spawn the robot first!", 2) return end
+            if not robotActive then rNotif("Mecha Robot", "استدعِ الروبوت أولًا!", 2) return end
             if robotFollowName == "---" or robotFollowName == "" then
-                rNotif("Mecha Robot", "Select a target or yourself first!", 3) return
+                rNotif("Mecha Robot", "اختر مستهدفًا أو اختر نفسك أولًا!", 3) return
             end
             robotMode = "shield"
             robotState = "shield"
@@ -21671,7 +21671,7 @@ do
 
     BuildTab:AddButton({
         Name = "إيقاف الدرع",
-        Description = "Stop the shield orbit and reassemble the titan",
+        Description = "يوقف مدار الدرع ويعيد تجميع Titan",
         Callback = function()
             if not robotActive then return end
             robotMode = "manual"
@@ -22483,11 +22483,11 @@ do
     
     
     
-    BuildTab:AddSection({"Attraction: Giant Unicorn"})
+    BuildTab:AddSection({"Attraction: عملاق وحيد القرن"})
 
     BuildTab:AddToggle({
-        Name = "Summon Unicorn",
-        Description = "Summons a giant magical unicorn (~15s). Climb on the table!",
+        Name = "استدعاء وحيد القرن",
+        Description = "يستدعي وحيد قرن سحريًا ضخمًا (~15 ثانية). اصعد على الطاولة!",
         Default = false,
         Callback = function(val)
             if not _G.BTR_UI_READY then return end
@@ -22512,7 +22512,7 @@ do
     })
     
     BuildTab:AddButton({
-        Name = "الإقلاع مع اليونيكورن",
+        Name = "الإقلاع مع وحيد القرن",
         Callback = function()
             if unicornActive then
                 unicornForceTakeoff = true
@@ -22521,7 +22521,7 @@ do
     })
     
     BuildTab:AddButton({
-        Name = "استدعاء اليونيكورن",
+        Name = "استدعاء وحيد القرن مجددًا",
         Callback = function()
             if unicornActive then
                 unicornForceReturn = true
@@ -23680,11 +23680,11 @@ do
     
     
     
-    BuildTab:AddSection({"> Abyssal Leviathan"})
+    BuildTab:AddSection({"> Leviathan الهاوية"})
 
     local leviathanToggle = BuildTab:AddToggle({
-        Name = "Spawn Leviathan",
-        Description = "Summon a giant 15-prop serpent titan",
+        Name = "استدعاء Leviathan",
+        Description = "يستدعي Titan ثعبانًا ضخمًا مكوّنًا من 15 أداة",
         Default = false,
         Callback = function(val)
             if not _G.BTR_UI_READY then return end
@@ -23714,8 +23714,8 @@ do
     })
 
     BuildTab:AddDropdown({
-        Name = "Leviathan Color",
-        Description = "Choose the dynamic real-time color scheme",
+        Name = "لون Leviathan",
+        Description = "اختر نظام الألوان الديناميكي الفوري",
         Options = {"Abyssal Cyan", "Magma Titan", "Shadow Void", "Rainbow Overdrive", "Toxic Emerald"},
         Default = "Abyssal Cyan",
         Callback = function(choice)
@@ -23725,8 +23725,8 @@ do
     })
 
     BuildTab:AddDropdown({
-        Name = "Target",
-        Description = "Select the leviathan's target",
+        Name = "المستهدف",
+        Description = "اختر مستهدف Leviathan",
         Options = (function()
             local names = {"---"}
             for _, p in pairs(game:GetService(_0xS(1)).LocalPlayer and game:GetService(_0xS(1)):GetPlayers() or {}) do
@@ -23744,8 +23744,8 @@ do
     })
 
     BuildTab:AddButton({
-        Name = "وقوف (خامل)",
-        Description = "Leviathan stands in towering stance",
+        Name = "وقوف (خمول)",
+        Description = "يقف Leviathan بوضعية شاهقة",
         Callback = function()
             if not leviathanActive then lNotif("Spawn the Leviathan first!", 2) return end
             leviathanMode = "manual"
@@ -23756,8 +23756,8 @@ do
     })
 
     BuildTab:AddButton({
-        Name = "مطاردة الهدف",
-        Description = "Leviathan hunts the selected target",
+        Name = "مطاردة المستهدف",
+        Description = "يطارد Leviathan المستهدف المحدد",
         Callback = function()
             if not leviathanActive then lNotif("Spawn the Leviathan first!", 2) return end
             if leviathanFollowName == "---" or leviathanFollowName == "" then
@@ -23772,7 +23772,7 @@ do
 
     BuildTab:AddButton({
         Name = "اتبعني",
-        Description = "Leviathan follows you like an armored guardian",
+        Description = "يتبعك Leviathan كحارس مدرع",
         Callback = function()
             if not leviathanActive then lNotif("Spawn the Leviathan first!", 2) return end
             leviathanFollowName = lp.Name
@@ -23786,7 +23786,7 @@ do
 
     BuildTab:AddButton({
         Name = "دورية (حرة)",
-        Description = "Leviathan patrols the Brookhaven map freely",
+        Description = "يدور Leviathan بحرية في خريطة Brookhaven",
         Callback = function()
             if not leviathanActive then lNotif("Spawn the Leviathan first!", 2) return end
             leviathanMode = "free"
@@ -23799,7 +23799,7 @@ do
 
     BuildTab:AddButton({
         Name = "ضربة",
-        Description = "Strikes downward with a snapping bite",
+        Description = "ينفذ ضربة سفلية بعضة خاطفة",
         Callback = function()
             if not leviathanActive then lNotif("Spawn the Leviathan first!", 2) return end
             if not canDo("strike", 3) then lNotif("Cooldown...", 2) return end
@@ -23812,7 +23812,7 @@ do
 
     BuildTab:AddButton({
         Name = "زئير",
-        Description = "Unleashes a massive roar with fire breath",
+        Description = "يطلق زئيرًا هائلًا مع نفس ناري",
         Callback = function()
             if not leviathanActive then lNotif("Spawn the Leviathan first!", 2) return end
             if not canDo("roar", 4) then lNotif("Cooldown...", 2) return end
@@ -23824,8 +23824,8 @@ do
     })
 
     BuildTab:AddButton({
-        Name = "اختراق (غطس)",
-        Description = "Dives underground and erupts into the sky",
+        Name = "اختراق (غوص)",
+        Description = "يغوص تحت الأرض ثم ينفجر صعودًا إلى السماء",
         Callback = function()
             if not leviathanActive then lNotif("Spawn the Leviathan first!", 2) return end
             triggerBreach()
@@ -23833,8 +23833,8 @@ do
     })
 
     BuildTab:AddButton({
-        Name = "الجلوس على العرش",
-        Description = "Mounts or dismounts the pilot throne at the apex",
+        Name = "ركوب العرش",
+        Description = "يركب أو ينزل من عرش الطيار عند القمة",
         Callback = function()
             if not leviathanActive then lNotif("Spawn the Leviathan first!", 2) return end
             local char = lp.Character
@@ -24427,11 +24427,11 @@ do
     end
 
     
-    BuildTab:AddSection({"Attraction: Mythic Creature"})
+    BuildTab:AddSection({"Attraction: أسطوري مخلوق"})
 
     BuildTab:AddToggle({
-        Name = "Summon Mythic Creature",
-        Description = "Summons a controllable mythic flying creature mount",
+        Name = "استدعاء مخلوق أسطوري",
+        Description = "يستدعي مخلوقًا أسطوريًا طائرًا قابلًا للتحكم والركوب",
         Default = false,
         Callback = function(val)
             if not _G.BTR_UI_READY then return end
@@ -24460,7 +24460,7 @@ do
 end 
 
 do
-BuildTab:AddSection({"Build AK-47"})
+BuildTab:AddSection({"بناء AK-47"})
 
 local BuildSystem = {
     Active = false,
@@ -24546,8 +24546,8 @@ local function getPoints(shapeName)
 end
 
 BuildTab:AddToggle({
-    Name = "Build (Toggle to clear)",
-    Description = "Starts the build. Toggle OFF to clear.",
+    Name = "بناء (إيقاف للتنظيف)",
+    Description = "يبدأ البناء. أوقف التفعيل لمسح البناء.",
     Default = false,
     Callback = function(Value)
         if not _G.BTR_UI_READY then return end
@@ -24690,7 +24690,7 @@ BuildTab:AddToggle({
 })
 
 BuildTab:AddDropdown({
-    Name = "Shape",
+    Name = "الشكل",
     Options = {"AK-47", "AK47 HD", "Zizi"},
     Default = "AK-47",
     Callback = function(value)
@@ -24698,7 +24698,7 @@ BuildTab:AddDropdown({
     end
 })
 
-    BuildTab:AddSection({"Attraction: RGB Orbit Aura"})
+    BuildTab:AddSection({"Attraction: RGB مدار هالة"})
 
     local orbitActive = false
     local orbitRGB = true
@@ -24720,7 +24720,7 @@ BuildTab:AddDropdown({
     local aStream = PropStreamer.new(0.066)
 
     BuildTab:AddDropdown({
-        Name = "Aura Shape",
+        Name = "شكل الهالة",
         Options = {"Dragon Tail", "Ferris Wheel", "Tornado", "Triple Ring", "Black Hole", "DNA Helix", "Meteor Shower", "Dragon Spirit", "Roller Coaster", "View the city"},
         Default = "Roller Coaster",
         Callback = function(val)
@@ -24730,7 +24730,7 @@ BuildTab:AddDropdown({
     })
 
     BuildTab:AddSlider({
-        Name = "Ride Duration (sec)",
+        Name = "مدة الركوب (ثانية)",
         Min = 10,
         Max = 180,
         Default = 60,
@@ -24742,7 +24742,7 @@ BuildTab:AddDropdown({
     })
 
     BuildTab:AddSlider({
-        Name = "Departure Time (sec)",
+        Name = "وقت المغادرة (ثانية)",
         Min = 1,
         Max = 15,
         Default = 5,
@@ -24754,7 +24754,7 @@ BuildTab:AddDropdown({
     })
 
     BuildTab:AddSlider({
-        Name = "Station Pause (sec)",
+        Name = "توقف المحطة (ثانية)",
         Min = 0,
         Max = 15,
         Default = 3,
@@ -24766,7 +24766,7 @@ BuildTab:AddDropdown({
     })
 
     BuildTab:AddDropdown({
-        Name = "Coaster Intensity",
+        Name = "شدة القطار",
         Options = {"Sky Rider", "Grand Tour", "Orbital Strike"},
         Default = "Sky Rider",
         Callback = function(val)
@@ -24775,7 +24775,7 @@ BuildTab:AddDropdown({
     })
 
     BuildTab:AddDropdown({
-        Name = "Aura Type",
+        Name = "نوع الهالة",
         Options = {"Bleachers", "Chairs", "Futuristic Large Bed"},
         Default = "Bleachers",
         Callback = function(val)
@@ -24787,7 +24787,7 @@ BuildTab:AddDropdown({
     })
 
     BuildTab:AddToggle({
-        Name = "RGB Colors",
+        Name = "ألوان RGB",
         Default = true,
         Callback = function(val)
             orbitRGB = val
@@ -24795,7 +24795,7 @@ BuildTab:AddDropdown({
     })
 
     BuildTab:AddButton({
-        Name = "استدعاء عرض المدينة",
+        Name = "استعادة العرض للمدينة",
         Callback = function()
             if selectedAuraShape ~= "View the city" then
                 game:GetService(_0xS(5)):SetCore("SendNotification", {Title="View the city", Text="Select 'View the city' first in Aura Shape!", Duration=4})
@@ -24813,7 +24813,7 @@ BuildTab:AddDropdown({
     })
 
     BuildTab:AddToggle({
-        Name = "RGB Orbit Aura",
+        Name = "هالة مدار RGB",
         Default = false,
         Callback = function(val)
             if not _G.BTR_UI_READY then return end
@@ -26216,11 +26216,11 @@ do
     
     
     
-    BuildV2Tab:AddSection({"> Giant Spider Titan"})
+    BuildV2Tab:AddSection({"> عملاق عنكبوت Titan"})
 
     local spiderToggle = BuildV2Tab:AddToggle({
-        Name = "Spawn Giant Spider",
-        Description = "Summon an ultra-realistic 15-prop arachnid titan with mountable beanbag",
+        Name = "استدعاء العنكبوت العملاق",
+        Description = "يستدعي Titan عنكبوت واقعيًا للغاية مكوّنًا من 15 أداة مع BeanBag قابل للركوب",
         Default = false,
         Callback = function(val)
             if not _G.BTR_UI_READY then return end
@@ -26252,8 +26252,8 @@ do
     })
 
     BuildV2Tab:AddButton({
-        Name = "ركوب / النزول من كيس الجلوس",
-        Description = "Mount the discreet beanbag cushion to drive the spider with WASD",
+        Name = "ركوب / النزول من Beanbag",
+        Description = "اركب وسادة BeanBag لتقود العنكبوت باستخدام WASD",
         Callback = function()
             if not spiderActive then sNotif("Giant Spider", "Spawn the spider first!", 2) return end
             local char = lp.Character
@@ -26281,8 +26281,8 @@ do
     })
 
     BuildV2Tab:AddDropdown({
-        Name = "Spider Mode",
-        Description = "Select spider behavior (Steer, Follow, or Autonomous AI)",
+        Name = "وضع العنكبوت",
+        Description = "اختر سلوك العنكبوت (توجيه، ملاحقة، أو AI ذاتي)",
         Options = {"Ride (WASD Steering)", "Guardian (Follow Me)", "Roam (Autonomous Predator AI)"},
         Default = "Ride (WASD Steering)",
         Callback = function(choice)
@@ -26299,8 +26299,8 @@ do
     })
 
     local targetDropdown = BuildV2Tab:AddDropdown({
-        Name = "Target Player",
-        Description = "Select a player to terrify with the giant spider",
+        Name = "اللاعب المستهدف",
+        Description = "اختر لاعبًا لإخافته بالعنكبوت العملاق",
         Options = getSpiderPlayers(),
         Default = "---",
         Callback = function(choice)
@@ -26309,8 +26309,8 @@ do
     })
 
     BuildV2Tab:AddButton({
-        Name = "إخافة الهدف (تخويف اللاعب)",
-        Description = "Charge across map and perform a terrifying face-to-face jumpscare lunge",
+        Name = "إخافة المستهدف (إرعاب اللاعب)",
+        Description = "يندفع عبر الخريطة وينفذ هجمة مفاجئة مرعبة وجهًا لوجه",
         Callback = function()
             if not spiderActive then
                 sNotif("Giant Spider", "Spawn the spider first!", 2)
@@ -26338,8 +26338,8 @@ do
     })
 
     BuildV2Tab:AddDropdown({
-        Name = "Spider Color",
-        Description = "Choose the dynamic real-time carapace and venom theme",
+        Name = "لون العنكبوت",
+        Description = "اختر سمة الدرع والسم الديناميكية في الوقت الفعلي",
         Options = {"Black Widow", "Tarantula Gold", "Acid Broodmother", "Shadow Void", "Glacial Weaver", "Rainbow Venom"},
         Default = "Black Widow",
         Callback = function(choice)
@@ -26349,8 +26349,8 @@ do
     })
 
     BuildV2Tab:AddSlider({
-        Name = "Crawl Speed",
-        Description = "Adjust the crawling speed of the spider",
+        Name = "سرعة الزحف",
+        Description = "اضبط سرعة زحف العنكبوت",
         Min = 25,
         Max = 120,
         Increase = 2,
@@ -27105,7 +27105,7 @@ do
     BuildV2Tab:AddSection({"Stickman Titan"})
 
     BuildV2Tab:AddToggle({
-        Name = "Spawn Stickman",
+        Name = "استدعاء Stickman",
         Default = false,
         Callback = function(v)
             if not _G.BTR_UI_READY then return end
@@ -27119,7 +27119,7 @@ do
     })
 
     BuildV2Tab:AddDropdown({
-        Name = "Size",
+        Name = "الحجم",
         Default = "Medium",
         Options = {"Medium", "Large", "Giant", "Ultra Giant"},
         Callback = function(choice)
@@ -27131,7 +27131,7 @@ do
     })
 
     BuildV2Tab:AddDropdown({
-        Name = "Style",
+        Name = "النمط",
         Default = "Samurai",
         Options = {"Original", "Samurai"},
         Callback = function(choice)
@@ -27143,7 +27143,7 @@ do
     })
 
     BuildV2Tab:AddDropdown({
-        Name = "Color Theme",
+        Name = "سمة اللون",
         Default = "Black",
         Options = {"Black", "Rainbow", "Samurai", "Red", "Blue", "Green", "Purple", "Orange", "Yellow", "White"},
         Callback = function(choice)
@@ -27155,7 +27155,7 @@ do
     })
 
     BuildV2Tab:AddToggle({
-        Name = "Follow Player",
+        Name = "ملاحقة اللاعب",
         Default = false,
         Callback = function(v)
             stickmanFollow = v
@@ -27163,7 +27163,7 @@ do
     })
 
     BuildV2Tab:AddButton({
-        Name = "انتقال أمام اللاعب",
+        Name = "النقل إلى الأمام",
         Callback = function()
             local char = lp.Character or lp.CharacterAdded:Wait()
             local hrp = char:FindFirstChild(_0xS(6))
@@ -27704,8 +27704,8 @@ do
     BuildV2Tab:AddSection({"> Feline Companion"})
 
     BuildV2Tab:AddToggle({
-        Name = "Spawn Cat Companion",
-        Description = "Summon an animated realistic 10-prop feline companion with mountable beanbag cushion",
+        Name = "استدعاء رفيق القط",
+        Description = "يستدعي رفيق قط واقعيًا متحركًا مكوّنًا من 10 أدوات مع وسادة BeanBag قابلة للركوب",
         Default = false,
         Callback = function(val)
             if not _G.BTR_UI_READY then return end
@@ -27733,8 +27733,8 @@ do
     })
 
     BuildV2Tab:AddButton({
-        Name = "ركوب / النزول من القطة",
-        Description = "Sit comfortably on the beanbag cushion for a fun stroll",
+        Name = "ركوب / النزول من القط",
+        Description = "اجلس براحة على وسادة BeanBag لنزهة ممتعة",
         Callback = function()
             if not catActive then
                 cNotif("Cat Companion", "Spawn the cat first!", 2)
@@ -27763,8 +27763,8 @@ do
     })
 
     BuildV2Tab:AddButton({
-        Name = "تفعيل / إيقاف اتبعني",
-        Description = "Cat follows you with realistic running strides and stops when you stop",
+        Name = "تفعيل/تعطيل اتبعني",
+        Description = "يتبعك القط بخطوات جري واقعية ويتوقف عندما تتوقف",
         Callback = function()
             if not catActive then
                 cNotif("Cat Companion", "Spawn the cat first!", 2)
@@ -27780,8 +27780,8 @@ do
     })
 
     BuildV2Tab:AddButton({
-        Name = "تفعيل / إيقاف النوم / الوقوف",
-        Description = "Smoothly toggle posture between standing on all 4 legs and sleeping flat",
+        Name = "تفعيل/تعطيل النوم / الوقوف",
+        Description = "بدّل بسلاسة بين الوقوف على الأرجل الأربع والنوم مستلقيًا",
         Callback = function()
             if not catActive then
                 cNotif("Cat Companion", "Spawn the cat first!", 2)
@@ -27794,8 +27794,8 @@ do
     })
 
     BuildV2Tab:AddDropdown({
-        Name = "Cat Breed",
-        Description = "Choose the cat breed and coat color theme",
+        Name = "سلالة القط",
+        Description = "اختر سلالة القط وسمة لون الفراء",
         Options = {"Bombay (Black)", "Ginger Tabby (Orange)", "Snow Angora (White)", "Russian Blue (Grey)", "Siamese (Cream)", "Caramel (Golden)"},
         Default = "Bombay (Black)",
         Callback = function(choice)
@@ -27809,8 +27809,8 @@ do
     })
 
     BuildV2Tab:AddButton({
-        Name = "انتقال أمام اللاعب",
-        Description = "Reposition the cat directly in front of you",
+        Name = "النقل إلى الأمام",
+        Description = "يعيد وضع القط مباشرة أمامك",
         Callback = function()
             local char = lp.Character or lp.CharacterAdded:Wait()
             local hrp = char:FindFirstChild(_0xS(6))
@@ -28491,11 +28491,11 @@ do
     end
 
     
-    BuildV2Tab:AddSection({"> Scorpion Mount"})
+    BuildV2Tab:AddSection({"> عقرب ركوب"})
 
     BuildV2Tab:AddToggle({
-        Name = "Spawn Scorpion",
-        Description = "Summon an animated colossal scorpion mount with rideable saddle",
+        Name = "استدعاء العقرب",
+        Description = "يستدعي عقربًا عملاقًا متحركًا مع سرج قابل للركوب",
         Default = false,
         Callback = function(val)
             if not _G.BTR_UI_READY then return end
@@ -28509,8 +28509,8 @@ do
     })
 
     BuildV2Tab:AddButton({
-        Name = "ركوب / النزول",
-        Description = "Climb onto or hop off the scorpion saddle",
+        Name = "ركوب / Dismount",
+        Description = "اصعد إلى سرج العقرب أو انزل منه",
         Callback = function()
             if not scorpionActive then
                 sNotif("Scorpion", "Spawn the scorpion first!", 2)
@@ -28539,16 +28539,16 @@ do
     })
 
     BuildV2Tab:AddButton({
-        Name = "ضربة ستينغر",
-        Description = "Unleash a high-speed poisonous tail strike (or press Space/F)",
+        Name = "ضربة اللسعة",
+        Description = "نفّذ ضربة ذيل سامة سريعة (أو اضغط Space/F)",
         Callback = function()
             triggerStingerStrike()
         end
     })
 
     BuildV2Tab:AddDropdown({
-        Name = "Scorpion Color",
-        Description = "Choose scorpion color theme or animated rainbow",
+        Name = "لون العقرب",
+        Description = "اختر سمة لون العقرب أو قوس قزح متحرك",
         Options = {
             "Realistic (Default)",
             "Desert",
@@ -28565,8 +28565,8 @@ do
     })
 
     BuildV2Tab:AddButton({
-        Name = "انتقال أمام اللاعب",
-        Description = "Reposition the scorpion directly in front of you",
+        Name = "النقل إلى الأمام",
+        Description = "يعيد وضع العقرب مباشرة أمامك",
         Callback = function()
             local char = lp.Character or lp.CharacterAdded:Wait()
             local hrp = char:FindFirstChild(_0xS(6))
@@ -29575,11 +29575,11 @@ do
         end)
     end
 
-    BuildV2Tab:AddSection({"> Colossal Silverback Gorilla"})
+    BuildV2Tab:AddSection({"> Colossal Silverback غوريلا"})
 
     BuildV2Tab:AddToggle({
-        Name = "Spawn Silverback Gorilla",
-        Description = "Pilot a colossal 15-prop knuckle-walking silverback gorilla with dynamic R15 animations",
+        Name = "استدعاء غوريلا Silverback",
+        Description = "قد غوريلا Silverback عملاقة مكوّنة من 15 أداة مع حركات R15 ديناميكية",
         Default = false,
         Callback = function(val)
             if not _G.BTR_UI_READY then return end
@@ -29593,8 +29593,8 @@ do
     })
 
     BuildV2Tab:AddDropdown({
-        Name = "Gorilla Theme",
-        Description = "Select gorilla color theme or dynamic rainbow chroma",
+        Name = "سمة الغوريلا",
+        Description = "اختر سمة لون الغوريلا أو قوس قزح ديناميكي",
         Options = {
             "Silverback",
             "King Kong",
@@ -29633,8 +29633,8 @@ do
     })
 
     BuildV2Tab:AddDropdown({
-        Name = "View Mode",
-        Description = "Choose cockpit pilot view or 3rd person front view",
+        Name = "وضع العرض",
+        Description = "اختر عرض الطيار من قمرة القيادة أو عرض الشخص الثالث الأمامي",
         Options = { "Cockpit (Pilot)", "Front (Third Person)" },
         Default = "Cockpit (Pilot)",
         Callback = function(choice)
@@ -29665,8 +29665,8 @@ do
     })
 
     BuildV2Tab:AddDropdown({
-        Name = "Limb Prop Type",
-        Description = "Select limb prop model (respawn required to take effect)",
+        Name = "نوع أداة الأطراف",
+        Description = "اختر نموذج أداة الأطراف (يتطلب إعادة الظهور لتطبيقه)",
         Options = { "BigGenerator", "PowerTurbine" },
         Default = "BigGenerator",
         Callback = function(choice)
@@ -30385,11 +30385,11 @@ do
     
     
     
-    BuildV2Tab:AddSection({"> Mecha Robot"})
+    BuildV2Tab:AddSection({"> روبوت Mecha"})
 
     BuildV2Tab:AddToggle({
-        Name = "Spawn Mecha Robot",
-        Description = "Pilote a giant 15-prop humanoid mecha with real-time R15 motion replication",
+        Name = "استدعاء روبوت Mecha",
+        Description = "قد Mecha بشريًا ضخمًا مكوّنًا من 15 أداة مع محاكاة حركة R15 لحظية",
         Default = false,
         Callback = function(val)
             if not _G.BTR_UI_READY then return end
@@ -30403,8 +30403,8 @@ do
     })
 
     BuildV2Tab:AddDropdown({
-        Name = "Mecha Color Theme",
-        Description = "Select robot color or animated wave",
+        Name = "سمة لون Mecha",
+        Description = "اختر لون الروبوت أو موجة متحركة",
         Options = {
             "Default",
             "Rainbow",
@@ -31129,11 +31129,11 @@ do
     
     
     
-    BuildV2Tab:AddSection({"> Toilet Titan Robot"})
+    BuildV2Tab:AddSection({"> Toilet Titan الروبوت"})
 
     BuildV2Tab:AddToggle({
-        Name = "Spawn Toilet Titan",
-        Description = "Pilote a giant 15-prop toilet colossus with real-time R15 motion replication",
+        Name = "استدعاء Titan المرحاض",
+        Description = "قد Colossus مرحاض ضخمًا مكوّنًا من 15 أداة مع محاكاة حركة R15 لحظية",
         Default = false,
         Callback = function(val)
             if not _G.BTR_UI_READY then return end
@@ -31147,8 +31147,8 @@ do
     })
 
     BuildV2Tab:AddDropdown({
-        Name = "Toilet Titan Color Theme",
-        Description = "Select robot color or animated wave",
+        Name = "سمة لون Titan المرحاض",
+        Description = "اختر لون الروبوت أو موجة متحركة",
         Options = {
             "Default",
             "Rainbow",
@@ -31953,11 +31953,11 @@ do
     
     
     
-    BuildV2Tab:AddSection({"> Generator Titan Robot"})
+    BuildV2Tab:AddSection({"> مولد Titan الروبوت"})
 
     BuildV2Tab:AddToggle({
-        Name = "Spawn Generator Titan",
-        Description = "Pilot a colossal 15-prop generator mecha with real-time R15 motion replication",
+        Name = "استدعاء Titan المولد",
+        Description = "قد Mecha مولد ضخمًا مكوّنًا من 15 أداة مع محاكاة حركة R15 لحظية",
         Default = false,
         Callback = function(val)
             if not _G.BTR_UI_READY then return end
@@ -31971,8 +31971,8 @@ do
     })
 
     BuildV2Tab:AddDropdown({
-        Name = "Generator Titan Color Theme",
-        Description = "Select robot color or animated wave",
+        Name = "سمة لون Titan المولد",
+        Description = "اختر لون الروبوت أو موجة متحركة",
         Options = {
             "Default",
             "Rainbow",
@@ -32728,11 +32728,11 @@ do
     
     
     
-    BuildV2Tab:AddSection({"> Mega Fusion Titan (Robot 4)"})
+    BuildV2Tab:AddSection({"> Mega Fusion Titan (الروبوت 4)"})
 
     BuildV2Tab:AddToggle({
-        Name = "Spawn Mega Fusion Titan",
-        Description = "Pilote an unstoppable 15-prop colossus fusing Bunker, Toilet, Generator & Turbines",
+        Name = "استدعاء Titan الاندماج الضخم",
+        Description = "قد Colossus لا يمكن إيقافه مكوّنًا من 15 أداة يدمج Bunker وToilet وGenerator وTurbines",
         Default = false,
         Callback = function(val)
             if not _G.BTR_UI_READY then return end
@@ -32746,8 +32746,8 @@ do
     })
 
     BuildV2Tab:AddDropdown({
-        Name = "Fusion Titan Color Theme",
-        Description = "Select fusion robot color or animated wave",
+        Name = "سمة لون Fusion Titan",
+        Description = "اختر لون روبوت الاندماج أو موجة متحركة",
         Options = {
             "Default",
             "Rainbow",
@@ -33519,11 +33519,11 @@ do
     
     
     
-    BuildV2Tab:AddSection({"> Apex Dreadnought Titan (Robot 5 - Cyber God)"})
+    BuildV2Tab:AddSection({"> Apex Dreadnought Titan (الروبوت 5 - Cyber God)"})
 
     BuildV2Tab:AddToggle({
-        Name = "Spawn Apex Dreadnought Titan",
-        Description = "Pilote an apex 15-prop winged war colossus with 8 railgun cannons & plasma blades",
+        Name = "استدعاء Titan Dreadnought القمة",
+        Description = "قد Colossus حربيًا مجنحًا مكوّنًا من 15 أداة مع 8 مدافع Railgun وشفرات بلازمية",
         Default = false,
         Callback = function(val)
             if not _G.BTR_UI_READY then return end
@@ -33537,8 +33537,8 @@ do
     })
 
     BuildV2Tab:AddDropdown({
-        Name = "Apex Titan Color Theme",
-        Description = "Select god mech finish or animated rainbow stream",
+        Name = "سمة لون Apex Titan",
+        Description = "اختر تشطيب الآلة الإلهية أو تدفق قوس قزح متحرك",
         Options = {
             "Default",
             "Rainbow",
@@ -34338,11 +34338,11 @@ do
     
     
     
-    BuildV2Tab:AddSection({"> Gigantic Titan Robot (Robot 6 - Bunker + Beds)"})
+    BuildV2Tab:AddSection({"> عملاق Titan الروبوت (الروبوت 6 - Bunker + Beds)"})
 
     BuildV2Tab:AddToggle({
-        Name = "Spawn Gigantic Titan",
-        Description = "Pilote a 15-prop war titan made of 5 Bunkers (joints) + 10 Beds (limbs)",
+        Name = "استدعاء Titan العملاق",
+        Description = "قد Titan حربيًا مكوّنًا من 15 أداة: 5 Bunkers (مفاصل) + 10 Beds (أطراف)",
         Default = false,
         Callback = function(val)
             if not _G.BTR_UI_READY then return end
@@ -34356,8 +34356,8 @@ do
     })
 
     BuildV2Tab:AddDropdown({
-        Name = "Gigantic Titan Color Theme",
-        Description = "Select titan armor finish or animated rainbow stream",
+        Name = "سمة لون Titan العملاق",
+        Description = "اختر تشطيب درع Titan أو تدفق قوس قزح متحرك",
         Options = {
             "Default",
             "Rainbow",
@@ -34377,7 +34377,7 @@ do
 end
 
 PremiumTab:AddSection({
-    "> Prop Unlocker"
+    "> فتح الأدوات"
 })
 
 local VIP_PROPS_DATA = {
@@ -34463,8 +34463,8 @@ local function vipNotify(title, text)
 end
 
 PremiumTab:AddDropdown({
-    Name = "Select VIP Prop",
-    Description = "Choose a VIP prop to unlock",
+    Name = "اختيار أداة VIP",
+    Description = "اختر أداة VIP لفتحها",
     Options = vipNamesList,
     Default = vipNamesList[1],
     Callback = function(val)
@@ -34475,7 +34475,7 @@ PremiumTab:AddDropdown({
 
 PremiumTab:AddButton({
     Name = _0xS(240),
-    Description = "Unlocks the prop into your hand to place freely",
+    Description = "يفتح الأداة في يدك لتضعها بحرية",
     Callback = function()
         task.spawn(function()
             local pm = getOrEquipVIPPropMaker()
@@ -34496,7 +34496,7 @@ PremiumTab:AddButton({
 
 PremiumTab:AddButton({
     Name = "وضع أمامي",
-    Description = "Spawns the VIP prop directly where you are standing",
+    Description = "يستدعي أداة VIP مباشرة في مكان وقوفك",
     Callback = function()
         task.spawn(function()
             local lp = game:GetService(_0xS(1)).LocalPlayer
@@ -34557,8 +34557,8 @@ PremiumTab:AddButton({
 })
 
 PremiumTab:AddButton({
-    Name = "مسح جميع العناصر",
-    Description = "Removes all placed props from the map",
+    Name = "مسح جميع الأدوات",
+    Description = "يزيل جميع الأدوات الموضوعة من الخريطة",
     Callback = function()
         pcall(function()
             local RE = game:GetService(_0xS(70)):FindFirstChild(_0xS(83))
@@ -34570,14 +34570,14 @@ PremiumTab:AddButton({
 })
 
 PremiumTab:AddSection({
-    "> " .. Translations["Vehicle Speed Unlocker"]
+    "> " .. Translations["مركبة السرعة فاتح"]
 })
 
 local premiumSpeed = 45
 local speedSliderRef = nil
 speedSliderRef = PremiumTab:AddSlider({
-    Name = "Max Speed (25 - 500)",
-    Description = "Sets the speed of ALL vehicles (MaxSpeed + TopSpeed + Turbo)",
+    Name = "السرعة القصوى (25 - 500)",
+    Description = "يضبط سرعة جميع المركبات (MaxSpeed + TopSpeed + Turbo)",
     Min = 25,
     Max = 500,
     Increase = 5,
@@ -34588,8 +34588,8 @@ speedSliderRef = PremiumTab:AddSlider({
 })
 
 PremiumTab:AddButton({
-    Name = "تطبيق السرعة على سيارتي",
-    Description = "Applies the speed to your current vehicle",
+    Name = "تطبيق السرعة على مركبتي",
+    Description = "يطبق السرعة على مركبتك الحالية",
     Callback = function()
         local lp = game:GetService(_0xS(1)).LocalPlayer
         local vehicles = workspace:FindFirstChild(_0xS(111))
@@ -34614,7 +34614,7 @@ PremiumTab:AddButton({
 
 PremiumTab:AddButton({
     Name = "إعادة السرعة للوضع الافتراضي",
-    Description = "Resets speed back to default (45) for all vehicles",
+    Description = "يعيد سرعة جميع المركبات إلى الافتراضي (45)",
     Callback = function()
         premiumSpeed = 45
         if speedSliderRef then
@@ -34642,7 +34642,7 @@ PremiumTab:AddButton({
 })
 
 PremiumTab:AddSection({
-    "> VIP Items Giver"
+    "> مانح عناصر VIP"
 })
 
 local VIP_ITEMS_DATA = {
@@ -34861,8 +34861,8 @@ end
 _G.BTR_RunVIPAdminCommand = runVIPAdminCommand
 
 PremiumTab:AddDropdown({
-    Name = "Select VIP Item",
-    Description = "Choose a VIP item to give",
+    Name = "اختيار عنصر VIP",
+    Description = "اختر عنصر VIP لإعطائه",
     Options = vipItemNames,
     Default = vipItemNames[1],
     Callback = function(val)
@@ -34873,8 +34873,8 @@ PremiumTab:AddDropdown({
 
 local vipTargetDropdown
 vipTargetDropdown = PremiumTab:AddDropdown({
-    Name = "Select Target Player",
-    Description = "Choose who receives the item",
+    Name = "اختيار اللاعب المستهدف",
+    Description = "اختر من سيحصل على العنصر",
     Options = getVIPTargetPlayers(),
     Default = "Myself",
     Callback = function(val)
@@ -34884,7 +34884,7 @@ vipTargetDropdown = PremiumTab:AddDropdown({
 
 PremiumTab:AddButton({
     Name = "تحديث قائمة اللاعبين",
-    Description = "Updates the target player dropdown with connected players",
+    Description = "يحدّث قائمة اللاعب المستهدف باللاعبين المتصلين",
     Callback = function()
         if vipTargetDropdown then
             pcall(function() vipTargetDropdown:Set(getVIPTargetPlayers()) end)
@@ -34893,8 +34893,8 @@ PremiumTab:AddButton({
 })
 
 PremiumTab:AddButton({
-    Name = "إعطاء الأداة للهدف",
-    Description = "Gives the selected item to the chosen target player",
+    Name = "إعطاء العنصر للمستهدف",
+    Description = "يعطي العنصر المحدد للاعب المستهدف المختار",
     Callback = function()
         local lp = game:GetService(_0xS(1)).LocalPlayer
         local target = (selectedVIPTargetName == "Myself") and lp or game:GetService(_0xS(1)):FindFirstChild(selectedVIPTargetName)
@@ -34909,8 +34909,8 @@ PremiumTab:AddButton({
 })
 
 PremiumTab:AddButton({
-    Name = "إعطاء الأداة لجميع اللاعبين (السيرفر)",
-    Description = "Flash teleports behind every player to deliver the item and returns you back",
+    Name = "إعطاء العنصر لجميع اللاعبين (السيرفر)",
+    Description = "ينقلك سريعًا خلف كل لاعب لتسليم العنصر ثم يعيدك إلى مكانك",
     Callback = function()
         task.spawn(function()
             executeGiveItemAll(selectedVIPItemId, selectedVIPItemName)
@@ -34919,13 +34919,13 @@ PremiumTab:AddButton({
 })
 
 PremiumTab:AddParagraph({
-    "VIP Commands & Items Guide",
-    "• Chat & CmdBar Commands:\n  :give me [item]  -> Give VIP item to yourself\n  :give [player] [item]  -> Give VIP item to target\n  :give all [item]  -> Give VIP item to all players\n  :giveall [item]  -> Give VIP item to all players\n\n• Official VIP Tools:\n  TearGasLauncher, WardenPistol, Snowboard, Skis, MoneyGun"
+    "دليل أوامر وعناصر VIP",
+    "• دردشة & CmdBar الأوامر:\n  :إعطاء me [العنصر]  -> إعطاء VIP العنصر إلى yourself\n  :إعطاء [اللاعب] [العنصر]  -> إعطاء VIP العنصر إلى المستهدف\n  :إعطاء all [العنصر]  -> إعطاء VIP العنصر إلى all اللاعبون\n  :giveall [العنصر]  -> إعطاء VIP العنصر إلى all اللاعبون\n\n• رسمي VIP الأدوات:\n  TearGasLauncher, WardenPistol, Snowboard, Skis, MoneyGun"
 })
 
 PremiumTab:AddButton({
     Name = "الأوامر",
-    Description = "Opens interactive VIP admin command bar & full item reference",
+    Description = "يفتح شريط أوامر إدارة VIP التفاعلي ومرجع العناصر الكامل",
     Callback = function()
         local lp = game:GetService(_0xS(1)).LocalPlayer
         local pg = lp and lp:FindFirstChild(_0xS(13))
@@ -35070,7 +35070,7 @@ PremiumTab:AddButton({
 
 PremiumTab:AddButton({
     Name = "مسح أدوات الحقيبة",
-    Description = "Removes all tools from your inventory",
+    Description = "يزيل جميع الأدوات من مخزونك",
     Callback = function()
         pcall(function()
             local RE = game:GetService(_0xS(70)):FindFirstChild(_0xS(83))
@@ -35370,12 +35370,12 @@ local function musicPlay(id)
 end
 
 AudioTab:AddSection({
-    "> Music (FE)"
+    "> موسيقى (FE)"
 })
 
 AudioTab:AddDropdown({
-    Name = "Song List (242 Audios)",
-    Description = "Choose a song from the list",
+    Name = "قائمة الأغاني (242 صوتًا)",
+    Description = "اختر أغنية من القائمة",
     Options = MUSIC_NAMES,
     Default = MUSIC_NAMES[1],
     Callback = function(val)
@@ -35384,8 +35384,8 @@ AudioTab:AddDropdown({
 })
 
 AudioTab:AddButton({
-    Name = "> تشغيل أغنية",
-    Description = "Spawns the skate and plays the selected song",
+    Name = "> تشغيل الأغنية",
+    Description = "يستدعي اللوح ويشغل الأغنية المحددة",
     Callback = function()
         if MUSIC_SELECTED ~= "" then
             musicPlay(MUSIC_SELECTED)
@@ -35396,17 +35396,17 @@ AudioTab:AddButton({
 })
 
 AudioTab:AddTextBox({
-    Name = "Custom Music ID",
-    Description = "Paste any audio ID",
-    PlaceholderText = "Custom ID...",
+    Name = "معرّف الموسيقى المخصص",
+    Description = "ألصق أي معرّف صوت",
+    PlaceholderText = "مخصص ID...",
     Callback = function(val)
         if val ~= "" then MUSIC_CUSTOM_ID = tostring(val) end
     end
 })
 
 AudioTab:AddButton({
-    Name = "> تشغيل موسيقى مخصصة",
-    Description = "Spawns the skate and plays your custom ID",
+    Name = "> تشغيل الموسيقى المخصصة",
+    Description = "يستدعي اللوح ويشغل المعرّف المخصص",
     Callback = function()
         if MUSIC_CUSTOM_ID ~= "" then
             musicPlay(MUSIC_CUSTOM_ID)
@@ -35417,8 +35417,8 @@ AudioTab:AddButton({
 })
 
 AudioTab:AddButton({
-    Name = "X إيقاف الموسيقى + إزالة لوح التزلج",
-    Description = "Stops the music and removes the skate",
+    Name = "X إيقاف الموسيقى + إزالة اللوح",
+    Description = "يوقف الموسيقى ويزيل اللوح",
     Callback = function()
         musicStop()
         game:GetService(_0xS(5)):SetCore("SendNotification", { Title = "Music FE", Text = "Music stopped, skate removed", Duration = 2 })
@@ -35452,8 +35452,8 @@ local function startSkateRGB()
 end
 
 PremiumTab:AddToggle({
-    Name = "RGB Skate",
-    Description = "Rainbow colors on the skateboard",
+    Name = "لوح RGB",
+    Description = "ألوان قوس قزح على لوح التزلج",
     Default = false,
     Callback = function(state)
         if state then startSkateRGB() else stopSkateRGB() end
@@ -35461,8 +35461,8 @@ PremiumTab:AddToggle({
 })
 
 PremiumTab:AddButton({
-    Name = "إزالة لوح التزلج",
-    Description = "Removes the vehicle and stops the RGB",
+    Name = "إزالة اللوح",
+    Description = "يزيل المركبة ويوقف RGB",
     Callback = function()
         task.spawn(function()
             stopSkateRGB()
@@ -35479,7 +35479,7 @@ PremiumTab:AddButton({
 })
 
 AudioTab:AddSection({
-    "> Piano FE (Gun Sound)"
+    "> بيانو FE (Gun صوت)"
 })
 
 local PianoNotes = {
@@ -35669,8 +35669,8 @@ local function equipAssault()
 end
 
 AudioTab:AddDropdown({
-    Name = "Piano - Choose a song",
-    Description = "Tempo updates automatically",
+    Name = "البيانو - اختر أغنية",
+    Description = "يتحدث الإيقاع تلقائيًا",
     Options = songNames,
     Default = songNames[1],
     Callback = function(val)
@@ -35684,7 +35684,7 @@ AudioTab:AddDropdown({
 
 AudioTab:AddButton({
     Name = "تشغيل البيانو (FE)",
-    Description = "Auto-equips the Assault gun and plays the song",
+    Description = "يجهز سلاح Assault تلقائيًا ويشغل الأغنية",
     Callback = function()
         task.spawn(function()
             if pianoPlaying then return end
@@ -35701,7 +35701,7 @@ AudioTab:AddButton({
 
 AudioTab:AddButton({
     Name = "إيقاف البيانو + إزالة السلاح",
-    Description = "Stops the playback and removes the Assault gun",
+    Description = "يوقف التشغيل ويزيل سلاح Assault",
     Callback = function()
         task.spawn(function()
             pianoPlaying = false
@@ -35717,7 +35717,7 @@ AudioTab:AddButton({
 })
 
 AudioTab:AddSection({
-    "> Global Meme Sounds (FE)"
+    "> عالمي ميمات Sounds (FE)"
 })
 
 local globalMemeSounds = {
@@ -35852,8 +35852,8 @@ local function playLocalSoundPreview(soundId)
 end
 
 AudioTab:AddDropdown({
-    Name = "Global Meme Sounds",
-    Description = "Choose a sound to play globally",
+    Name = "أصوات الميمات العامة",
+    Description = "اختر صوتًا لتشغيله للجميع",
     Default = globalMemeNames[1],
     Options = globalMemeNames,
     Callback = function(val)
@@ -35863,7 +35863,7 @@ AudioTab:AddDropdown({
 
 AudioTab:AddButton({
     Name = "تشغيل الصوت المحدد",
-    Description = "Plays the sound globally for everyone",
+    Description = "يشغل الصوت للجميع",
     Callback = function()
         if selectedGlobalSound then
             playSoundGlobally(selectedGlobalSound)
@@ -35873,8 +35873,8 @@ AudioTab:AddButton({
 })
 
 AudioTab:AddToggle({
-    Name = "Loop Global Sound",
-    Description = "Repeats the selected sound globally",
+    Name = "تكرار الصوت العام",
+    Description = "يكرر الصوت المحدد للجميع",
     Default = false,
     Callback = function(state)
         globalLoopRunning = state
@@ -35895,12 +35895,12 @@ AudioTab:AddToggle({
 -- [LOCKED: WORK PERFECTLY] ONGLET PREMIUM COMPLET
 
 HouseTab:AddSection({
-    "> Advanced House Functions"
+    "> وظائف المنزل المتقدمة"
 })
 
 HouseTab:AddButton({
-    Name = "إلغاء حظر جميع المنازل",
-    Description = "Destroys ban barriers in all houses",
+    Name = "إزالة حظر جميع المنازل",
+    Description = "يدمر حواجز الحظر في جميع المنازل",
     Callback = function()
         local lotsFolder = workspace:FindFirstChild(_0xS(107))
         if not lotsFolder then return end
@@ -35921,8 +35921,8 @@ HouseTab:AddButton({
 
 _G.LoopUnbanHouses = false
 HouseTab:AddToggle({
-    Name = "Auto Unban (Loop)",
-    Description = "Automatically destroys ban barriers (every 0.5s)",
+    Name = "إزالة الحظر تلقائيًا (تكرار)",
+    Description = "يدمر حواجز الحظر تلقائيًا (كل 0.5 ثانية)",
     Default = false,
     Callback = function(state)
         _G.LoopUnbanHouses = state
@@ -35953,8 +35953,8 @@ HouseTab:AddToggle({
 
 _G.RainbowHouseActive = false
 HouseTab:AddToggle({
-    Name = "Rainbow House (RGB)",
-    Description = "Cycles your house color through RGB",
+    Name = "منزل بألوان RGB",
+    Description = "يبدّل لون منزلك عبر RGB",
     Default = false,
     Callback = function(state)
         _G.RainbowHouseActive = state
@@ -35980,8 +35980,8 @@ HouseTab:AddToggle({
 
 _G.RainbowTextActive = false
 HouseTab:AddToggle({
-    Name = "Rainbow Sign Text (RGB)",
-    Description = "Cycles your house sign text color through RGB",
+    Name = "نص لافتة RGB",
+    Description = "يبدّل لون نص لافتة منزلك عبر RGB",
     Default = false,
     Callback = function(state)
         _G.RainbowTextActive = state
@@ -36006,12 +36006,12 @@ HouseTab:AddToggle({
 })
 
 HouseTab:AddSection({
-    "Music Player"
+    "مشغل الموسيقى"
 })
 
 HouseTab:AddButton({
-    Name = "تشغيل: It's Raining Tacos",
-    Description = "Plays It's Raining Tacos in your house",
+    Name = "تشغيل: إنها تمطر تاكو",
+    Description = "يشغل It's Raining Tacos في منزلك",
     Callback = function()
         local re = game:GetService(_0xS(70)):FindFirstChild(_0xS(83))
         local remote = re and re:FindFirstChild(_0xS(259))
@@ -36028,7 +36028,7 @@ HouseTab:AddButton({
 
 HouseTab:AddButton({
     Name = "إيقاف الموسيقى",
-    Description = "Stops the current music in your house",
+    Description = "يوقف الموسيقى الحالية في منزلك",
     Callback = function()
         local re = game:GetService(_0xS(70)):FindFirstChild(_0xS(83))
         local remote = re and re:FindFirstChild(_0xS(259))
@@ -36046,7 +36046,7 @@ HouseTab:AddButton({
 local _customHouseMusicId = ""
 HouseTab:AddTextBox({
     Title = "Custom Music ID",
-    Description = "Enter a Roblox Sound ID to play in your house",
+    Description = "أدخل معرّف صوت Roblox لتشغيله في منزلك",
     Default = "",
     PlaceholderText = "e.g. 142376088",
     ClearText = false,
@@ -36056,8 +36056,8 @@ HouseTab:AddTextBox({
 })
 
 HouseTab:AddButton({
-    Name = "تشغيل ID مخصص",
-    Description = "Plays the custom sound ID entered above",
+    Name = "تشغيل المعرّف المخصص",
+    Description = "يشغل معرّف الصوت المخصص المُدخل أعلاه",
     Callback = function()
         if _customHouseMusicId == "" then
             game:GetService(_0xS(5)):SetCore("SendNotification", {Title="House Music", Text="Enter an ID first!", Duration=3})
@@ -36261,8 +36261,8 @@ task.spawn(function()
 end)
 
 funTargetDD = VehicleTab:AddDropdown({
-    Name = "Target Vehicle",
-    Description = "Select the vehicle to use",
+    Name = "المركبة المستهدفة",
+    Description = "اختر المركبة المستخدمة",
     Options = { "---" },
     Default = "---",
     Callback = function(v)
@@ -36272,13 +36272,13 @@ funTargetDD = VehicleTab:AddDropdown({
 })
 
 VehicleTab:AddSection({
-    "> Vehicle"
+    "> المركبة"
 })
 
 -- [LOCKED: WORK PERFECTLY] Destroy (scan map)
 VehicleTab:AddButton({
     Name = "تدمير",
-    Description = "Destroys the selected vehicle",
+    Description = "يدمر المركبة المحددة",
     Callback = function()
         task.spawn(function()
             _G.withAntiSitDisabled(function()
@@ -36413,8 +36413,8 @@ VehicleTab:AddButton({
 -- [LOCKED: WORK PERFECTLY] Glitch Vehicle
 
 VehicleTab:AddButton({
-    Name = "خلل المركبة",
-    Description = "The selected vehicle can no longer be spawned by its owner",
+    Name = "تعطيل المركبة",
+    Description = "لا يمكن لمالك المركبة المحددة استدعاؤها مرة أخرى",
     Callback = function()
         task.spawn(function()
             _G.withAntiSitDisabled(function()
@@ -36528,8 +36528,8 @@ VehicleTab:AddButton({
 -- [LOCKED: WORK PERFECTLY] Glitch All Free Vehicles
 
 VehicleTab:AddButton({
-    Name = "تفعيل خلل جميع المركبات المجانية",
-    Description = "Glitches every free vehicle to the void (same as Glitch Vehicle)",
+    Name = "تعطيل جميع المركبات المجانية",
+    Description = "يعطل جميع المركبات المجانية ويرسلها إلى الفراغ (مثل تعطيل المركبة)",
     Callback = function()
         task.spawn(function()
             _G.withAntiSitDisabled(function()
@@ -36653,7 +36653,7 @@ VehicleTab:AddButton({
 
 VehicleTab:AddButton({
     Name = "إزالة جميع المركبات",
-    Description = "Carjacks ALL free vehicles to the void (you survive + TP back)",
+    Description = "ينقل جميع المركبات المجانية إلى الفراغ (تبقى حيًا + عودة عبر TP)",
     Callback = function()
         task.spawn(function()
             _G.withAntiSitDisabled(function()
@@ -36987,7 +36987,7 @@ end
 -- [LOCKED: WORK PERFECTLY] Dislocate Closest Car
 VehicleTab:AddButton({
     Name = "إزاحة أقرب سيارة",
-    Description = "Dislocates and tears off the wheels of the nearest car (FE)",
+    Description = "يزيح وينزع عجلات أقرب سيارة (FE)",
     Callback = function()
         task.spawn(function()
             local wasAntiSit = (_G.AntiSitValue == true)
@@ -37050,7 +37050,7 @@ VehicleTab:AddButton({
 -- [LOCKED: WORK PERFECTLY] Dislocate Vehicle (Target)
 VehicleTab:AddButton({
     Name = "إزاحة المركبة",
-    Description = "Dislocates and tears off the wheels of the selected vehicle (FE)",
+    Description = "يزيح وينزع عجلات المركبة المحددة (FE)",
     Callback = function()
         task.spawn(function()
             local wasAntiSit = (_G.AntiSitValue == true)
@@ -37143,7 +37143,7 @@ VehicleTab:AddButton({
 -- [LOCKED: WORK PERFECTLY] BTR BRING CAR v1  Bring Car / Bring Car All
 
 VehicleTab:AddSection({
-    "> Bring Car"
+    "> إحضار السيارة"
 })
 
 local function isVehicleOccupied(car)
@@ -37223,7 +37223,7 @@ end
 
 VehicleTab:AddButton({
     Name = "إحضار السيارة",
-    Description = "Brings the selected vehicle to you instantly without jumping",
+    Description = "يحضر المركبة المحددة إليك فورًا دون القفز",
     Callback = function()
         task.spawn(function()
             _G.withAntiSitDisabled(function()
@@ -37269,7 +37269,7 @@ VehicleTab:AddButton({
 
 VehicleTab:AddButton({
     Name = "إحضار جميع السيارات",
-    Description = "Brings every free player vehicle to you instantly (circle formation)",
+    Description = "يحضر جميع مركبات اللاعبين المجانية إليك فورًا (بتشكيل دائري)",
     Callback = function()
         task.spawn(function()
             _G.withAntiSitDisabled(function()
@@ -37315,7 +37315,7 @@ VehicleTab:AddButton({
 })
 
 VehicleTab:AddSection({
-    "> Pirate Ship Tornado"
+    "> إعصار السفينة القراصنة"
 })
 
 -- [LOCKED: WORK PERFECTLY] PIRATE SHIP TORNADO - VRAI CODE GOAT HUB
@@ -37511,8 +37511,8 @@ do
 
     local tornadoLockOwner = false 
     local TornadoToggle = VehicleTab:AddToggle({
-        Name = "Pirate Ship Tornado",
-        Description = "Pulls Pirate Ship to the Square",
+        Name = "إعصار السفينة القراصنة",
+        Description = "يسحب السفينة القراصنة إلى الساحة",
         Default = false
     })
 
@@ -37546,8 +37546,8 @@ _G.CanoeSpamActive = false
 local canoeOriginalPos = nil
 
 VehicleTab:AddToggle({
-    Name = "Canoe Spam",
-    Description = "Spawns and scatters canoes at spawn area",
+    Name = "إغراق بالقوارب",
+    Description = "يستدعي وينشر القوارب في منطقة الظهور",
     Default = false,
     Callback = function(p163)
         getgenv().Toggle = p163
@@ -37857,8 +37857,8 @@ do
         _G.BTR_PROT_CALLBACKS.AntiSit = setAntiSitCallback
 
         _G.AntiSitToggle = ProtectionTab:AddToggle({
-            Name = "Anti-Sit",
-            Description = "No sitting (auto-paused during your own Vehicle Fling)",
+            Name = "مضاد الجلوس",
+            Description = "يمنع الجلوس (يتوقف تلقائيًا أثناء قذف مركبتك)",
             Default = (_G.BTR_AUTORUN and _G.BTR_AUTORUN.AntiSit ~= false),
             Callback = function(Value)
                 _G.setBTRProtection("AntiSit", Value, "ProtectionTab")
@@ -38065,38 +38065,38 @@ do
     _G.BTR_PROT_CALLBACKS.Doors = setDoors
 
     _G.BTR_PROT_TOGGLES.Vehicles = ProtectionTab:AddToggle({
-        Name = "Anti Fling Vehicles",
-        Description = "Neutralizes fast moving vehicles to prevent flings",
+        Name = "مضاد قذف المركبات",
+        Description = "يعطل المركبات سريعة الحركة لمنع القذف",
         Default = (_G.BTR_AUTORUN and _G.BTR_AUTORUN.Vehicles == true) or false,
         Callback = function(state) _G.setBTRProtection("Vehicles", state, "ProtectionTab") end
     })
     _G.BTR_PROT_TOGGLES.Canoes = ProtectionTab:AddToggle({
-        Name = "Anti Canoe Fling",
-        Description = "Destroys foreign canoes",
+        Name = "مضاد قذف القوارب",
+        Description = "يدمر القوارب الخاصة بالآخرين",
         Default = (_G.BTR_AUTORUN and _G.BTR_AUTORUN.Canoes == true) or false,
         Callback = function(state) _G.setBTRProtection("Canoes", state, "ProtectionTab") end
     })
     _G.BTR_PROT_TOGGLES.Jets = ProtectionTab:AddToggle({
-        Name = "Anti Fling Jets",
-        Description = "Destroys foreign jets",
+        Name = "مضاد قذف الطائرات",
+        Description = "يدمر الطائرات الخاصة بالآخرين",
         Default = (_G.BTR_AUTORUN and _G.BTR_AUTORUN.Jets == true) or false,
         Callback = function(state) _G.setBTRProtection("Jets", state, "ProtectionTab") end
     })
     _G.BTR_PROT_TOGGLES.Helis = ProtectionTab:AddToggle({
-        Name = "Anti Fling Helicopters",
-        Description = "Destroys foreign helicopters",
+        Name = "مضاد قذف المروحيات",
+        Description = "يدمر المروحيات الخاصة بالآخرين",
         Default = (_G.BTR_AUTORUN and _G.BTR_AUTORUN.Helis == true) or false,
         Callback = function(state) _G.setBTRProtection("Helis", state, "ProtectionTab") end
     })
     _G.BTR_PROT_TOGGLES.Balls = ProtectionTab:AddToggle({
-        Name = "Anti Fling Ball",
-        Description = "Destroys soccer balls",
+        Name = "مضاد قذف الكرة",
+        Description = "يدمر كرات القدم",
         Default = (_G.BTR_AUTORUN and _G.BTR_AUTORUN.Balls == true) or false,
         Callback = function(state) _G.setBTRProtection("Balls", state, "ProtectionTab") end
     })
     _G.BTR_PROT_TOGGLES.Doors = ProtectionTab:AddToggle({
-        Name = "Anti Fling Doors",
-        Description = "Hides all doors (one-time, no lag)",
+        Name = "مضاد قذف الأبواب",
+        Description = "يخفي جميع الأبواب (مرة واحدة، بدون تقطيع)",
         Default = (_G.BTR_AUTORUN and _G.BTR_AUTORUN.Doors == true) or false,
         Callback = function(state) _G.setBTRProtection("Doors", state, "ProtectionTab") end
     })
@@ -38135,8 +38135,8 @@ do
     end
     _G.BTR_PROT_CALLBACKS.Dump = setAntiDump
     _G.BTR_PROT_TOGGLES.Dump = ProtectionTab:AddToggle({
-        Name = "Anti Dump Tool",
-        Description = "Destroys spawned dump tools from other players",
+        Name = "مضاد أدوات التفريغ",
+        Description = "يدمر أدوات التفريغ التي يستدعيها اللاعبون الآخرون",
         Default = (_G.BTR_AUTORUN and _G.BTR_AUTORUN.Dump == true) or false,
         Callback = function(state) _G.setBTRProtection("Dump", state, "ProtectionTab") end
     })
@@ -38145,8 +38145,8 @@ do
     local _antiBangActive = false
 
     ProtectionTab:AddToggle({
-        Name = "Anti-Bang (Total)",
-        Description = "Detects any bang (CFrame loop, TP, or animation) and stops the attacker immediately",
+        Name = "مضاد Bang (كامل)",
+        Description = "يكتشف أي Bang (حلقة CFrame أو TP أو حركة) ويوقف المهاجم فورًا",
         Default = false,
         Callback = function(state)
             _antiBangActive = state
@@ -38261,14 +38261,14 @@ do
     end
     _G.BTR_PROT_CALLBACKS.AntiAfk = setAntiAfk
     _G.BTR_PROT_TOGGLES.AntiAfk = ProtectionTab:AddToggle({
-        Name = "Anti-AFK",
-        Description = "Prevents Roblox from kicking you for inactivity (20m)",
+        Name = "مضاد AFK",
+        Description = "يمنع Roblox من طردك بسبب عدم النشاط (20 دقيقة)",
         Default = (_G.BTR_AUTORUN and _G.BTR_AUTORUN.AntiAfk == true) or false,
         Callback = function(state) _G.setBTRProtection("AntiAfk", state, "ProtectionTab") end
     })
 
     
-    ProtectionTab:AddSection({"> Anti-Copy Avatar"})
+    ProtectionTab:AddSection({"> مضاد-نسخ مظهر"})
 
     local _antiCopyActive = false
     local _notifiedCopyPlayers = {}
@@ -38455,8 +38455,8 @@ do
 
     _G.BTR_PROT_CALLBACKS.AntiCopy = setAntiCopy
     _G.BTR_PROT_TOGGLES.AntiCopy = ProtectionTab:AddToggle({
-        Name = "Anti-Copy Avatar",
-        Description = "Detects players copying 3+ of your items and reacts immediately",
+        Name = "مضاد نسخ المظهر",
+        Description = "يكتشف اللاعبين الذين ينسخون 3 عناصر أو أكثر منك ويتصرف فورًا",
         Default = (_G.BTR_AUTORUN and _G.BTR_AUTORUN.AntiCopy == true) or false,
         Callback = function(state) _G.setBTRProtection("AntiCopy", state, "ProtectionTab") end
     })
@@ -38464,8 +38464,8 @@ do
     local slotStrDefault = "Slot " .. tostring(_G.BTR_OUTFIT_SLOT or 1)
 
     ProtectionTab:AddDropdown({
-        Name = "Copy Reaction Mode",
-        Description = "Action to take when a copycat is detected",
+        Name = "وضع رد فعل النسخ",
+        Description = "الإجراء المتخذ عند اكتشاف ناسخ للمظهر",
         Options = {"Load Saved Slot Outfit", "Auto Rejoin", "Notification Only"},
         Default = _G.BTR_ANTI_COPY_REACTION or "Load Saved Slot Outfit",
         Callback = function(mode)
@@ -38475,8 +38475,8 @@ do
     })
 
     ProtectionTab:AddDropdown({
-        Name = "Bait Outfit Slot",
-        Description = "Brookhaven wardrobe slot to load if copied (1, 2 or 3)",
+        Name = "خانة المظهر الطُعم",
+        Description = "خانة خزانة Brookhaven التي تُحمّل عند النسخ (1 أو 2 أو 3)",
         Options = {"Slot 1", "Slot 2", "Slot 3"},
         Default = slotStrDefault,
         Callback = function(slot)
@@ -38490,7 +38490,7 @@ do
 
     ProtectionTab:AddButton({
         Name = "تحميل الخانة المحددة الآن",
-        Description = "Manually loads your chosen Brookhaven outfit slot",
+        Description = "يحمّل يدويًا خانة مظهر Brookhaven التي اخترتها",
         Callback = function()
             local slot = _G.BTR_OUTFIT_SLOT or 1
             loadSlotOutfit(slot)
@@ -38619,8 +38619,8 @@ do
 
     
     _G.BTR_PROT_TOGGLES.PropPlacement = ProtectionTab:AddToggle({
-        Name = "Unlock House Props (All)",
-        Description = "Global protection: automatically unblocks prop placement on EVERY house via server Remote. ON by default.",
+        Name = "فتح أدوات المنازل (الكل)",
+        Description = "حماية عامة: تفتح وضع الأدوات تلقائيًا في كل منزل عبر Remote السيرفر. مفعّلة افتراضيًا.",
         Default = (_G.BTR_AUTORUN and _G.BTR_AUTORUN.PropPlacement == true) or false,
         Callback = function(state) _G.setBTRProtection("PropPlacement", state, "ProtectionTab") end
     })
@@ -38726,12 +38726,12 @@ end
 _G.BTR_PROT_CALLBACKS.InvincibleShield = setInvincibleShieldCallback
 
 ProtectionTab:AddSection({
-    "> Invincible Exploit Protection"
+    "> غير قابل للإيقاف Exploit Protection"
 })
 
 _G.BTR_PROT_TOGGLES.InvincibleShield = ProtectionTab:AddToggle({
-    Name = "Invincible Hacker Shield",
-    Description = "Permanently neutralizes Dark Hub, Bus Fling, Boat Fling, & SkidFling using Undead Godmode (Health = 0). Auto-reactivates on respawn.",
+    Name = "درع مخترق غير قابل للإيقاف",
+    Description = "يعطّل Dark Hub وBus Fling وBoat Fling وSkidFling بشكل دائم باستخدام Undead Godmode (الصحة = 0). يُعاد تفعيله تلقائيًا بعد الظهور.",
     Default = (_G.BTR_AUTORUN and _G.BTR_AUTORUN.InvincibleShield == true) or false,
     Callback = function(state)
         _G.setBTRProtection("InvincibleShield", state, "ProtectionTab")
@@ -38739,12 +38739,12 @@ _G.BTR_PROT_TOGGLES.InvincibleShield = ProtectionTab:AddToggle({
 })
 
 SettingsTab:AddSection({
-    "> Welcome & Community Support"
+    "> ترحيب & Community Support"
 })
 
 SettingsTab:AddButton({
     Name = "عرض الترحيب والنصائح المفيدة ❤️",
-    Description = "Opens the welcome notice, tips, and ScriptBlox support page",
+    Description = "يفتح تنبيه الترحيب والنصائح وصفحة دعم ScriptBlox",
     Callback = function()
         if showWelcomeModal then
             showWelcomeModal(true)
@@ -38753,13 +38753,13 @@ SettingsTab:AddButton({
 })
 
 SettingsTab:AddSection({
-    "> Hub Themes & Wallpapers"
+    "> سمات وخلفيات الهَب"
 })
 
 local wallpaperDropdown
 wallpaperDropdown = SettingsTab:AddDropdown({
-    Name = "Hub Wallpaper",
-    Description = "Choose the background wallpaper texture",
+    Name = "خلفية الهَب",
+    Description = "اختر خامة خلفية الهَب",
     Options = {"Default", "Wallpaper 1", "Wallpaper 2", "Wallpaper 3", "Wallpaper 4", "Custom ID", "None"},
     Default = _G.BTR_SELECTED_WALLPAPER or "Wallpaper 1",
     Callback = function(choice)
@@ -38781,10 +38781,10 @@ wallpaperDropdown = SettingsTab:AddDropdown({
 })
 
 SettingsTab:AddTextBox({
-    Name = "Custom Wallpaper Asset ID",
-    Description = "Enter any custom Roblox Image ID",
+    Name = "معرّف خلفية مخصص",
+    Description = "أدخل أي معرّف صورة Roblox مخصص",
     Default = _G.BTR_CUSTOM_WALLPAPER_ID or "",
-    PlaceholderText = "Paste Image ID (e.g. 8942361465)...",
+    PlaceholderText = "الصق معرّف الصورة (مثال: 8942361465)...",
     ClearText = false,
     Callback = function(val)
         local cleanId = tostring(val or ""):gsub("%D", "")
@@ -38821,8 +38821,8 @@ SettingsTab:AddTextBox({
 })
 
 SettingsTab:AddButton({
-    Name = "تطبيق وحفظ خلفية مخصصة",
-    Description = "Saves and renders the custom asset ID permanently",
+    Name = "تطبيق وحفظ الخلفية المخصصة",
+    Description = "يحفظ معرّف الأصل المخصص ويعرضه بشكل دائم",
     Callback = function()
         local cleanId = tostring(_G.BTR_CUSTOM_WALLPAPER_ID or ""):gsub("%D", "")
         if cleanId:len() > 3 then
@@ -38853,8 +38853,8 @@ SettingsTab:AddButton({
 
 local iconDropdown
 iconDropdown = SettingsTab:AddDropdown({
-    Name = "Hub Icon",
-    Description = "Choose the hub button and header icon",
+    Name = "أيقونة الهَب",
+    Description = "اختر زر الهَب وأيقونة العنوان",
     Options = {"Default", "Option 1", "Custom ID"},
     Default = _G.BTR_SELECTED_ICON or "Default",
     Callback = function(choice)
@@ -38876,10 +38876,10 @@ iconDropdown = SettingsTab:AddDropdown({
 })
 
 SettingsTab:AddTextBox({
-    Name = "Custom Icon Asset ID",
-    Description = "Enter any custom Roblox Image/Texture ID",
+    Name = "معرّف أيقونة مخصص",
+    Description = "أدخل أي معرّف صورة/خامة Roblox مخصص",
     Default = _G.BTR_CUSTOM_ICON_ID or "",
-    PlaceholderText = "Paste Icon ID (e.g. 125815391535552)...",
+    PlaceholderText = "الصق أيقونة ID (e.g. 125815391535552)...",
     ClearText = false,
     Callback = function(val)
         local cleanId = tostring(val or ""):gsub("%D", "")
@@ -38905,8 +38905,8 @@ SettingsTab:AddTextBox({
 })
 
 SettingsTab:AddButton({
-    Name = "تطبيق وحفظ أيقونة مخصصة",
-    Description = "Saves and renders the custom icon ID in real-time",
+    Name = "تطبيق وحفظ الأيقونة المخصصة",
+    Description = "يحفظ معرّف الأيقونة المخصص ويعرضه في الوقت الفعلي",
     Callback = function()
         local cleanId = tostring(_G.BTR_CUSTOM_ICON_ID or ""):gsub("%D", "")
         if cleanId:len() > 3 then
@@ -38936,8 +38936,8 @@ SettingsTab:AddButton({
 })
 
 SettingsTab:AddToggle({
-    Name = "Floating BTR Button",
-    Description = "Show or hide the on-screen BTR toggle button (Hotkey: RightControl)",
+    Name = "زر BTR العائم",
+    Description = "إظهار أو إخفاء زر BTR الظاهر على الشاشة (الاختصار: RightControl)",
     Default = _G.BTR_SHOW_FLOATING_BUTTON ~= false,
     Callback = function(val)
         _G.BTR_SHOW_FLOATING_BUTTON = val
@@ -38949,8 +38949,8 @@ SettingsTab:AddToggle({
 })
 
 _G.BTR_NO_ANIMATION_TOGGLE = SettingsTab:AddToggle({
-    Name = "No Category Animation",
-    Description = "Instantly display tab contents without slide animation",
+    Name = "بدون حركة للتصنيفات",
+    Description = "عرض محتويات التاب فورًا دون حركة انزلاق",
     Default = (_G.BTR_NO_ANIMATION == true),
     Callback = function(val)
         _G.BTR_NO_ANIMATION = val
@@ -38964,12 +38964,12 @@ _G.BTR_NO_ANIMATION_TOGGLE = SettingsTab:AddToggle({
 })
 
 SettingsTab:AddSection({
-    "> Color Customization (Dark, Stealth & Vibrant)"
+    "> تخصيص الألوان (داكن، تخفي ومشرق)"
 })
 
 SettingsTab:AddDropdown({
-    Name = "Category Color",
-    Description = "Choose category tab background color (Sleek dark & bright neon options)",
+    Name = "لون التصنيف",
+    Description = "اختر لون خلفية تصنيف التاب (خيارات داكنة أنيقة ونيون ساطع)",
     Options = {
         "AMOLED Black (Pure)",
         "Midnight Obsidian",
@@ -39006,8 +39006,8 @@ SettingsTab:AddDropdown({
 })
 
 SettingsTab:AddDropdown({
-    Name = "Menu Text Color",
-    Description = "Choose options text color with high contrast palettes",
+    Name = "لون نص القائمة",
+    Description = "اختر لون نص الخيارات باستخدام لوحات عالية التباين",
     Options = {
         "Default",
         "Pure White",
@@ -39038,8 +39038,8 @@ SettingsTab:AddDropdown({
 })
 
 SettingsTab:AddDropdown({
-    Name = "Title Font Style",
-    Description = "Choose font family for the BTR CLIENT header",
+    Name = "نمط خط العنوان",
+    Description = "اختر عائلة الخط لرأس BTR CLIENT",
     Options = {"GothamBlack", "FredokaOne", "Arcade", "Creepster", "PermanentMarker", "BuilderSansBold", "SpecialElite", "SciFi"},
     Default = _G.BTR_TITLE_FONT or "GothamBlack",
     Callback = function(val)
@@ -39054,8 +39054,8 @@ SettingsTab:AddDropdown({
 })
 
 SettingsTab:AddDropdown({
-    Name = "Title Color Theme",
-    Description = "Choose color theme for the BTR CLIENT header",
+    Name = "سمة لون العنوان",
+    Description = "اختر سمة لون لرأس BTR CLIENT",
     Options = {
         "Cyberpunk (Pink & Cyan)",
         "Stealth Obsidian (Dark Gray & Neon Cyan)",
@@ -39085,12 +39085,12 @@ SettingsTab:AddDropdown({
 })
 
 SettingsTab:AddSection({
-    "> Interface Scale & Transparency"
+    "> Interface حجم & Transparency"
 })
 
 SettingsTab:AddSlider({
-    Name = "Menu Opacity",
-    Description = "Adjust overall Hub transparency in real-time",
+    Name = "شفافية القائمة",
+    Description = "اضبط شفافية الهَب بشكل لحظي",
     Min = 10,
     Max = 100,
     Default = _G.BTR_MENU_OPACITY or 100,
@@ -39107,8 +39107,8 @@ SettingsTab:AddSlider({
 })
 
 SettingsTab:AddSlider({
-    Name = "Category Opacity",
-    Description = "Adjust category background & text transparency in real-time",
+    Name = "شفافية التصنيف",
+    Description = "اضبط شفافية خلفية ونص التصنيف بشكل لحظي",
     Min = 10,
     Max = 100,
     Default = _G.BTR_CATEGORY_OPACITY or 100,
@@ -39125,8 +39125,8 @@ SettingsTab:AddSlider({
 })
 
 SettingsTab:AddDropdown({
-    Name = "Hub Scale Preset",
-    Description = "Choose a preset size instantly without dragging",
+    Name = "حجم الهَب الجاهز",
+    Description = "اختر حجمًا جاهزًا فورًا دون السحب",
     Options = {"80%", "90%", "100% (Default)", "110%", "120%", "130%", "140%"},
     Default = (_G.BTR_HUB_SCALE == 100 and "100% (Default)") or (tostring(_G.BTR_HUB_SCALE or 100) .. "%"),
     Callback = function(choice)
@@ -39142,8 +39142,8 @@ SettingsTab:AddDropdown({
 })
 
 SettingsTab:AddSlider({
-    Name = "Custom Scale Value",
-    Description = "Select fine-tuned scale percentage (70% - 150%)",
+    Name = "قيمة الحجم المخصصة",
+    Description = "اختر نسبة حجم دقيقة (70% - 150%)",
     Min = 70,
     Max = 150,
     Default = _G.BTR_HUB_SCALE or 100,
@@ -39155,7 +39155,7 @@ SettingsTab:AddSlider({
 
 SettingsTab:AddButton({
     Name = "تطبيق الحجم",
-    Description = "Click to apply chosen scale percentage smoothly",
+    Description = "اضغط لتطبيق نسبة الحجم المختارة بسلاسة",
     Callback = function()
         if _G.saveBTRConfig then
             _G.saveBTRConfig()
@@ -39174,11 +39174,11 @@ SettingsTab:AddButton({
 })
 
 SettingsTab:AddSection({
-    "> Auto-Launch Protections (Startup Defaults)"
+    "> الحمايات ذات التشغيل التلقائي (إعدادات بدء التشغيل)"
 })
 
 _G.BTR_SETTINGS_TOGGLES.AntiSit = SettingsTab:AddToggle({
-    Name = "Auto-Start: Anti-Sit",
+    Name = "تشغيل تلقائي: مضاد الجلوس",
     Default = (_G.BTR_AUTORUN and _G.BTR_AUTORUN.AntiSit ~= false),
     Callback = function(val)
         _G.setBTRStartupPref("AntiSit", val)
@@ -39186,7 +39186,7 @@ _G.BTR_SETTINGS_TOGGLES.AntiSit = SettingsTab:AddToggle({
 })
 
 _G.BTR_SETTINGS_TOGGLES.AntiCopy = SettingsTab:AddToggle({
-    Name = "Auto-Start: Anti-Copy Avatar",
+    Name = "تشغيل تلقائي: مضاد نسخ المظهر",
     Default = _G.BTR_AUTORUN and (_G.BTR_AUTORUN.AntiCopy == true) or false,
     Callback = function(val)
         _G.setBTRStartupPref("AntiCopy", val)
@@ -39194,7 +39194,7 @@ _G.BTR_SETTINGS_TOGGLES.AntiCopy = SettingsTab:AddToggle({
 })
 
 _G.BTR_SETTINGS_TOGGLES.AntiAfk = SettingsTab:AddToggle({
-    Name = "Auto-Start: Anti-AFK",
+    Name = "تشغيل تلقائي: مضاد AFK",
     Default = _G.BTR_AUTORUN and (_G.BTR_AUTORUN.AntiAfk == true) or false,
     Callback = function(val)
         _G.setBTRStartupPref("AntiAfk", val)
@@ -39202,7 +39202,7 @@ _G.BTR_SETTINGS_TOGGLES.AntiAfk = SettingsTab:AddToggle({
 })
 
 _G.BTR_SETTINGS_TOGGLES.Vehicles = SettingsTab:AddToggle({
-    Name = "Auto-Start: Anti-Fling Vehicles",
+    Name = "تشغيل تلقائي: مضاد قذف المركبات",
     Default = _G.BTR_AUTORUN and (_G.BTR_AUTORUN.Vehicles == true) or false,
     Callback = function(val)
         _G.setBTRStartupPref("Vehicles", val)
@@ -39210,7 +39210,7 @@ _G.BTR_SETTINGS_TOGGLES.Vehicles = SettingsTab:AddToggle({
 })
 
 _G.BTR_SETTINGS_TOGGLES.Dump = SettingsTab:AddToggle({
-    Name = "Auto-Start: Anti-Dump Tool",
+    Name = "تشغيل تلقائي: مضاد أدوات التفريغ",
     Default = _G.BTR_AUTORUN and (_G.BTR_AUTORUN.Dump == true) or false,
     Callback = function(val)
         _G.setBTRStartupPref("Dump", val)
@@ -39218,7 +39218,7 @@ _G.BTR_SETTINGS_TOGGLES.Dump = SettingsTab:AddToggle({
 })
 
 _G.BTR_SETTINGS_TOGGLES.Canoes = SettingsTab:AddToggle({
-    Name = "Auto-Start: Anti-Canoe / Jets / Helis Fling",
+    Name = "تشغيل تلقائي: مضاد قذف القوارب / الطائرات / المروحيات",
     Default = _G.BTR_AUTORUN and (_G.BTR_AUTORUN.Canoes == true or _G.BTR_AUTORUN.Jets == true or _G.BTR_AUTORUN.Helis == true) or false,
     Callback = function(val)
         _G.setBTRStartupPref("Canoes", val)
@@ -39228,7 +39228,7 @@ _G.BTR_SETTINGS_TOGGLES.Canoes = SettingsTab:AddToggle({
 })
 
 _G.BTR_SETTINGS_TOGGLES.PropPlacement = SettingsTab:AddToggle({
-    Name = "Auto-Start: Unlock House Props",
+    Name = "تشغيل تلقائي: فتح أدوات المنازل",
     Default = _G.BTR_AUTORUN and (_G.BTR_AUTORUN.PropPlacement == true) or false,
     Callback = function(val)
         _G.setBTRStartupPref("PropPlacement", val)
@@ -39236,7 +39236,7 @@ _G.BTR_SETTINGS_TOGGLES.PropPlacement = SettingsTab:AddToggle({
 })
 
 _G.BTR_SETTINGS_TOGGLES.Balls = SettingsTab:AddToggle({
-    Name = "Auto-Start: Anti-Fling Ball",
+    Name = "تشغيل تلقائي: مضاد قذف الكرة",
     Default = _G.BTR_AUTORUN and (_G.BTR_AUTORUN.Balls == true) or false,
     Callback = function(val)
         _G.setBTRStartupPref("Balls", val)
@@ -39244,7 +39244,7 @@ _G.BTR_SETTINGS_TOGGLES.Balls = SettingsTab:AddToggle({
 })
 
 _G.BTR_SETTINGS_TOGGLES.Doors = SettingsTab:AddToggle({
-    Name = "Auto-Start: Anti-Fling Doors",
+    Name = "تشغيل تلقائي: مضاد قذف الأبواب",
     Default = _G.BTR_AUTORUN and (_G.BTR_AUTORUN.Doors == true) or false,
     Callback = function(val)
         _G.setBTRStartupPref("Doors", val)
@@ -39252,7 +39252,7 @@ _G.BTR_SETTINGS_TOGGLES.Doors = SettingsTab:AddToggle({
 })
 
 _G.BTR_SETTINGS_TOGGLES.InvincibleShield = SettingsTab:AddToggle({
-    Name = "Auto-Start: Invincible Hacker Shield",
+    Name = "تشغيل تلقائي: درع المخترق",
     Default = _G.BTR_AUTORUN and (_G.BTR_AUTORUN.InvincibleShield == true) or false,
     Callback = function(val)
         _G.setBTRStartupPref("InvincibleShield", val)
@@ -39260,14 +39260,14 @@ _G.BTR_SETTINGS_TOGGLES.InvincibleShield = SettingsTab:AddToggle({
 })
 
 SettingsTab:AddSection({
-    "> Performance & Graphics"
+    "> أداء & رسوميات"
 })
 
 local _savedGraphics = {}
 local _antiLagActive = false
 SettingsTab:AddToggle({
-    Name = "Anti-Lag (FPS Boost)",
-    Description = "Boosts FPS by simplifying textures (restores on toggle OFF)",
+    Name = "مضاد التقطيع (تعزيز FPS)",
+    Description = "يعزز FPS بتبسيط الخامات (يستعيدها عند الإيقاف)",
     Default = false,
     Callback = function(state)
         _antiLagActive = state
@@ -39642,8 +39642,8 @@ local function applyDarkBrookShaders()
 end
 
 SettingsTab:AddToggle({
-    Name = "DarkBrook Shaders (Reversible)",
-    Description = "Realistic sky, lighting, ambient audio & materials (fully reversible on OFF)",
+    Name = "تظليل DarkBrook (قابل للعكس)",
+    Description = "سماء وإضاءة وصوت محيطي وخامات واقعية (قابلة للعكس بالكامل عند الإيقاف)",
     Default = false,
     Callback = function(state)
         if state then
@@ -39657,12 +39657,12 @@ SettingsTab:AddToggle({
 })
 
 SettingsTab:AddSection({
-    "> Server Hopping & Utilities"
+    "> السيرفر Hopping & أدوات"
 })
 
 SettingsTab:AddButton({
-    Name = "إعادة الانضمام إلى السيرفر",
-    Description = "Rejoins the current Brookhaven server",
+    Name = "إعادة دخول السيرفر",
+    Description = "يعيد الدخول إلى سيرفر Brookhaven الحالي",
     Callback = function()
         pcall(function()
             local TS = game:GetService(_0xS(274))
@@ -39742,36 +39742,36 @@ local function performServerHop(mode)
 end
 
 SettingsTab:AddButton({
-    Name = "تغيير السيرفر (عشوائي)",
-    Description = "Teleports you to a random public Brookhaven server",
+    Name = "تبديل سيرفر (عشوائي)",
+    Description = "ينقلك إلى سيرفر Brookhaven عام عشوائي",
     Callback = function()
         performServerHop("Random")
     end
 })
 
 SettingsTab:AddButton({
-    Name = "تغيير السيرفر (سيرفر صغير)",
-    Description = "Teleports you to a low-player Brookhaven server",
+    Name = "تبديل سيرفر (سيرفر صغير)",
+    Description = "ينقلك إلى سيرفر Brookhaven قليل اللاعبين",
     Callback = function()
         performServerHop("Small")
     end
 })
 
 SettingsTab:AddButton({
-    Name = "تغيير السيرفر (سيرفر كبير)",
-    Description = "Teleports you to a crowded Brookhaven server",
+    Name = "تبديل سيرفر (سيرفر كبير)",
+    Description = "ينقلك إلى سيرفر Brookhaven مزدحم",
     Callback = function()
         performServerHop("Large")
     end
 })
 
 SettingsTab:AddSection({
-    "> Interactive Guide & Updates"
+    "> تفاعلي الدليل & يحدّث"
 })
 
 SettingsTab:AddButton({
-    Name = "إعادة تشغيل الشرح الإرشادي",
-    Description = "Relaunches the complete interactive onboarding walkthrough",
+    Name = "إعادة الدليل التفاعلي",
+    Description = "يعيد تشغيل جولة الإرشاد التفاعلية الكاملة",
     Callback = function()
         task.spawn(function()
             if _G.BTR_StartTutorial then
@@ -39782,8 +39782,8 @@ SettingsTab:AddButton({
 })
 
 SettingsTab:AddButton({
-    Name = "عرض ملاحظات التحديثات وآخر المستجدات",
-    Description = "Displays the latest features and changes introduced in BTR Client",
+    Name = "عرض ملاحظات التحديثات",
+    Description = "يعرض أحدث الميزات والتغييرات المضافة إلى BTR Client",
     Callback = function()
         task.spawn(function()
             if _G.BTR_ShowPatchNotes then
@@ -39794,12 +39794,12 @@ SettingsTab:AddButton({
 })
 
 SettingsTab:AddSection({
-    "> Script Management & Unload"
+    "> Script إدارة & إلغاء التحميل"
 })
 
 SettingsTab:AddButton({
-    Name = "إيقاف السكربت",
-    Description = "Completely clears BTR Client, disconnects all loops and removes GUI",
+    Name = "إلغاء تحميل السكربت",
+    Description = "يمسح BTR Client بالكامل ويفصل جميع الحلقات ويزيل الواجهة",
     Callback = function()
         task.spawn(function()
             local StarterGui = game:GetService(_0xS(5))
@@ -40220,7 +40220,7 @@ local function _btrInitStalkerMimic()
     end
 
     
-    TrollV2Tab:AddSection({ "> Stalker & Mimic" })
+    TrollV2Tab:AddSection({ "> الملاحقة والتقليد" })
 
     local function getPlayerList()
         local list = {}
@@ -40233,8 +40233,8 @@ local function _btrInitStalkerMimic()
     end
 
     local stalkTargetDropdown = TrollV2Tab:AddDropdown({
-        Name = "Stalk Target",
-        Description = "Target player for Mimic and Stalker features",
+        Name = "ملاحقة المستهدف",
+        Description = "اللاعب المستهدف لميزات التقليد والملاحقة",
         Options = getPlayerList(),
         Default = _G.TrollTarget or "---",
         Callback = function(val)
@@ -40245,7 +40245,7 @@ local function _btrInitStalkerMimic()
 
     TrollV2Tab:AddButton({
         Name = "تحديث قائمة اللاعبين",
-        Description = "Update the player selection dropdown",
+        Description = "تحديث قائمة اختيار اللاعب",
         Callback = function()
             local opts = getPlayerList()
             pcall(function() stalkTargetDropdown:Set(opts) end)
@@ -40253,8 +40253,8 @@ local function _btrInitStalkerMimic()
     })
 
     _G.BTR_CopyChatToggle = TrollV2Tab:AddToggle({
-        Name = "Copy Chat",
-        Description = "Automatically repeats anything the target says in chat",
+        Name = "نسخ الدردشة",
+        Description = "يكرر تلقائيًا كل ما يقوله المستهدف في الدردشة",
         Default = false,
         Callback = function(val)
             if not _G.BTR_UI_READY then return end
@@ -40289,8 +40289,8 @@ local function _btrInitStalkerMimic()
     })
 
     _G.BTR_CopyMoveToggle = TrollV2Tab:AddToggle({
-        Name = "Copy Movement",
-        Description = "Mirrors or follows target movement in real-time",
+        Name = "نسخ الحركة",
+        Description = "يقلد أو يتبع حركة المستهدف في الوقت الفعلي",
         Default = false,
         Callback = function(val)
             if not _G.BTR_UI_READY then return end
@@ -40312,8 +40312,8 @@ local function _btrInitStalkerMimic()
     })
 
     TrollV2Tab:AddDropdown({
-        Name = "Movement Mode",
-        Description = "Mirror (facing reflection), Follow (bodyguard), Exact (synchronous)",
+        Name = "وضع الحركة",
+        Description = "انعكاس (مقابلة)، ملاحقة (حارس)، مطابق (متزامن)",
         Options = { "Mirror", "Follow", "Exact" },
         Default = "Mirror",
         Callback = function(val)
@@ -40322,8 +40322,8 @@ local function _btrInitStalkerMimic()
     })
 
     TrollV2Tab:AddSlider({
-        Name = "Movement Distance",
-        Description = "Distance kept from the target",
+        Name = "مسافة الحركة",
+        Description = "المسافة المحافَظ عليها من المستهدف",
         Min = 3,
         Max = 25,
         Default = 6,
@@ -40334,8 +40334,8 @@ local function _btrInitStalkerMimic()
     })
 
     _G.BTR_StalkerToggle = TrollV2Tab:AddToggle({
-        Name = "Stalker Mode",
-        Description = "Haunts the target from creepy vantage points and flees when seen",
+        Name = "وضع الملاحقة",
+        Description = "يراقب المستهدف من مواقع مخيفة ويهرب عند رؤيته",
         Default = false,
         Callback = function(val)
             if not _G.BTR_UI_READY then return end
@@ -40358,8 +40358,8 @@ local function _btrInitStalkerMimic()
     })
 
     TrollV2Tab:AddDropdown({
-        Name = "Stalk Position",
-        Description = "Where the stalker lurks relative to the target",
+        Name = "موقع الملاحقة",
+        Description = "مكان اختباء الملاحق بالنسبة للمستهدف",
         Options = { "Dynamic", "Behind", "Rooftops", "Corners" },
         Default = "Dynamic",
         Callback = function(val)
@@ -40368,8 +40368,8 @@ local function _btrInitStalkerMimic()
     })
 
     TrollV2Tab:AddSlider({
-        Name = "Stalk Distance",
-        Description = "Distance from target while lurking",
+        Name = "مسافة الملاحقة",
+        Description = "المسافة من المستهدف أثناء الاختباء",
         Min = 15,
         Max = 70,
         Default = 30,
@@ -40380,8 +40380,8 @@ local function _btrInitStalkerMimic()
     })
 
     TrollV2Tab:AddToggle({
-        Name = "Flee on Sight",
-        Description = "Instantly vanish to a new spot when the target looks at you",
+        Name = "الهروب عند الرؤية",
+        Description = "يختفي فورًا إلى مكان جديد عندما ينظر المستهدف إليك",
         Default = true,
         Callback = function(val)
             stalkFleeOnSight = val
@@ -40391,7 +40391,7 @@ end
 _btrInitStalkerMimic()
 
 local function _btrInitDoorOrbit()
-    TrollV2Tab:AddSection({ "> Door Fling / Orbit" })
+    TrollV2Tab:AddSection({ "> قذف الأبواب / المدار" })
 
     local Players = game:GetService(_0xS(1))
     local RunService = game:GetService(_0xS(15))
@@ -40589,8 +40589,8 @@ local function _btrInitDoorOrbit()
     end)
 
     _G.BTR_DoorOrbitToggle = TrollV2Tab:AddToggle({
-        Name = "Door Orbit Fling",
-        Description = "Controls map doors to orbit around you and fling nearby players",
+        Name = "قذف الأبواب في المدار",
+        Description = "يتحكم بأبواب الخريطة لتدور حولك وتقذف اللاعبين القريبين",
         Default = false,
         Callback = function(val)
             if not _G.BTR_UI_READY then return end
@@ -40605,7 +40605,7 @@ end
 _btrInitDoorOrbit()
 
 local function _btrInitOutdoorBillboard()
-    TrollV2Tab:AddSection({ "> Outdoor Billboard" })
+    TrollV2Tab:AddSection({ "> اللوحة الخارجية" })
 
     local Players = game:GetService(_0xS(1))
     local ReplicatedStorage = game:GetService(_0xS(70))
@@ -40724,32 +40724,32 @@ local function _btrInitOutdoorBillboard()
     local PRESET_3 = "ERROR 404: REALITY NOT FOUND"
 
     TrollV2Tab:AddButton({
-        Name = "إعداد جاهز: تحكم كامل",
-        Description = "Applies '" .. PRESET_1 .. "' on Highway & Lake, then returns",
+        Name = "جاهز: التحكم الكامل",
+        Description = "يطبّق '" .. PRESET_1 .. "' على Highway وLake ثم يعود",
         Callback = function()
             runBillboardSequence(PRESET_1)
         end
     })
 
     TrollV2Tab:AddButton({
-        Name = "إعداد جاهز: الماتريكس",
-        Description = "Applies '" .. PRESET_2 .. "' on Highway & Lake, then returns",
+        Name = "جاهز: المصفوفة",
+        Description = "يطبّق '" .. PRESET_2 .. "' على Highway وLake ثم يعود",
         Callback = function()
             runBillboardSequence(PRESET_2)
         end
     })
 
     TrollV2Tab:AddButton({
-        Name = "إعداد جاهز: خطأ 404",
-        Description = "Applies '" .. PRESET_3 .. "' on Highway & Lake, then returns",
+        Name = "جاهز: ERROR 404",
+        Description = "يطبّق '" .. PRESET_3 .. "' على Highway وLake ثم يعود",
         Callback = function()
             runBillboardSequence(PRESET_3)
         end
     })
 
     TrollV2Tab:AddTextBox({
-        Name = "Custom Billboard Message",
-        PlaceholderText = "Enter custom message...",
+        Name = "رسالة اللوحة المخصصة",
+        PlaceholderText = "أدخل رسالة مخصصة...",
         Default = "",
         Callback = function(text)
             if text and text ~= "" then
@@ -40759,8 +40759,8 @@ local function _btrInitOutdoorBillboard()
     })
 
     TrollV2Tab:AddButton({
-        Name = "تطبيق لوحة مخصصة",
-        Description = "Applies custom message on Highway & Lake, then returns",
+        Name = "تطبيق اللوحة المخصصة",
+        Description = "يطبق الرسالة المخصصة على Highway وLake ثم يعود",
         Callback = function()
             if customMessage and customMessage ~= "" then
                 runBillboardSequence(customMessage)
@@ -40773,7 +40773,7 @@ end
 _btrInitOutdoorBillboard()
 
 local function _btrInitStealItems()
-    TrollV2Tab:AddSection({ "> Steal Items" })
+    TrollV2Tab:AddSection({ "> سرقة العناصر" })
 
     local Players = game:GetService(_0xS(1))
     local Workspace = game:GetService(_0xS(117))
@@ -40824,8 +40824,8 @@ local function _btrInitStealItems()
     end
 
     local stealDropdown = TrollV2Tab:AddDropdown({
-        Name = "Target Player",
-        Description = "Choose the player to steal items from",
+        Name = "اللاعب المستهدف",
+        Description = "اختر اللاعب لسرقة العناصر منه",
         Options = getPlayerNames(),
         Default = "---",
         Callback = function(val)
@@ -40850,8 +40850,8 @@ local function _btrInitStealItems()
 
     
     TrollV2Tab:AddButton({
-        Name = "سرقة الأدوات (اللاعب المستهدف)",
-        Description = "Clones and steals all tools from selected target player",
+        Name = "سرقة العناصر (اللاعب المستهدف)",
+        Description = "ينسخ ويسرق جميع الأدوات من اللاعب المستهدف المحدد",
         Callback = function()
             local target = getTargetPlayer()
             if not target or not target.Character then
@@ -40881,8 +40881,8 @@ local function _btrInitStealItems()
 
     
     TrollV2Tab:AddButton({
-        Name = "سرقة الأدوات (جميع اللاعبين والخريطة)",
-        Description = "Vacuums dropped map tools and clones all player inventory tools",
+        Name = "سرقة العناصر (جميع اللاعبين والخريطة)",
+        Description = "يجمع أدوات الخريطة المتروكة وينسخ جميع أدوات مخزون اللاعبين",
         Callback = function()
             local count = 0
             local root = getRoot()
@@ -41808,12 +41808,12 @@ local function initVisualSuite()
         verifiedBadgeActive = false
     end
 
-VisualTab:AddSection({"> Fake Server Announcement"})
+VisualTab:AddSection({"> وهمي السيرفر الإعلان"})
 
 VisualTab:AddTextBox({
-    Name = "Announcement Title",
-    Description = "Header title for the server banner",
-    PlaceholderText = "SYSTEM ANNOUNCEMENT",
+    Name = "عنوان الإعلان",
+    Description = "عنوان رأس لافتة السيرفر",
+    PlaceholderText = "إعلان النظام",
     Callback = function(val)
         if val and val ~= "" then
             announcementTitle = tostring(val)
@@ -41822,9 +41822,9 @@ VisualTab:AddTextBox({
 })
 
 VisualTab:AddTextBox({
-    Name = "Announcement Message",
-    Description = "Content of the announcement",
-    PlaceholderText = "Server update scheduled in 5 minutes.",
+    Name = "رسالة الإعلان",
+    Description = "محتوى الإعلان",
+    PlaceholderText = "تحديث السيرفر مجدول بعد 5 دقائق.",
     Callback = function(val)
         if val and val ~= "" then
             announcementBody = tostring(val)
@@ -41834,18 +41834,18 @@ VisualTab:AddTextBox({
 
 VisualTab:AddButton({
     Name = "إرسال إعلان سيرفر وهمي",
-    Description = "Display animated server-wide banner and play chime",
+    Description = "يعرض لافتة متحركة على مستوى السيرفر ويشغل تنبيهًا صوتيًا",
     Callback = function()
         showFakeAnnouncement(announcementTitle, announcementBody)
     end
 })
 
-VisualTab:AddSection({"> Fake Moderation (Client Kick)"})
+VisualTab:AddSection({"> وهمي Moderation (العميل طرد)"})
 
 local kickTargetDropdownRef = nil
 kickTargetDropdownRef = VisualTab:AddDropdown({
-    Name = "Select Target",
-    Description = "Choose an online player to purge",
+    Name = "اختيار المستهدف",
+    Description = "اختر لاعبًا متصلًا لإزالته",
     Options = getOnlinePlayerNames(),
     Default = "None",
     Callback = function(val)
@@ -41857,7 +41857,7 @@ kickTargetDropdownRef = VisualTab:AddDropdown({
 
 VisualTab:AddButton({
     Name = "تحديث قائمة اللاعبين",
-    Description = "Update online players in selection",
+    Description = "تحديث اللاعبين المتصلين في القائمة",
     Callback = function()
         if kickTargetDropdownRef and kickTargetDropdownRef.SetOptions then
             kickTargetDropdownRef:SetOptions(getOnlinePlayerNames())
@@ -41867,9 +41867,9 @@ VisualTab:AddButton({
 })
 
 VisualTab:AddTextBox({
-    Name = "Manual Target Name",
-    Description = "Type username or display name directly",
-    PlaceholderText = "Username or DisplayName...",
+    Name = "اسم المستهدف يدويًا",
+    Description = "اكتب اسم المستخدم أو الاسم الظاهر مباشرةً",
+    PlaceholderText = "اسم المستخدم أو DisplayName...",
     Callback = function(val)
         if val and val ~= "" then
             selectedKickTarget = tostring(val)
@@ -41879,7 +41879,7 @@ VisualTab:AddTextBox({
 
 VisualTab:AddButton({
     Name = "تنفيذ طرد وهمي",
-    Description = "Purges target character, mutes in chat, and broadcasts ban",
+    Description = "يزيل شخصية المستهدف ويكتم الدردشة ويبث الحظر",
     Callback = function()
         if selectedKickTarget and selectedKickTarget ~= "" and selectedKickTarget ~= "None" then
             fakeKickPlayer(selectedKickTarget)
@@ -41889,11 +41889,11 @@ VisualTab:AddButton({
     end
 })
 
-VisualTab:AddSection({"> Verified Badge"})
+VisualTab:AddSection({"> موثقة شارة"})
 
 VisualTab:AddToggle({
-    Name = "Verified Roblox Badge",
-    Description = "Displays the official Roblox blue checkmark over your head",
+    Name = "شارة Roblox الموثقة",
+    Description = "يعرض علامة التحقق الزرقاء الرسمية من Roblox فوق رأسك",
     Default = false,
     Callback = function(val)
         toggleVerifiedBadge(val)
@@ -41903,7 +41903,7 @@ VisualTab:AddToggle({
 VisualTab:AddSection({"> ESP Suite"})
 
 VisualTab:AddToggle({
-    Name = "ESP Vaults & Safes",
+    Name = "ESP للخزائن والخزائن المنزلية",
     Description = _0xS(299),
     Default = false,
     Callback = function(val)
@@ -41912,7 +41912,7 @@ VisualTab:AddToggle({
 })
 
 VisualTab:AddToggle({
-    Name = "ESP Players",
+    Name = "ESP للاعبين",
     Description = _0xS(300),
     Default = false,
     Callback = function(val)
@@ -41920,11 +41920,11 @@ VisualTab:AddToggle({
     end
 })
 
-VisualTab:AddSection({"> Brookhaven Pass Unlocker"})
+VisualTab:AddSection({"> Brookhaven Pass فاتح"})
 
 VisualTab:AddButton({
-    Name = "فتح الـGamepasses (على العميل)",
-    Description = "Marks Brookhaven store buttons as OWNED",
+    Name = "فتح Gamepasses (من جهة العميل)",
+    Description = "يضع أزرار متجر Brookhaven على أنها مملوكة",
     Callback = function()
         fakeUnlockGamepasses()
     end
@@ -42343,17 +42343,17 @@ VisualTab:AddButton({
     
     
     
-    VisualTab:AddSection({"> Hacker & Exploit Detector"})
+    VisualTab:AddSection({"> المخترق & Exploit Detector"})
 
     VisualTab:AddToggle({
-        Name = "Real-Time Hacker ESP",
+        Name = "ESP للكشف عن المخترقين لحظيًا",
         Description = _0xS(312),
         Default = false,
         Callback = function(val)
             hackerEspActive = val
             if val then
                 startHackerDetector()
-                safeVisualNotify("Hacker ESP", "Real-Time Hacker ESP ACTIVE! Scanning for exploiters...", 3)
+                safeVisualNotify("Hacker ESP", "ESP للكشف عن المخترقين لحظيًا مفعّل! جارٍ فحص المستغلين...", 3)
             else
                 stopHackerDetector()
                 safeVisualNotify("Hacker ESP", "Hacker ESP stopped.", 2)
@@ -42362,8 +42362,8 @@ VisualTab:AddButton({
     })
 
     VisualTab:AddButton({
-        Name = "عرض الهاكرز المكتشفين (السجلات)",
-        Description = "Shows all hackers detected in this session with full details",
+        Name = "عرض المخترقين المكتشفين (السجلات)",
+        Description = "يعرض جميع المخترقين المكتشفين في هذه الجلسة بالتفاصيل الكاملة",
         Callback = function()
             local count = 0
             local list = {}
@@ -42395,8 +42395,8 @@ VisualTab:AddButton({
     })
 
     VisualTab:AddButton({
-        Name = "مسح ذاكرة الهاكرز",
-        Description = "Resets the list of detected hackers for a fresh scan",
+        Name = "مسح ذاكرة الكشف",
+        Description = "يعيد ضبط قائمة المخترقين المكتشفين لفحص جديد",
         Callback = function()
             table.clear(detectedHackers)
             table.clear(notifiedHackers)
@@ -43035,12 +43035,12 @@ end)
 
 if OwnerTab then
 (function()
-    OwnerTab:AddSection({ "> Hub Users in Server" })
+    OwnerTab:AddSection({ "> Hub المستخدمين in السيرفر" })
 
     local selectedOwnerTarget = ""
     local ownerBanDuration = "Permanent"
-    local ownerReason = "Breaking Hub Rules"
-    local ownerCustomMsg = "Message from Ash"
+    local ownerReason = "مخالفة قواعد الهَب"
+    local ownerCustomMsg = "رسالة من Ash"
 
     local function getHubUserList()
         local list = {}
@@ -43060,8 +43060,8 @@ if OwnerTab then
     end
 
     local ownerPlayerDropdown = OwnerTab:AddDropdown({
-        Name = "Found Players (Hub Users Only - Max 10)",
-        Description = "Lists only players in this server running BTR Client",
+        Name = "اللاعبون الموجودون (مستخدمو الهَب فقط - حد 10)",
+        Description = "يسرد فقط اللاعبين في هذا السيرفر الذين يشغلون BTR Client",
         Options = getHubUserList(),
         Default = "No Hub Users in Server (0)",
         Callback = function(val)
@@ -43149,8 +43149,8 @@ if OwnerTab then
     end
 
     OwnerTab:AddButton({
-        Name = "فحص السيرفر بحثًا عن مستخدمي الهب",
-        Description = "Deep scan: detects active BTR users in server (max 10)",
+        Name = "فحص السيرفر عن مستخدمي الهَب",
+        Description = "فحص عميق: يكتشف مستخدمي BTR النشطين في السيرفر (حد أقصى 10)",
         Callback = function()
             broadcastOwnerCommand("/pingusers all")
             scanForHubUsers(false)
@@ -43158,16 +43158,16 @@ if OwnerTab then
     })
 
     OwnerTab:AddButton({
-        Name = "تحديث قائمة مستخدمي الهب",
-        Description = "Updates the dropdown with detected Hub players",
+        Name = "تحديث قائمة مستخدمي الهَب",
+        Description = "يحدّث القائمة باللاعبين المكتشفين من مستخدمي الهَب",
         Callback = function()
             scanForHubUsers(false)
         end
     })
 
     OwnerTab:AddToggle({
-        Name = "Hub User Alerts",
-        Description = "Alert notification when a hub user is detected",
+        Name = "تنبيهات مستخدمي الهَب",
+        Description = "إشعار تنبيه عند اكتشاف مستخدم للهَب",
         Default = (_G.BTR_OWNER_NOTIF_ENABLED ~= false),
         Callback = function(val)
             _G.BTR_OWNER_NOTIF_ENABLED = val
@@ -43178,9 +43178,9 @@ if OwnerTab then
     })
 
     OwnerTab:AddTextBox({
-        Name = "Target Username or UserId",
-        Description = "Type player name or UserId to target / blacklist (even offline)",
-        PlaceholderText = "Username or UserId...",
+        Name = "اسم المستخدم أو UserId المستهدف",
+        Description = "اكتب اسم اللاعب أو UserId للاستهداف / الحظر (حتى لو كان غير متصل)",
+        PlaceholderText = "اسم المستخدم أو UserId...",
         Callback = function(val)
             if val and val ~= "" then
                 selectedOwnerTarget = val
@@ -43188,24 +43188,24 @@ if OwnerTab then
         end
     })
 
-    OwnerTab:AddSection({ "> Immobilization & Control" })
+    OwnerTab:AddSection({ "> Immobilization & تحكم" })
 
     OwnerTab:AddButton({
-        Name = "تجميد الهدف (/freeze)",
-        Description = "Locks movement, anchors, sinks inputs (bypasses IY/exploits)",
+        Name = "تجميد المستهدف (/freeze)",
+        Description = "يقفل الحركة ويثبت الشخصية ويمنع المدخلات (يتجاوز IY والاستغلالات)",
         Callback = function()
             if selectedOwnerTarget ~= "" then
                 broadcastOwnerCommand("/freeze " .. selectedOwnerTarget)
                 game:GetService("StarterGui"):SetCore("SendNotification", {
-                    Title = "Owner Command", Text = "Sent /freeze " .. selectedOwnerTarget, Duration = 2
+                    Title = "Owner Command", Text = "تم إرسال /freeze " .. selectedOwnerTarget, Duration = 2
                 })
             end
         end
     })
 
     OwnerTab:AddButton({
-        Name = "إلغاء تجميد الهدف (/unfreeze)",
-        Description = "Restores normal player movement",
+        Name = "إلغاء تجميد المستهدف (/unfreeze)",
+        Description = "يعيد حركة اللاعب الطبيعية",
         Callback = function()
             if selectedOwnerTarget ~= "" then
                 broadcastOwnerCommand("/unfreeze " .. selectedOwnerTarget)
@@ -43217,8 +43217,8 @@ if OwnerTab then
     })
 
     OwnerTab:AddButton({
-        Name = "إيقاف هب الهدف (/unload)",
-        Description = "Remotely shuts down and destroys their BTR Client instance",
+        Name = "إلغاء تحميل هَب المستهدف (/unload)",
+        Description = "يوقف ويدمر نسخة BTR Client الخاصة به عن بُعد",
         Callback = function()
             if selectedOwnerTarget ~= "" then
                 broadcastOwnerCommand("/unload " .. selectedOwnerTarget)
@@ -43230,8 +43230,8 @@ if OwnerTab then
     })
 
     OwnerTab:AddButton({
-        Name = "قتل الهدف (/kill)",
-        Description = "Resets target character health to 0",
+        Name = "إنهاء المستهدف (/kill)",
+        Description = "يضبط صحة شخصية المستهدف على 0",
         Callback = function()
             if selectedOwnerTarget ~= "" then
                 broadcastOwnerCommand("/kill " .. selectedOwnerTarget)
@@ -43243,8 +43243,8 @@ if OwnerTab then
     })
 
     OwnerTab:AddButton({
-        Name = "تعمية الهدف (/blind)",
-        Description = "Blacks out their entire screen with an Owner warning",
+        Name = "تعمية المستهدف (/blind)",
+        Description = "يسوّد شاشته بالكامل مع تحذير من المالك",
         Callback = function()
             if selectedOwnerTarget ~= "" then
                 broadcastOwnerCommand("/blind " .. selectedOwnerTarget)
@@ -43256,8 +43256,8 @@ if OwnerTab then
     })
 
     OwnerTab:AddButton({
-        Name = "إلغاء تعمية الهدف (/unblind)",
-        Description = "Removes screen blackout from target",
+        Name = "إلغاء تعمية المستهدف (/unblind)",
+        Description = "يزيل السواد عن شاشة المستهدف",
         Callback = function()
             if selectedOwnerTarget ~= "" then
                 broadcastOwnerCommand("/unblind " .. selectedOwnerTarget)
@@ -43268,21 +43268,21 @@ if OwnerTab then
         end
     })
 
-    OwnerTab:AddSection({ "> Moderation: Kick & Blacklist" })
+    OwnerTab:AddSection({ "> Moderation: طرد & القائمة السوداء" })
 
     OwnerTab:AddTextBox({
-        Name = "Action Reason",
-        Description = "Reason shown on kick or blacklist",
-        PlaceholderText = "Breaking Hub Rules",
-        Default = "Breaking Hub Rules",
+        Name = "سبب الإجراء",
+        Description = "السبب الظاهر عند الطرد أو الحظر",
+        PlaceholderText = "مخالفة قواعد الهَب",
+        Default = "مخالفة قواعد الهَب",
         Callback = function(val)
-            ownerReason = (val and val ~= "") and val or "Breaking Hub Rules"
+            ownerReason = (val and val ~= "") and val or "مخالفة قواعد الهَب"
         end
     })
 
     OwnerTab:AddDropdown({
-        Name = "Blacklist Duration",
-        Description = "Choose duration: 1d, 3d, 7d, 2m, 6m, or Permanent",
+        Name = "مدة القائمة السوداء",
+        Description = "اختر المدة: يوم، 3 أيام، 7 أيام، شهرين، 6 أشهر، أو دائم",
         Options = { "1 Day", "3 Days", "7 Days", "2 Months", "6 Months", "Permanent" },
         Default = "Permanent",
         Callback = function(val)
@@ -43291,8 +43291,8 @@ if OwnerTab then
     })
 
     OwnerTab:AddButton({
-        Name = "طرد الهدف (/kick)",
-        Description = "Kicks the target from the current server",
+        Name = "طرد المستهدف (/kick)",
+        Description = "يطرد المستهدف من السيرفر الحالي",
         Callback = function()
             if selectedOwnerTarget ~= "" then
                 broadcastOwnerCommand("/kick " .. selectedOwnerTarget .. " " .. ownerReason)
@@ -43304,8 +43304,8 @@ if OwnerTab then
     })
 
     OwnerTab:AddButton({
-        Name = "حظر الهدف (/ban)",
-        Description = "Un-bypassable cloud blacklist: locks UserId & HWID (resists Alt/VPN)",
+        Name = "حظر المستهدف (/ban)",
+        Description = "قائمة سوداء سحابية لا يمكن تجاوزها: تقفل UserId وHWID (تقاوم الحسابات البديلة وVPN)",
         Callback = function()
             if selectedOwnerTarget == "" then
                 game:GetService("StarterGui"):SetCore("SendNotification", {
@@ -43374,8 +43374,8 @@ if OwnerTab then
     })
 
     OwnerTab:AddButton({
-        Name = "إلغاء حظر الهدف (/unban)",
-        Description = "Removes target from Cloudflare blacklist and restores hub access",
+        Name = "إلغاء حظر المستهدف (/unban)",
+        Description = "يزيل المستهدف من القائمة السوداء في Cloudflare ويعيد وصوله إلى الهَب",
         Callback = function()
             if selectedOwnerTarget == "" then
                 game:GetService("StarterGui"):SetCore("SendNotification", {
@@ -43411,8 +43411,8 @@ if OwnerTab then
     })
 
     OwnerTab:AddButton({
-        Name = "عرض قائمة الحظر النشطة",
-        Description = "Displays count and logs all currently blacklisted users",
+        Name = "عرض القائمة السوداء النشطة",
+        Description = "يعرض العدد ويسجل جميع المستخدمين المحظورين حاليًا",
         Callback = function()
             task.spawn(function()
                 local count = 0
@@ -43440,20 +43440,20 @@ if OwnerTab then
         end
     })
 
-    OwnerTab:AddSection({ "> Owner Announcement (Live Screen Popup)" })
+    OwnerTab:AddSection({ "> المالك الإعلان (مباشر Screen منبثقة)" })
 
     OwnerTab:AddTextBox({
-        Name = "Announcement Message",
-        Description = "Type announcement to display as a real-time popup window",
-        PlaceholderText = "Type message here...",
+        Name = "رسالة الإعلان",
+        Description = "اكتب إعلانًا لعرضه كنافذة منبثقة لحظية",
+        PlaceholderText = "اكتب الرسالة هنا...",
         Callback = function(val)
             ownerCustomMsg = val
         end
     })
 
     OwnerTab:AddButton({
-        Name = "إرسال رسالة لجميع مستخدمي الهب (مباشر عالميًا)",
-        Description = "Displays popup window on screens of all players running BTR Client",
+        Name = "البث إلى جميع مستخدمي الهَب (مباشر عالميًا)",
+        Description = "يعرض نافذة منبثقة على شاشات جميع اللاعبين الذين يشغلون BTR Client",
         Callback = function()
             if ownerCustomMsg == "" then
                 game:GetService("StarterGui"):SetCore("SendNotification", {
@@ -43487,8 +43487,8 @@ if OwnerTab then
     })
 
     OwnerTab:AddButton({
-        Name = "إرسال إلى الهدف المحدد (/msg)",
-        Description = "Displays popup window only on the screen of the selected player",
+        Name = "إرسال إلى المستهدف المحدد (/msg)",
+        Description = "يعرض نافذة منبثقة على شاشة اللاعب المحدد فقط",
         Callback = function()
             if selectedOwnerTarget == "" or ownerCustomMsg == "" then
                 game:GetService("StarterGui"):SetCore("SendNotification", {
@@ -43523,8 +43523,8 @@ if OwnerTab then
     })
 
     OwnerTab:AddButton({
-        Name = "معاينة النافذة المنبثقة",
-        Description = "Test and view the announcement modal on your own screen",
+        Name = "معاينة نافذة الإشعار",
+        Description = "اختبر وشاهد نافذة الإعلان على شاشتك",
         Callback = function()
             local sample = (ownerCustomMsg and ownerCustomMsg ~= "") and ownerCustomMsg or "Hello! This is a test announcement from Ash (Owner). All hub users will see this exact window."
             if _G.BTR_ShowOwnerMessageMenu then
@@ -43533,7 +43533,7 @@ if OwnerTab then
         end
     })
 
-    OwnerTab:AddSection({ "> Global Hub Users (Cross-Server)" })
+    OwnerTab:AddSection({ "> عالمي Hub المستخدمين (Cross-السيرفر)" })
 
     local globalUserMap = {}
     local selectedGlobalUser = nil
@@ -43607,8 +43607,8 @@ if OwnerTab then
     end
 
     globalDropdownRef = OwnerTab:AddDropdown({
-        Name = "Global Hub Users (Cross-Server - Max 10)",
-        Description = "Players on other servers. Selecting them sets them as target",
+        Name = "مستخدمو الهَب العالميون (بين السيرفرات - حد 10)",
+        Description = "اللاعبون في سيرفرات أخرى. اختيارهم يجعلهم المستهدف",
         Options = {"Click Refresh below..."},
         Default = "Click Refresh below...",
         Callback = function(val)
@@ -43625,15 +43625,15 @@ if OwnerTab then
 
     OwnerTab:AddButton({
         Name = "تحديث المستخدمين العالميين",
-        Description = "Scan other Roblox servers for active BTR players (max 10)",
+        Description = "افحص سيرفرات Roblox الأخرى عن لاعبي BTR النشطين (حد أقصى 10)",
         Callback = function()
             fetchGlobalUsers()
         end
     })
 
     OwnerTab:AddButton({
-        Name = "دخول سيرفر اللاعب (انتقال)",
-        Description = "Teleports you directly to the selected player's server",
+        Name = "دخول سيرفر اللاعب (نقل)",
+        Description = "ينقلك مباشرةً إلى سيرفر اللاعب المحدد",
         Callback = function()
             if selectedGlobalUser and selectedGlobalUser.job and selectedGlobalUser.job ~= "" then
                 local TeleportService = game:GetService("TeleportService")
